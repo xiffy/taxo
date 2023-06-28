@@ -12,7 +12,6 @@ jobs:
     - name: Zip rj taxonomy
       run: zip -r rj_taxonomy_2022.zip ./rj_taxonomy_2022
     - uses: Arelle/Arelle@2.11.4
-    # - run: python arelleCmdLine.py --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip" -f https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd -v
     - uses: actions/upload-artifact@v3
       with:
         name: taxonomy-packages
