@@ -1,1 +1,1 @@
-arelle-release=2.11.4
+arelle-release==2.11.4
