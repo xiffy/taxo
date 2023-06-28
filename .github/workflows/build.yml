@@ -11,13 +11,7 @@ jobs:
       run: zip -r jenv_taxonomy_2022.zip ./jenv_taxonomy_2022
     - name: Zip rj taxonomy
       run: zip -r rj_taxonomy_2022.zip ./rj_taxonomy_2022
-    - uses: actions/setup-python@v4 
-      with:
-        python-version: '3.9'
-        cache: 'pip'
-    # - run: pip install arelle-release
-    - run: pip install -r requirements.txt
-    - run: ls -R /opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/arelle
+    - uses: Arelle/Arelle@2.6.4
     # - run: python arelleCmdLine.py --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip" -f https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd -v
     - uses: actions/upload-artifact@v3
       with:
