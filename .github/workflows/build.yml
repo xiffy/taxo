@@ -7,9 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Zip Folder
+    - name: Zip jenv taxonomy
       run: zip -r jenv_taxonomy_2022.zip ./jenv_taxonomy_2022
+    - name: Zip rj taxonomy
+      run: zip -r rj_taxonomy_2022.zip ./rj_taxonomy_2022
     - uses: actions/upload-artifact@v3
       with:
-        name: jenv_taxonomy_2022
-        path: ${{ github.workspace }}/jenv_taxonomy_2022.zip
+        name: taxonomy-packages
+        path: |
+          ${{ github.workspace }}/jenv_taxonomy_2022.zip
+          ${{ github.workspace }}/rj_taxonomy_2022.zip
