@@ -1,0 +1,11 @@
+name: Zip
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Zip Folder
+      run: zip jenv_taxonomy_2022.zip ./jenv_taxonomy_2022
