@@ -17,7 +17,7 @@ jobs:
         cache: 'pip'
     # - run: pip install arelle-release
     - run: pip install -r requirements.txt
-    - run: ls /usr/local/lib/python3.10/site-packages
+    - run: ls /usr/local/lib/python3.10
     # - run: python arelleCmdLine.py --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip" -f https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd -v
     - uses: actions/upload-artifact@v3
       with:
