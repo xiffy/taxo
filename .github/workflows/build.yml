@@ -24,7 +24,7 @@ jobs:
         python-version: '3.9'
         cache: 'pip' # caching pip dependencies
     - run: pip install -r requirements.txt
-    - run: dir C:\hostedtoolcache\windows\Python\3.9.13\x64\lib\site-packages /s
+    - run: dir \.\hostedtoolcache\windows\Python\3.9.13\x64\lib\site-packages /s
     - uses: actions/upload-artifact@v3
       with:
         name: taxonomy-packages
