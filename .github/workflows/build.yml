@@ -13,9 +13,12 @@ jobs:
     #   run: zip -r rj_taxonomy_2022.zip ./rj_taxonomy_2022
     - uses: vimtor/action-zip@v1
       with:
-        files: ./rj_taxonomy_2022
+        files: ./jenv_taxonomy_2022
         dest: jenv_taxonomy_2022.zip
-    - uses: Arelle/Arelle@2.11.4
+    - uses: vimtor/action-zip@v1
+      with:
+        files: ./rj_taxonomy_2022
+        dest: rj_taxonomy_2022.zip
     - uses: actions/upload-artifact@v3
       with:
         name: taxonomy-packages
