@@ -19,6 +19,11 @@ jobs:
       with:
         files: ./rj_taxonomy_2022
         dest: rj_taxonomy_2022.zip
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cache: 'pip' # caching pip dependencies
+    - run: pip install -r requirements.txt
     - uses: actions/upload-artifact@v3
       with:
         name: taxonomy-packages
