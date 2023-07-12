@@ -18,6 +18,21 @@ jobs:
         recursive: false
         dest: rj_taxonomy_2022.zip
     - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip" -f https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd -v --logFile arelle-log.xml'
+    - name: Get level from output
+      id: get_level
+      shell: pwsh  
+      run: |
+        $arellelog = get-childitem -Filter arelle-log.xml -Recurse | Sort-Object -Descending -Property LastWriteTime -Top 1
+        Write-Output $arellelog.FullName
+        [xml]$arellelog = Get-Content -Path $arellelog.FullName
+        $level = $arellelog.log.entry.'level'
+        Write-Output "::set-output name=level::$level"
+    - name: Check coverage tolerance
+      if: ${{ steps.get_level.outputs.level == 'error' }}
+      uses: actions/github-script@v3
+      with:
+        script: |
+            core.setFailed('Error(s) present')
     - uses: actions/upload-artifact@v3
       with:
         name: taxonomy-packages
