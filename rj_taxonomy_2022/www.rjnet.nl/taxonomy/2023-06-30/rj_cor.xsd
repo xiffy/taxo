@@ -6,9 +6,9 @@
         <link:definition>Financial Statement EE</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
-      <link:roleType id="rj_cor_StagesOfAdoptionEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/stages-of-adoption-ee">
+      <link:roleType id="rj_cor_StagesOfAdosptionEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/stages-of-adoption-ee">
         <link:definition>Stages of Adoption EE</link:definition>
-        <link:usedOn>link:definitionLdink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
       <link:roleType id="rj_cor_RelatedPartyMainActivitiesEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/related-party-main-activities-ee">
         <link:definition>Related Party Main Activities EE</link:definition>
