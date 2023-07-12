@@ -17,7 +17,6 @@ jobs:
         files: rj_taxonomy_2022/
         recursive: false
         dest: rj_taxonomy_2022.zip
-    - run: "dir"
     - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip" -f https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd -v'
     - uses: actions/upload-artifact@v3
       with:
