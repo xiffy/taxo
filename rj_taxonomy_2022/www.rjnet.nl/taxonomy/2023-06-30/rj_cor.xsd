@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" xmlns:jenv_bw2_cor="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" xmlns:nl-codes="http://www.nltaxonomie.nl/nt17/sbr/20220301/dictionary/nl-codes" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" elementFormDefault="qualified">
   <xsd:annotation>
-    <xsd:appinfo>>
+    <xsd:appinfo>
       <link:roleType id="rj_cor_FinancialStatementEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/financial-statement-ee">
         <link:definition>Financial Statement EE</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
