@@ -12,7 +12,7 @@
       </link:roleType>
       <link:roleType id="rj_cor_RelatedPartyMainActivitiesEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/related-party-main-activities-ee">
         <link:definition>Related Party Main Activities EE</link:definition>
-        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:definitionlLink</link:usedOn>
       </link:roleType>
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor_ee.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor_lab_nl.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
