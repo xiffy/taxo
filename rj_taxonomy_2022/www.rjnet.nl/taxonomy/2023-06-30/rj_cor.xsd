@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" xmlns:jenv_bw2_cor="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" xmlns:cur="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21" xmlns:jenv_bw2_cor="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" elementFormDefault="qualified">
   <xsd:annotation>
     <xsd:appinfo>
       <link:roleType id="rj_cor_FinancialStatementEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/financial-statement-ee">
@@ -23,6 +23,7 @@
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
   <xsd:import namespace="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" schemaLocation="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor.xsd" />
+  <xsd:import namespace="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21" schemaLocation="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency-elts.xsd" />
   <!-- start of item concepts -->
   <xsd:element name="ALMPolicyDescription" id="rj_cor_ALMPolicyDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccommodationCosts" id="rj_cor_AccommodationCosts" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
@@ -3657,6 +3658,10 @@
   <!-- start of enumeration item concepts -->
 
   <!-- start of extensible enumeration item concepts -->
+
+    <!-- from nl-cd -->
+    <xsd:element name="DocumentPresentationCurrency" id="rj_cor_DocumentPresentationCurrency" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="cur:CurrencyDomain" enum2:headUsable="false" enum2:linkrole="http://www.xbrl.org/taxonomy/int/currency/roles/CurrencyList" abstract="false" nillable="true" xbrli:periodType="duration" />
+
   <xsd:element name="DocumentRelatesToIndividualEntityOrGroup" id="rj_cor_DocumentRelatesToIndividualEntityOrGroup" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj_cor:FinancialStatementDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/financial-statement-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="FinancingDeficitSurplusToBeSettledInRatesStageOfAdoption" id="rj_cor_FinancingDeficitSurplusToBeSettledInRatesStageOfAdoption" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj_cor:StagesOfAdoptionDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/stages-of-adoption-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RelatedPartyLegalForm" id="rj_cor_RelatedPartyLegalForm" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv_bw2_cor:LegalFormDomain" enum2:headUsable="false" enum2:linkrole="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor/legal-form-ee" abstract="false" nillable="true" xbrli:periodType="duration" />

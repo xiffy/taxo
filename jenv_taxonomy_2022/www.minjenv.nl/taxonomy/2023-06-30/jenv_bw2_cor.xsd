@@ -27,6 +27,11 @@
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
   <!-- start of item concepts -->
+
+    <!-- from nl-cd -->
+    <xsd:element name="ChamberOfCommerceRegistrationNumber" id="jenv_bw2_cor_ChamberOfCommerceRegistrationNumber" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <xsd:element name="LegalEntityName" id="jenv_bw2_cor_LegalEntityName" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+
   <xsd:element name="AccommodationCostsAllocatedToInvestmentsInLandAndBuildingsForOwnUse" id="jenv_bw2_cor_AccommodationCostsAllocatedToInvestmentsInLandAndBuildingsForOwnUse" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
   <xsd:element name="AccountingPrinciplesForDeterminingTheResult" id="jenv_bw2_cor_AccountingPrinciplesForDeterminingTheResult" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccountingPrinciplesForTheValuationOfAssetsAndEquityAndLiabilities" id="jenv_bw2_cor_AccountingPrinciplesForTheValuationOfAssetsAndEquityAndLiabilities" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
