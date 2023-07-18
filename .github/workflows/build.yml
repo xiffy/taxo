@@ -39,3 +39,5 @@ jobs:
         path: |
           ${{ github.workspace }}/jenv_taxonomy_2022.zip
           ${{ github.workspace }}/rj_taxonomy_2022.zip
+          ${{ github.workspace }}/nen_taxonomy_2022.zip
+          ${{ github.workspace }}/iso_taxonomy_2022.zip
