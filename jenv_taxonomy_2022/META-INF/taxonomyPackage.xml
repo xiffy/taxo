@@ -10,7 +10,7 @@
 	<tp:publicationDate>2023-06-30</tp:publicationDate>
 	<tp:entryPoints>
 		<tp:entryPoint>
-			<tp:name>JenV Taxonomy 2022</tp:name>
+			<tp:name>JenV BW2 Core</tp:name>
 			<tp:description></tp:description>
 			<tp:entryPointDocument href="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor.xsd" />
 		</tp:entryPoint>

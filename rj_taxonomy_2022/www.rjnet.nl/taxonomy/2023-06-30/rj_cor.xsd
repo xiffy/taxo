@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" xmlns:jenv_bw2_cor="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" xmlns:nl-codes="http://www.nltaxonomie.nl/nt17/sbr/20220301/dictionary/nl-codes" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" xmlns:jenv_bw2_cor="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" elementFormDefault="qualified">
   <xsd:annotation>
     <xsd:appinfo>
       <link:roleType id="rj_cor_FinancialStatementEE" roleURI="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor/financial-statement-ee">
@@ -22,7 +22,6 @@
   <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
-  <xsd:import namespace="http://www.nltaxonomie.nl/nt17/sbr/20220301/dictionary/nl-codes" schemaLocation="http://nltaxonomie.nl/nt17/sbr/20220301/dictionary/nl-codes.xsd" />
   <xsd:import namespace="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" schemaLocation="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor.xsd" />
   <!-- start of item concepts -->
   <xsd:element name="ALMPolicyDescription" id="rj_cor_ALMPolicyDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
@@ -3648,13 +3647,13 @@
   <!-- end of dimensions -->
 
   <!-- start of enumeration item concepts -->
-  <xsd:element name="FinancialReportingPeriodDifferentThanAnnualStatus" id="rj_cor_FinancialReportingPeriodDifferentThanAnnualStatus" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <xsd:element name="RelatedPartyMainActivitiesContractTeachingIndication" id="rj_cor_RelatedPartyMainActivitiesContractTeachingIndication" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <xsd:element name="RelatedPartyMainActivitiesContractualResearchIndication" id="rj_cor_RelatedPartyMainActivitiesContractualResearchIndication" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <xsd:element name="RelatedPartyMainActivitiesOtherIndication" id="rj_cor_RelatedPartyMainActivitiesOtherIndication" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <xsd:element name="RelatedPartyMainActivitiesRealEstateIndication" id="rj_cor_RelatedPartyMainActivitiesRealEstateIndication" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <xsd:element name="RelatedPartySeverallyLiableForLiabilities" id="rj_cor_RelatedPartySeverallyLiableForLiabilities" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <xsd:element name="SubsidyIncomeActivitiesFullyPerformedAndCompletedAtPeriodEndInAccordanceWithConditions" id="rj_cor_SubsidyIncomeActivitiesFullyPerformedAndCompletedAtPeriodEndInAccordanceWithConditions" substitutionGroup="xbrli:item" type="nl-codes:yesNoItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="FinancialReportingPeriodDifferentThanAnnualStatus" id="rj_cor_FinancialReportingPeriodDifferentThanAnnualStatus" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RelatedPartyMainActivitiesContractTeachingIndication" id="rj_cor_RelatedPartyMainActivitiesContractTeachingIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RelatedPartyMainActivitiesContractualResearchIndication" id="rj_cor_RelatedPartyMainActivitiesContractualResearchIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RelatedPartyMainActivitiesOtherIndication" id="rj_cor_RelatedPartyMainActivitiesOtherIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RelatedPartyMainActivitiesRealEstateIndication" id="rj_cor_RelatedPartyMainActivitiesRealEstateIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RelatedPartySeverallyLiableForLiabilities" id="rj_cor_RelatedPartySeverallyLiableForLiabilities" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SubsidyIncomeActivitiesFullyPerformedAndCompletedAtPeriodEndInAccordanceWithConditions" id="rj_cor_SubsidyIncomeActivitiesFullyPerformedAndCompletedAtPeriodEndInAccordanceWithConditions" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <!-- start of enumeration item concepts -->
 
   <!-- start of extensible enumeration item concepts -->

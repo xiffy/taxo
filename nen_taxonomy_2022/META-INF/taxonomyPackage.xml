@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
-	<tp:identifier>https://www.rjnet.nl/taxonomy/2023-06-30</tp:identifier>
-	<tp:name>RJ Taxonomy 2022</tp:name>
+	<tp:identifier>https://www.nen.nl/taxonomy/2023-06-30</tp:identifier>
+	<tp:name>NEN Taxonomy 2022</tp:name>
 	<tp:description></tp:description>
 	<tp:version>0.1.0</tp:version>
-	<tp:publisher>Raad voor de Jaarverslaggeving</tp:publisher>
-	<tp:publisherURL>https://www.rjnet.nl</tp:publisherURL>
+	<tp:publisher>Nederlandse Norm</tp:publisher>
+	<tp:publisherURL>https://www.nen.nl</tp:publisherURL>
 	<tp:publisherCountry>NL</tp:publisherCountry>
 	<tp:publicationDate>2023-06-30</tp:publicationDate>
 	<tp:entryPoints>
 		<tp:entryPoint>
-			<tp:name>RJ Core</tp:name>
+			<tp:name>NEN 1888:2002</tp:name>
 			<tp:description></tp:description>
-			<tp:entryPointDocument href="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd" />
+			<tp:entryPointDocument href="https://www.nen.nl/taxonomy/2023-06-30/nen_1888_2002.xsd" />
+		</tp:entryPoint>
+		<tp:entryPoint>
+			<tp:name>NEN 5825:2002</tp:name>
+			<tp:description></tp:description>
+			<tp:entryPointDocument href="https://www.nen.nl/taxonomy/2023-06-30/nen_5825_2002.xsd" />
 		</tp:entryPoint>
 	</tp:entryPoints>
 </tp:taxonomyPackage>
