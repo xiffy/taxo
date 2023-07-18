@@ -1,0 +1,19 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+  <rewriteURI
+    uriStartString="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor.xsd"
+    rewritePrefix="./jenv_taxonomy_2022/www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor.xsd" />
+
+  <rewriteURI
+    uriStartString="https://www.nen.nl/taxonomy/2023-06-30/nen_1888_2002.xsd"
+    rewritePrefix="./nen_taxonomy_2022/www.nen.nl/taxonomy/2023-06-30/nen_1888_2002.xsd" />
+
+  <rewriteURI
+    uriStartString="https://www.nen.nl/taxonomy/2023-06-30/nen_5825_2002.xsd"
+    rewritePrefix="./nen_taxonomy_2022/www.nen.nl/taxonomy/2023-06-30/nen_5825_2002.xsd" />
+
+  <rewriteURI
+    uriStartString="https://www.iso.org/taxonomy/2023-06-30/iso_29160-4_2023.xsd"
+    rewritePrefix="./iso_taxonomy_2022/www.iso.org/taxonomy/2023-06-30/iso_29160-4_2023.xsd" />
+
+</catalog>
