@@ -23,7 +23,7 @@
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
   <xsd:import namespace="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor" schemaLocation="https://www.minjenv.nl/taxonomy/2023-06-30/jenv_bw2_cor.xsd" />
-  <xsd:import namespace="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21" schemaLocation="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency-elts.xsd" />
+  <xsd:import namespace="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency" schemaLocation="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency.xsd" />
   <!-- start of item concepts -->
   <xsd:element name="ALMPolicyDescription" id="rj_cor_ALMPolicyDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccommodationCosts" id="rj_cor_AccommodationCosts" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />

@@ -17,7 +17,7 @@
     rewritePrefix="./iso_taxonomy_2022/www.iso.org/taxonomy/2023-06-30/iso_29160-4_2023.xsd" />
 
   <rewriteURI
-    uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency-elts.xsd"
-    rewritePrefix="./currency-PWD-2023-06-21/currency-elts.xsd" />
+    uriStartString="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency.xsd"
+    rewritePrefix="./currency-PWD-2023-06-21/currency.xsd" />
 
 </catalog>
