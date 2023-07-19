@@ -1,0 +1,40 @@
+name: Build
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: vimtor/action-zip@v1
+      with:
+        files: jenv_taxonomy_2022/
+        recursive: false
+        dest: jenv_taxonomy_2022.zip
+    - uses: vimtor/action-zip@v1
+      with:
+        files: rj_taxonomy_2022/
+        recursive: false
+        dest: rj_taxonomy_2022.zip
+    - uses: vimtor/action-zip@v1
+      with:
+        files: nen_taxonomy_2022/
+        recursive: false
+        dest: nen_taxonomy_2022.zip
+    - uses: vimtor/action-zip@v1
+      with:
+        files: iso_taxonomy_2022/
+        recursive: false
+        dest: iso_taxonomy_2022.zip
+    - uses: vimtor/action-zip@v1
+      with:
+        files: currency-PWD-2023-06-21/
+        recursive: false
+        dest: currency-PWD-2023-06-21.zip
+    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-PWD-2023-06-21.zip" --file "test.xbrl" -v --logFile arelle-log.xml'
+    - uses: actions/upload-artifact@v3
+      with:
+        name: instance(s)
+        path: |
+          ${{ github.workspace }}/test.xbrl
