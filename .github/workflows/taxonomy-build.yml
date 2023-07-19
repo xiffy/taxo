@@ -41,9 +41,9 @@ jobs:
       id: package
       uses: jaywcjlove/github-action-read-file@main
       with:
-        path: package.json
+        path: arelle-log.xml
 
-    - name: Echo package.json
+    - name: Echo arelle-log.xml
       run: echo "${{ steps.package.outputs.content }}"
     
     - uses: actions/upload-artifact@v3
