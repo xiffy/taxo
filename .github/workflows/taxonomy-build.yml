@@ -51,7 +51,7 @@ jobs:
       shell: pwsh  
       run: |
         [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
-        $document.load(".\arelle-instance-log.xml")
+        $document.load(".\arelle-taxonomy-log.xml")
         $errors = $document.SelectSingleNode('//entry[@level="error"]')
         Write-Output "::set-output name=errors::$errors"
         
