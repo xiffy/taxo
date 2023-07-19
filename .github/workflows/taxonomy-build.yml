@@ -1,4 +1,4 @@
-name: Instance validation
+name: Taxonomy validation
 on:
   workflow_dispatch:
   push:
