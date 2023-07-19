@@ -43,18 +43,15 @@ jobs:
     - name: Echo arelle-instance-log.xml
       run: echo "${{ steps.package.outputs.content }}"
       
-    - name: Get Line Rate from output
-      id: get_line_rate
-      shell: pwsh  
-      run: |
-        $covreport = get-childitem -Filter arelle-instance-log.xml -Recurse | Sort-Object -Descending -Property LastWriteTime -Top 1
-        Write-Output $covreport.FullName
-        [xml]$covxml = Get-Content -Path $covreport.FullName
-        $lineRate = $covxml.log.entry.'level'
-        Write-Output "::set-output name=lineRate::$lineRate"
+    - name: Get XML
+      id: getxml
+      uses: mavrosxristoforos/get-xml-info@1.0
+      with:
+        xml-file: 'arelle-instance-log.xml'
+        xpath: 'count(//*[@level="info"])'      
         
     - name: echo line
-      run: echo "${{ steps.get_line_rate.outputs.lineRate[0] }}"
+      run: echo "${{ steps.getxml.outputs.info }}"
     
     - uses: actions/upload-artifact@v3
       with:
