@@ -54,7 +54,7 @@ jobs:
         Write-Output "::set-output name=lineRate::$lineRate"
         
     - name: echo line
-      run: echo "${{ steps.get_line_rate.outputs.lineRate }}
+      run: echo "${{ steps.get_line_rate.outputs.lineRate }}"
     
     - uses: actions/upload-artifact@v3
       with:
