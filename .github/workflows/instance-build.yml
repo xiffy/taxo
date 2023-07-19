@@ -48,7 +48,7 @@ jobs:
       uses: QwerMike/xpath-action@v1
       with:
         filename: 'arelle-instance-log.xml'
-        expression: 'count(//*[@level="info"])'      
+        expression: '//@level="info"'      
         
     - name: echo line
       run: echo "${{ steps.getxml.outputs.info }}"
