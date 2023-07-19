@@ -41,7 +41,7 @@ jobs:
       id: package
       uses: jaywcjlove/github-action-read-file@main
       with:
-        path: arelle-log.xml
+        path: ./arelle-log.xml
 
     - name: Echo arelle-log.xml
       run: echo "${{ steps.package.outputs.content }}"
