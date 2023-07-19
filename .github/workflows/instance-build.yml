@@ -54,7 +54,7 @@ jobs:
         Write-Output "lineRate=$lineRate" >> "$GITHUB_ENV"
         
     - name: echo line
-      run: echo "${{ steps.get_line_rate.outputs.lineRate }}"
+      run: echo "${{ env.lineRate }}"
     
     - uses: actions/upload-artifact@v3
       with:
