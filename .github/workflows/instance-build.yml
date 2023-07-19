@@ -48,7 +48,7 @@ jobs:
       uses: mavrosxristoforos/get-xml-info@1.0
       with:
         xml-file: 'arelle-instance-log.xml'
-        xpath: '//entry/message/text()'
+        xpath: 'count(//entry)'
         
     - name: echo line
       run: echo "${{ steps.getxml.outputs.info }}"
