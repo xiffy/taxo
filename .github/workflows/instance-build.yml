@@ -32,7 +32,17 @@ jobs:
         files: currency-PWD-2023-06-21/
         recursive: false
         dest: currency-PWD-2023-06-21.zip
-    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-PWD-2023-06-21.zip" --file "test.xbrl" -v --logFile arelle-log.xml'
+    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-PWD-2023-06-21.zip" --file "test.xbrl" -v --logFile arelle-instance-log.xml'
+    
+    - name: Read arelle-instance-log.xml
+      id: package
+      uses: juliangruber/read-file-action@v1.1.6
+      with:
+        path: ./arelle-instance-log.xml
+        
+    - name: Echo arelle-instance-log.xml
+      run: echo "${{ steps.package.outputs.content }}"
+    
     - uses: actions/upload-artifact@v3
       with:
         name: instance(s)
