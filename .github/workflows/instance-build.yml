@@ -51,7 +51,7 @@ jobs:
         Write-Output $covreport.FullName
         [xml]$covxml = Get-Content -Path $covreport.FullName
         $lineRate = $covxml.log.entry.'level'
-        Write-Output "lineRate=$lineRate" >> "$GITHUB_OUTPUT"
+        Write-Output "lineRate=$lineRate" >> "$GITHUB_ENV"
         
     - name: echo line
       run: echo "${{ steps.get_line_rate.outputs.lineRate }}"
