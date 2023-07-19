@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xbrli:xbrl xml:lang="nl" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <link:schemaRef xlink:type="simple" xlink:href="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd"/>
+  <link:schemaRef xlink:type="simple" xlink:href="https://www.rjnet.nl/taxonomy/2023-06-30/rj_cor.xsd" />
   <xbrli:context id="context_1">
     <xbrli:entity>
       <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
@@ -9,7 +9,7 @@
       <xbrli:startDate>2022-01-01</xbrli:startDate>
       <xbrli:endDate>2022-12-31</xbrli:endDate>
     </xbrli:period>
-    </xbrli:context>
+  </xbrli:context>
   <rj_cor:ALMPolicyDescription contextRef="context_1">test text</rj_cor:ALMPolicyDescription>
   <rj_cor:DocumentPresentationCurrency contextRef="context_1">https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21#EUR</rj_cor:DocumentPresentationCurrency>
 </xbrli:xbrl>
