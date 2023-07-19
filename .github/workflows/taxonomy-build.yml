@@ -45,6 +45,18 @@ jobs:
         
     - name: Echo arelle-taxonomy-log.xml
       run: echo "${{ steps.package.outputs.content }}"
+      
+    - name: Get Line Rate from output
+      id: get_line_rate
+      shell: pwsh  
+      run: |
+        [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
+        $document.load(".\arelle-instance-log.xml")
+        $errors = $document.SelectSingleNode('//entry[@level="error"]')
+        Write-Output "::set-output name=errors::$errors"
+        
+    - name: Echo
+      run: echo "${{ steps.get_line_rate.outputs.errors }}"
     
     - uses: actions/upload-artifact@v3
       with:
