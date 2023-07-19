@@ -45,10 +45,10 @@ jobs:
       
     - name: Get XML
       id: getxml
-      uses: mavrosxristoforos/get-xml-info@1.0
+      uses: QwerMike/xpath-action@v1
       with:
-        xml-file: 'arelle-instance-log.xml'
-        xpath: 'count(//*[@level="info"])'      
+        filename: 'arelle-instance-log.xml'
+        expression: 'count(//*[@level="info"])'      
         
     - name: echo line
       run: echo "${{ steps.getxml.outputs.info }}"
