@@ -40,16 +40,6 @@ jobs:
       with:
         path: ./arelle-instance-log.xml
         
-    - name: Echo arelle-instance-log.xml
-      run: echo "${{ steps.package.outputs.content }}"
-      
-    - name: Get XML
-      id: getxml
-      uses: mavrosxristoforos/get-xml-info@1.0
-      with:
-        xml-file: 'arelle-instance-log.xml'
-        xpath: 'count(//entry)'
-        
     - name: echo line
       run: echo "${{ steps.getxml.outputs.info }}"
     
