@@ -27,10 +27,8 @@
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
   <!-- start of item concepts -->
-
-    <!-- from nl-cd -->
-    <xsd:element name="ChamberOfCommerceRegistrationNumber" id="jenv_bw2_cor_ChamberOfCommerceRegistrationNumber" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-    <xsd:element name="LegalEntityName" id="jenv_bw2_cor_LegalEntityName" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ChamberOfCommerceRegistrationNumber" id="jenv_bw2_cor_ChamberOfCommerceRegistrationNumber" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalEntityName" id="jenv_bw2_cor_LegalEntityName" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
 
   <xsd:element name="AccommodationCostsAllocatedToInvestmentsInLandAndBuildingsForOwnUse" id="jenv_bw2_cor_AccommodationCostsAllocatedToInvestmentsInLandAndBuildingsForOwnUse" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
   <xsd:element name="AccountingPrinciplesForDeterminingTheResult" id="jenv_bw2_cor_AccountingPrinciplesForDeterminingTheResult" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
@@ -1659,6 +1657,17 @@
   <xsd:element name="WorkInProgress" id="jenv_bw2_cor_WorkInProgress" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" />
   <xsd:element name="WorkInProgressDisclosure" id="jenv_bw2_cor_WorkInProgressDisclosure" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="WorkInProgressPolicy" id="jenv_bw2_cor_WorkInProgressPolicy" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+
+  <xsd:element name="EntryChamberOfCommerce" id="jenv_bw2_cor_EntryChamberOfCommerce" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PlanGoalsMenAndWomenBoardAndSupervisoryBoardDescription" id="jenv_bw2_cor_PlanGoalsMenAndWomenBoardAndSupervisoryBoardDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ReasonsGoalsNotMetMenAndWomenBoardAndSupervisoryBoardDescription" id="jenv_bw2_cor_ReasonsGoalsNotMetMenAndWomenBoardAndSupervisoryBoardDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="TargetGoalsMenAndWomenBoardAndSupervisoryBoardDescription" id="jenv_bw2_cor_TargetGoalsMenAndWomenBoardAndSupervisoryBoardDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="NumberOfMenBoard" id="jenv_bw2_cor_NumberOfMenBoard" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="NumberOfMenManagerialPositions" id="jenv_bw2_cor_NumberOfMenManagerialPositions" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <xsd:element name="NumberOfMenSupervisoryBoard" id="jenv_bw2_cor_NumberOfMenSupervisoryBoard" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="NumberOfWomenBoard" id="jenv_bw2_cor_NumberOfWomenBoard" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="NumberOfWomenSupervisoryBoard" id="jenv_bw2_cor_NumberOfWomenSupervisoryBoard" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="NumberOfWomenManagerialPositions" id="jenv_bw2_cor_NumberOfWomenManagerialPositions" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="instant" />
   <!-- end of item concepts -->
 
   <!-- start of domain members -->
