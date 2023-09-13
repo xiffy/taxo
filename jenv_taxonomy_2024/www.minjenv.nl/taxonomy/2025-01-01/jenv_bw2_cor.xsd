@@ -19,7 +19,7 @@
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
     <link:linkbaseRef xlink:type="simple" xlink:href="jenv_bw2_cor_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
-    <link:linkbaseRef xlink:type="simple" xlink:href="jenv_bw2_cor_lab_en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="jenv_bw2_cor_lab_en.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     </xsd:appinfo>
   </xsd:annotation>
   <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
@@ -1988,6 +1988,7 @@
   <xsd:element name="SupervisoryDirectorNamesDirectorLoansAdvancesGuaranteesAxis" id="jenv_bw2_cor_SupervisoryDirectorNamesDirectorLoansAdvancesGuaranteesAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv_bw2_cor_SupervisoryDirectorTypedMember" />
   <xsd:element name="SupervisoryDirectorNamesRightsGrantedNotYetExercisedAxis" id="jenv_bw2_cor_SupervisoryDirectorNamesRightsGrantedNotYetExercisedAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv_bw2_cor_SupervisoryDirectorTypedMember" />
   <xsd:element name="SupervisoryDirectorNamesRightsGrantedNotYetExercisedMovementAxis" id="jenv_bw2_cor_SupervisoryDirectorNamesRightsGrantedNotYetExercisedMovementAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv_bw2_cor_SupervisoryDirectorTypedMember" />
+  <xsd:element name="CategoryEmployeesManagerialPositionsAxis" id="jenv_bw2_cor_CategoryEmployeesManagerialPositionsAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv_bw2_cor_CategoryEmployeesManagerialPositionsTypedMember" />
   <!-- end of typed dimensions -->
 
   <!-- start of typed domains -->
@@ -2004,7 +2005,7 @@
   <xsd:element name="NetRevenueGeographicTypedMember" id="jenv_bw2_cor_NetRevenueGeographicTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="NetRevenueIndustryTypedMember" id="jenv_bw2_cor_NetRevenueIndustryTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="ReceivablesOtherAffiliatedCompaniesCurrentTypedMember" id="jenv_bw2_cor_ReceivablesOtherAffiliatedCompaniesCurrentTypedMember" abstract="false" nillable="true" type="xsd:string" />
-  <xsd:element name="ReceivablesOtherTypedMember" id="jenv_bw2_cor_ReceivablesOtherTypedMember" abstract="false" nillable="true" type="xsd:string" />
+  <xsd:element name="ReceivablesOtherTypedMember" id="jenv_bw2_cor_ReceivablesOtherTypedMember" abstract="false" nillable="true" type="xsd:string" /> 
   <xsd:element name="RelatedPartyTransactionDetailsTypedMember" id="jenv_bw2_cor_RelatedPartyTransactionDetailsTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="SegmentForAverageNumberEmployeesTypedMember" id="jenv_bw2_cor_SegmentForAverageNumberEmployeesTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="ShareBasedPaymentsSpecificationTypedMember" id="jenv_bw2_cor_ShareBasedPaymentsSpecificationTypedMember" abstract="false" nillable="true" type="xsd:string" />
@@ -2012,5 +2013,6 @@
   <xsd:element name="ShareCapitalNumberOfSharesTypedMember" id="jenv_bw2_cor_ShareCapitalNumberOfSharesTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="ShareCapitalTypedMember" id="jenv_bw2_cor_ShareCapitalTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="SupervisoryDirectorTypedMember" id="jenv_bw2_cor_SupervisoryDirectorTypedMember" abstract="false" nillable="true" type="xsd:string" />
+  <xsd:element name="CategoryEmployeesManagerialPositionsTypedMember" id="jenv_bw2_cor_CategoryEmployeesManagerialPositionsTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <!-- end of typed domains -->
 </xsd:schema>
