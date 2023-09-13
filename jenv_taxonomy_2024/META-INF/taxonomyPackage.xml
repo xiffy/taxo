@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier>https://www.minjenv.nl/taxonomy/2025-01-01</tp:identifier>
+	<tp:name>JenV Taxonomy 2022</tp:name>
+	<tp:description></tp:description>
+	<tp:version>0.1.0</tp:version>
+	<tp:publisher>Ministerie van Justitie en Veiligheid</tp:publisher>
+	<tp:publisherURL>https://www.minjenv.nl</tp:publisherURL>
+	<tp:publisherCountry>NL</tp:publisherCountry>
+	<tp:publicationDate>2025-01-01</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name>JenV BW2 Core</tp:name>
+			<tp:description></tp:description>
+			<tp:entryPointDocument href="https://www.minjenv.nl/taxonomy/2025-01-01/jenv_bw2_cor.xsd" />
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>

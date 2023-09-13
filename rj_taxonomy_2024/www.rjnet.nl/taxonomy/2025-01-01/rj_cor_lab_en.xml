@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:labelLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+    <!-- start of item concept labels -->
+    <!-- end of item concept labels -->
+
+    <!-- start of dimension labels -->
+    <!-- end of dimension labels -->
+
+    <!-- start of domain members labels -->
+    <!-- end of domain members labels -->
+
+    <!-- start of enumeration item concept labels -->
+    <!-- end of enumeration item concept labels -->
+
+    <!-- start of extensible enumeration item concept labels -->
+    <!-- start of extensible enumeration item concept labels -->
+
+    <!-- start of enumeration members -->
+    <!-- end of enumeration members -->
+
+    <!-- start of typed dimensions -->
+    <!-- end of typed dimensions -->
+
+    <!-- start of typed domains -->
+    <!-- end of typed domains -->
+  </link:labelLink>
+</link:linkbase>
