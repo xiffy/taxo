@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+  <tp:identifier>https://xbrl.org/taxonomy/int/currency-CR-2023-08-23</tp:identifier> 
+  <tp:name>Currency Code Taxonomy</tp:name>
+  <tp:description>This taxonomy provides a list of currency codes as defined by ISO:4271 for use in XBRL reports and taxonomies.</tp:description>
+  <tp:version>2023-01-01 (CR-2023-08-23)</tp:version>
+  <tp:publisher>XBRL International Inc.</tp:publisher>
+  <tp:publisherURL>https://www.xbrl.org/</tp:publisherURL>
+  <tp:publisherCountry>US</tp:publisherCountry>
+  <tp:publicationDate>2023-08-23</tp:publicationDate>
+  <tp:entryPoints>
+    <tp:entryPoint>
+      <tp:name>Currency List with English Labels</tp:name>
+      <tp:description>Currency codes as domain members for use as dimension values or enumeration values, with ISO 4217 code labels and English language labels (as provided by ISO).</tp:description>
+      <tp:entryPointDocument href="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-en.xsd"/>
+    </tp:entryPoint>
+    <tp:entryPoint>
+      <tp:name>Currency List</tp:name>
+      <tp:description>Currency codes as domain members for use as dimension values or enumeration values.  Includes ISO 4217 code labels only.</tp:description>
+      <tp:entryPointDocument href="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd"/>
+    </tp:entryPoint>
+  </tp:entryPoints>
+</tp:taxonomyPackage>

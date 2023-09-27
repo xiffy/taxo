@@ -66,7 +66,7 @@ from arelle.ValidateXbrlCalcs import inferredDecimals, rangeValue
 from arelle.XbrlConst import (ixbrl11, xhtml, parentChild, summationItem, standardLabel,
                               all as hc_all, notAll as hc_notAll, dimensionDomain, domainMember,
                               qnLinkLoc, qnLinkFootnoteArc, qnLinkFootnote, qnIXbrl11Footnote, iso17442, widerNarrower)
-from arelle.XmlValidate import VALID
+from arelle.XmlValidateConst import VALID
 from arelle.ValidateUtr import ValidateUtr
 from .Const import (mandatory, untransformableTypes,
                     esefPrimaryStatementPlaceholderNames, esefStatementsOfMonetaryDeclarationNames, esefMandatoryElementNames2020)
@@ -175,7 +175,12 @@ def modelXbrlLoadComplete(modelXbrl: ModelXbrl) -> None:
                     validateEntity(modelXbrl, filename, modelXbrl.fileSource)
         else:
             if isinstance(modelXbrl.fileSource.url, str):
-                validateEntity(modelXbrl, modelXbrl.fileSource.url, modelXbrl.fileSource)
+                ixdsDocUrls = getattr(modelXbrl, "ixdsDocUrls", None)
+                if ixdsDocUrls:
+                    for url in ixdsDocUrls:
+                        validateEntity(modelXbrl, url, modelXbrl.fileSource)
+                else:
+                    validateEntity(modelXbrl, modelXbrl.fileSource.url, modelXbrl.fileSource)
             elif isinstance(modelXbrl.fileSource.url, list):
                 for filename in modelXbrl.fileSource.url:
                     validateEntity(modelXbrl, filename, modelXbrl.fileSource)

@@ -13,6 +13,7 @@
   <renderingLogsXslt>RenderingLogs.xslt</renderingLogsXslt>
   <summaryXslt>Summarize.xslt</summaryXslt>
   <abortOnMajorError>True</abortOnMajorError>
+  <noRenderingWithError>False</noRenderingWithError>
   <auxMetadata>False</auxMetadata>
   <deleteProcessedFilings>True</deleteProcessedFilings>
   <debugMode>False</debugMode>
@@ -28,6 +29,7 @@
   <validateEFM>False</validateEFM>
   <zipOutputFile />
   <includeLogsInSummary>True</includeLogsInSummary>
+  <includeLogsInSummaryDissem>False</includeLogsInSummaryDissem>
   <processXsltInBrowser>False</processXsltInBrowser>
   <logMessageTextFile>arelleMessagesText.xml</logMessageTextFile>
 </configuration>

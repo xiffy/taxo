@@ -60,14 +60,14 @@ from arelle.FileSource import archiveFilenameParts, archiveFilenameSuffixes
 from arelle.ModelInstanceObject import ModelInlineFootnote
 from arelle.ModelObject import ModelObject
 from arelle.ModelDocument import ModelDocument, ModelDocumentReference, Type, load, create, inlineIxdsDiscover
-from arelle.ModelValue import qname
+from arelle.ModelValue import INVALIDixVALUE, qname
 from arelle.PluginManager import pluginClassMethods
 from arelle.PythonUtil import attrdict
 from arelle.UrlUtil import isHttpUrl
 from arelle.ValidateFilingText import CDATApattern
 from arelle.Version import authorLabel, copyrightLabel
 from arelle.XmlUtil import addChild, copyIxFootnoteHtml, elementFragmentIdentifier, elementChildSequence, xmlnsprefix, setXmlns
-from arelle.XmlValidate import validate as xmlValidate
+from arelle.XmlValidate import validate as xmlValidate, VALID
 import os, zipfile
 import regex as re
 from optparse import SUPPRESS_HELP
@@ -91,7 +91,6 @@ class ModelInlineXbrlDocumentSet(ModelDocument):
             targetId = instanceElt.id
             self.targetDocumentId = targetId
             self.targetDocumentPreferredFilename = instanceElt.get('preferredFilename')
-            self.targetDocumentSchemaRefs = set()  # union all the instance schemaRefs
             for ixbrlElt in instanceElt.iter(tag="{http://disclosure.edinet-fsa.go.jp/2013/manifest}ixbrl"):
                 uri = ixbrlElt.textValue.strip()
                 if uri:
@@ -102,10 +101,15 @@ class ModelInlineXbrlDocumentSet(ModelDocument):
                         referencedDocument = ModelDocumentReference("inlineDocument", instanceElt)
                         referencedDocument.targetId = targetId
                         self.referencesDocument[doc] = referencedDocument
-                        for referencedDoc in doc.referencesDocument.keys():
-                            if referencedDoc.type == Type.SCHEMA:
-                                self.targetDocumentSchemaRefs.add(doc.relativeUri(referencedDoc.uri))
+                        self.ixNS = doc.ixNS
         return True
+
+def loadDTS(modelXbrl, modelIxdsDocument):
+    for htmlElt in modelXbrl.ixdsHtmlElements:
+        for ixRefElt in htmlElt.iterdescendants(tag=htmlElt.modelDocument.ixNStag + "references"):
+            if ixRefElt.get("target") == modelXbrl.ixdsTarget:
+                modelIxdsDocument.schemaLinkbaseRefsDiscover(ixRefElt)
+                xmlValidate(modelXbrl, ixRefElt) # validate instance elements
 
 # this loader is used for test cases of multi-ix doc sets
 def inlineXbrlDocumentSetLoader(modelXbrl, normalizedUri, filepath, isEntry=False, namespace=None, **kwargs):
@@ -120,9 +124,21 @@ def inlineXbrlDocumentSetLoader(modelXbrl, normalizedUri, filepath, isEntry=Fals
             modelXbrl.ixdsTarget = None if _target == DEFAULT_TARGET else _target or None
         except (KeyError, AttributeError, IndexError, TypeError):
             pass # set later in selectTargetDocument plugin method
-    if IXDS_SURROGATE in normalizedUri:
-        # create surrogate entry object for inline document set which references ix documents
-        xml = ["<instances>\n"]
+    createIxdsDocset = False
+    ixdocs = None
+    if "ixdsHtmlElements" in kwargs: # loading supplemental modelXbrl with preloaded htmlElements
+        createIxdsDocset = True
+        ixdocs = []
+        modelXbrl.ixdsDocUrls = []
+        modelXbrl.ixdsHtmlElements = kwargs["ixdsHtmlElements"]
+        for ixdsHtmlElement in modelXbrl.ixdsHtmlElements:
+            modelDocument = ixdsHtmlElement.modelDocument
+            ixdocs.append(modelDocument)
+            modelXbrl.ixdsDocUrls.append(modelDocument.uri)
+            modelXbrl.urlDocs[modelDocument.uri] = modelDocument
+        docsetUrl = modelXbrl.uriDir + "/_IXDS"
+    elif IXDS_SURROGATE in normalizedUri:
+        createIxdsDocset = True
         modelXbrl.ixdsDocUrls = []
         schemeFixup = isHttpUrl(normalizedUri) # schemes after separator have // normalized to single /
         msUNCfixup = modelXbrl.modelManager.cntlr.isMSW and normalizedUri.startswith("\\\\") # path starts with double backslash \\
@@ -137,26 +153,42 @@ def inlineXbrlDocumentSetLoader(modelXbrl, normalizedUri, filepath, isEntry=Fals
             else:
                 if msUNCfixup and not url.startswith("\\\\") and url.startswith("\\"):
                     url = "\\" + url
-                xml.append("<instance>{}</instance>\n".format(url))
                 modelXbrl.ixdsDocUrls.append(url)
+    if createIxdsDocset:
+        # create surrogate entry object for inline document set which references ix documents
+        xml = ["<instances>\n"]
+        for url in modelXbrl.ixdsDocUrls:
+            xml.append("<instance>{}</instance>\n".format(url))
         xml.append("</instances>\n")
         ixdocset = create(modelXbrl, Type.INLINEXBRLDOCUMENTSET, docsetUrl, isEntry=True, initialXml="".join(xml))
         ixdocset.type = Type.INLINEXBRLDOCUMENTSET
         ixdocset.targetDocumentSchemaRefs = set()  # union all the instance schemaRefs
-        _firstdoc = True
-        for elt in ixdocset.xmlRootElement.iter(tag="instance"):
+        for i, elt in enumerate(ixdocset.xmlRootElement.iter(tag="instance")):
             # load ix document
-            ixdoc = load(modelXbrl, elt.text, referringElement=elt, isDiscovered=True)
-            if ixdoc is not None and ixdoc.type == Type.INLINEXBRL:
-                # set reference to ix document in document set surrogate object
-                referencedDocument = ModelDocumentReference("inlineDocument", elt)
-                ixdocset.referencesDocument[ixdoc] = referencedDocument
-                ixdocset.ixNS = ixdoc.ixNS # set docset ixNS
-                if _firstdoc:
-                    _firstdoc = False
-                    ixdocset.targetDocumentPreferredFilename = os.path.splitext(ixdoc.uri)[0] + ".xbrl"
-                ixdoc.inDTS = True # behaves like an entry
+            if ixdocs:
+                ixdoc = ixdocs[i]
+                ixdoc.modelXbrl = modelXbrl # TODO: this won't work for multi-targets sharing same html
+            else:
+                ixdoc = load(modelXbrl, elt.text, referringElement=elt, isDiscovered=True)
+            if ixdoc is not None:
+                if ixdoc.type == Type.INLINEXBRL:
+                    # set reference to ix document in document set surrogate object
+                    referencedDocument = ModelDocumentReference("inlineDocument", elt)
+                    ixdocset.referencesDocument[ixdoc] = referencedDocument
+                    ixdocset.ixNS = ixdoc.ixNS # set docset ixNS
+                    if i == 0:
+                        ixdocset.targetDocumentPreferredFilename = os.path.splitext(ixdoc.uri)[0] + ".xbrl"
+                    ixdoc.inDTS = True # behaves like an entry
+                else:
+                    modelXbrl.warning("arelle:nonIxdsDocument",
+                                      _("Non-inline file is not loadable into an Inline XBRL Document Set."),
+                                      modelObject=ixdoc)
+        # correct uriDir to remove surrogate suffix
+        if IXDS_SURROGATE in modelXbrl.uriDir:
+            modelXbrl.uriDir = os.path.dirname(modelXbrl.uriDir.partition(IXDS_SURROGATE)[0])
         if hasattr(modelXbrl, "ixdsHtmlElements"): # has any inline root elements
+            if ixdocs:
+                loadDTS(modelXbrl, ixdocset)
             inlineIxdsDiscover(modelXbrl, ixdocset) # compile cross-document IXDS references
             for ixdoc in ixdocset.referencesDocument.keys():
                 for referencedDoc in ixdoc.referencesDocument.keys():
@@ -167,7 +199,7 @@ def inlineXbrlDocumentSetLoader(modelXbrl, normalizedUri, filepath, isEntry=Fals
 
 # baseXmlLang: set on root xbrli:xbrl element
 # defaultXmlLang: if a fact/footnote has a different lang, provide xml:lang on it.
-def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingFiles, baseXmlLang=None, defaultXmlLang=None):
+def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingFiles, baseXmlLang=None, defaultXmlLang=None, skipInvalid=False, xbrliNamespacePrefix=None):
     def addLocallyReferencedFile(elt,filingFiles):
         if elt.tag in ("a", "img"):
             for attrTag, attrValue in elt.items():
@@ -183,7 +215,8 @@ def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingF
                                       url=targetUrl,
                                       schemaRefs=targetDocumentSchemaRefs,
                                       isEntry=True,
-                                      discover=False) # don't attempt to load DTS
+                                      discover=False,  # don't attempt to load DTS
+                                      xbrliNamespacePrefix=xbrliNamespacePrefix)
     ixTargetRootElt = modelXbrl.ixTargetRootElements[getattr(modelXbrl, "ixdsTarget", None)]
     langIsSet = False
     # copy ix resources target root attributes
@@ -229,9 +262,12 @@ def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingF
 
     modelXbrl.modelManager.showStatus(_("Creating and validating facts"))
     newFactForOldObjId = {}
+    invalidFacts = []
     def createFacts(facts, parent):
         for fact in facts:
-            if fact.isItem: # HF does not de-duplicate, which is currently-desired behavior
+            if fact.xValid < VALID and skipInvalid:
+                invalidFacts.append(fact)
+            elif fact.isItem: # HF does not de-duplicate, which is currently-desired behavior
                 modelConcept = fact.concept # isItem ensures concept is not None
                 attrs = {"contextRef": fact.contextID}
                 if fact.id:
@@ -246,11 +282,11 @@ def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingF
                     attrs[XbrlConst.qnXsiNil] = "true"
                     text = None
                 elif ( not(modelConcept.baseXsdType == "token" and modelConcept.isEnumeration)
-                       and fact.xValid ):
+                       and fact.xValid >= VALID ):
                     text = fact.xValue
                 # may need a special case for QNames (especially if prefixes defined below root)
                 else:
-                    text = fact.textValue
+                    text = fact.rawValue if fact.textValue == INVALIDixVALUE else fact.textValue
                 for attrName, attrValue in fact.items():
                     if attrName.startswith("{"):
                         attrs[qname(attrName,fact.nsmap)] = attrValue # using qname allows setting prefix in extracted instance
@@ -279,6 +315,11 @@ def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingF
                 createFacts(fact.modelTupleFacts, newTuple)
 
     createFacts(modelXbrl.facts, None)
+    if invalidFacts:
+        modelXbrl.warning("arelle.invalidFactsSkipped",
+                          _("Skipping %(count)s invalid facts in saving extracted instance document."),
+                          modelObject=invalidFacts, count=len(invalidFacts))
+        del invalidFacts[:] # dereference
     modelXbrl.modelManager.showStatus(_("Creating and validating footnotes and relationships"))
     HREF = "{http://www.w3.org/1999/xlink}href"
     footnoteLinks = defaultdict(list)
@@ -326,7 +367,7 @@ def createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingF
                             addLocallyReferencedFile(elt,filingFiles)
     return targetInstance
 
-def saveTargetDocument(modelXbrl, targetDocumentFilename, targetDocumentSchemaRefs, outputZip=None, filingFiles=None, *args, **kwargs):
+def saveTargetDocument(modelXbrl, targetDocumentFilename, targetDocumentSchemaRefs, outputZip=None, filingFiles=None, xbrliNamespacePrefix=None, *args, **kwargs):
     targetUrl = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(targetDocumentFilename, modelXbrl.modelDocument.filepath)
     targetUrlParts = targetUrl.rpartition(".")
     targetUrl = targetUrlParts[0] + "_extracted." + targetUrlParts[2]
@@ -336,7 +377,7 @@ def saveTargetDocument(modelXbrl, targetDocumentFilename, targetDocumentSchemaRe
     baseXmlLang = htmlRootElt.get("{http://www.w3.org/XML/1998/namespace}lang") or htmlRootElt.get("lang")
     for ixElt in modelXbrl.modelDocument.xmlRootElement.iterdescendants(tag="{http://www.w3.org/1999/xhtml}body"):
         baseXmlLang = ixElt.get("{http://www.w3.org/XML/1998/namespace}lang") or htmlRootElt.get("lang") or baseXmlLang
-    targetInstance = createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingFiles, baseXmlLang)
+    targetInstance = createTargetInstance(modelXbrl, targetUrl, targetDocumentSchemaRefs, filingFiles, baseXmlLang, xbrliNamespacePrefix=xbrliNamespacePrefix)
     targetInstance.saveInstance(overrideFilepath=targetUrl, outputZip=outputZip, xmlcharrefreplace=kwargs.get("encodeSavedXmlChars", False))
     if getattr(modelXbrl, "isTestcaseVariation", False):
         modelXbrl.extractedInlineInstance = True # for validation comparison
@@ -409,6 +450,8 @@ def runOpenInlineDocumentSetMenuCommand(cntlr, filenames, runInBackground=False,
                 filename = docsetSurrogatePath + IXDS_DOC_SEPARATOR.join(archiveEntries)
             else:
                 filename = None
+        else:
+            filename = None
         filesource.close()
     elif len(filenames) >= MINIMUM_IXDS_DOC_COUNT:
         ixdsFirstFile = filenames[0]
@@ -425,7 +468,7 @@ def runOpenInlineDocumentSetMenuCommand(cntlr, filenames, runInBackground=False,
         cntlr.fileOpenFile(filename)
 
 
-def runSaveTargetDocumentMenuCommand(cntlr, runInBackground=False, saveTargetFiling=False, encodeSavedXmlChars=False):
+def runSaveTargetDocumentMenuCommand(cntlr, runInBackground=False, saveTargetFiling=False, encodeSavedXmlChars=False, xbrliNamespacePrefix=None):
     # skip if another class handles saving (e.g., EdgarRenderer)
     for pluginXbrlMethod in pluginClassMethods('InlineDocumentSet.SavesTargetInstance'):
         if pluginXbrlMethod():
@@ -468,7 +511,7 @@ def runSaveTargetDocumentMenuCommand(cntlr, runInBackground=False, saveTargetFil
         else:
             filingZip = None
             filingFiles = None
-        saveTargetDocument(modelDocument.modelXbrl, targetFilename, targetSchemaRefs, filingZip, filingFiles, encodeSavedXmlChars=encodeSavedXmlChars)
+        saveTargetDocument(modelDocument.modelXbrl, targetFilename, targetSchemaRefs, filingZip, filingFiles, encodeSavedXmlChars=encodeSavedXmlChars, xbrliNamespacePrefix=xbrliNamespacePrefix)
         if saveTargetFiling:
             instDir = os.path.dirname(modelDocument.uri.split(IXDS_DOC_SEPARATOR)[0])
             for refFile in filingFiles:
@@ -506,6 +549,16 @@ def commandLineOptionExtender(parser, *args, **kwargs):
                       action="store_true",
                       dest="encodeSavedXmlChars",
                       help=SUPPRESS_HELP)
+    parser.add_option("--xbrliNamespacePrefix",
+                      action="store",
+                      dest="xbrliNamespacePrefix",
+                      help=_("The namespace prefix to use for http://www.xbrl.org/2003/instance. It's used as the default namespace when unset."),
+                      type="string")
+    parser.add_option("--xbrlinamespaceprefix",  # for WEB SERVICE use
+                      action="store",
+                      dest="xbrliNamespacePrefix",
+                      help=SUPPRESS_HELP,
+                      type="string")
 
 def commandLineFilingStart(cntlr, options, filesource, entrypointFiles, *args, **kwargs):
     global skipExpectedInstanceComparison
@@ -565,7 +618,8 @@ def commandLineXbrlRun(cntlr, options, modelXbrl, *args, **kwargs):
         runSaveTargetDocumentMenuCommand(cntlr,
                                          runInBackground=False,
                                          saveTargetFiling=getattr(options, "saveTargetFiling", False),
-                                         encodeSavedXmlChars=getattr(options, "encodeSavedXmlChars", False))
+                                         encodeSavedXmlChars=getattr(options, "encodeSavedXmlChars", False),
+                                         xbrliNamespacePrefix=getattr(options, "xbrliNamespacePrefix"))
 
 def testcaseVariationReadMeFirstUris(modelTestcaseVariation):
     _readMeFirstUris = [os.path.join(modelTestcaseVariation.modelDocument.filepathdir,
@@ -670,19 +724,43 @@ class TargetChoiceDialog:
         self.selection = self.lb.selection_get()
         self.t.destroy()
 
-def selectTargetDocument(modelXbrl):
-    if not hasattr(modelXbrl, "ixdsTarget"): # DTS discoverey deferred until all ix docs loaded
-        # find target attributes
-        _targets = sorted(set(elt.get("target", DEFAULT_TARGET)
-                              for htmlElt in modelXbrl.ixdsHtmlElements
+def ixdsTargets(ixdsHtmlElements):
+    return sorted(set(elt.get("target", DEFAULT_TARGET)
+                              for htmlElt in ixdsHtmlElements
                               for elt in htmlElt.iterfind(f".//{{{htmlElt.modelDocument.ixNS}}}references")))
+
+def selectTargetDocument(modelXbrl, modelIxdsDocument):
+    if not hasattr(modelXbrl, "ixdsTarget"): # DTS discoverey deferred until all ix docs loaded
+        # isolate any documents to separate IXDSes according to authority submission rules
+        modelXbrl.targetIXDSesToLoad = [] # [[target,[ixdsHtmlElements], ...]
+        for pluginXbrlMethod in pluginClassMethods('InlineDocumentSet.IsolateSeparateIXDSes'):
+            separateIXDSesHtmlElements = pluginXbrlMethod(modelXbrl)
+            if len(separateIXDSesHtmlElements) > 1: # [[ixdsHtml1, ixdsHtml2], [ixdsHtml3...] ...]
+                for separateIXDSHtmlElements in separateIXDSesHtmlElements[1:]:
+                    toLoadIXDS = [ixdsTargets(separateIXDSHtmlElements),[]]
+                    modelXbrl.targetIXDSesToLoad.append(toLoadIXDS)
+                    for ixdsHtmlElement in separateIXDSHtmlElements:
+                        modelDoc = ixdsHtmlElement.modelDocument
+                        toLoadIXDS[1].append(ixdsHtmlElement)
+                        modelXbrl.ixdsHtmlElements.remove(ixdsHtmlElement)
+                        del modelXbrl.urlDocs[modelDoc.uri]
+                        if modelDoc in modelIxdsDocument.referencesDocument:
+                            del modelIxdsDocument.referencesDocument[modelDoc]
+                # the primary target  instance may have changed
+                modelIxdsDocument.targetDocumentPreferredFilename = os.path.splitext(modelXbrl.ixdsHtmlElements[0].modelDocument.uri)[0] + ".xbrl"
+        # find target attributes
+        _targets = ixdsTargets(modelXbrl.ixdsHtmlElements)
         if len(_targets) == 0:
             _target = DEFAULT_TARGET
         elif len(_targets) == 1:
             _target = _targets[0]
         elif modelXbrl.modelManager.cntlr.hasGui:
-            dlg = TargetChoiceDialog(modelXbrl.modelManager.cntlr.parent, _targets)
-            _target = dlg.selection
+            if True: # provide option to load all or ask user which target
+                modelXbrl.targetIXDSesToLoad.insert(0, [_targets[1:],modelXbrl.ixdsHtmlElements])
+                _target = _targets[0]
+            else: # ask user which target
+                dlg = TargetChoiceDialog(modelXbrl.modelManager.cntlr.parent, _targets)
+                _target = dlg.selection
         else:
             _target = _targets[0]
             modelXbrl.warning("arelle:unspecifiedTargetDocument",
@@ -690,17 +768,25 @@ def selectTargetDocument(modelXbrl):
                               modelObject=modelXbrl, target=_target, targets=_targets)
         modelXbrl.ixdsTarget = None if _target == DEFAULT_TARGET else _target or None
         # load referenced schemas and linkbases (before validating inline HTML
-        for htmlElt in modelXbrl.ixdsHtmlElements:
-            modelDoc = htmlElt.modelDocument
-            for ixRefElt in htmlElt.iterdescendants(tag=modelDoc.ixNStag + "references"):
-                if ixRefElt.get("target") == modelXbrl.ixdsTarget:
-                    modelDoc.schemaLinkbaseRefsDiscover(ixRefElt)
-                    xmlValidate(modelXbrl, ixRefElt) # validate instance elements
+        loadDTS(modelXbrl, modelIxdsDocument)
     # now that all ixds doc(s) references loaded, validate resource elements
     for htmlElt in modelXbrl.ixdsHtmlElements:
         for inlineElement in htmlElt.iterdescendants(tag=htmlElt.modelDocument.ixNStag + "resources"):
             xmlValidate(modelXbrl, inlineElement) # validate instance elements
 
+def ixdsTargetDiscoveryCompleted(modelXbrl, modelIxdsDocument):
+    targetIXDSesToLoad = getattr(modelXbrl, "targetIXDSesToLoad", False)
+    if targetIXDSesToLoad:
+        # load and discover additional targets
+        modelXbrl.supplementalModelXbrls = []
+        for targets, ixdsHtmlElements in targetIXDSesToLoad:
+            for target in targets:
+                modelXbrl.supplementalModelXbrls.append(
+                    ModelXbrl.load(modelXbrl.modelManager, ixdsHtmlElements[0].modelDocument.uri,
+                                   f"loading secondary target {target} {ixdsHtmlElements[0].modelDocument.uri}",
+                                   useFileSource=modelXbrl.fileSource, ixdsTarget=target, ixdsHtmlElements=ixdsHtmlElements)
+                )
+        modelXbrl.modelManager.loadedModelXbrls.extend(modelXbrl.supplementalModelXbrls)
 
 __pluginInfo__ = {
     'name': 'Inline XBRL Document Set',
@@ -725,6 +811,7 @@ __pluginInfo__ = {
     'ModelDocument.Discover': discoverInlineXbrlDocumentSet,
     'ModelDocument.DiscoverIxdsDts': discoverIxdsDts,
     'ModelDocument.SelectIxdsTarget': selectTargetDocument,
+    'ModelDocument.IxdsTargetDiscovered': ixdsTargetDiscoveryCompleted,
     'ModelTestcaseVariation.ReadMeFirstUris': testcaseVariationReadMeFirstUris,
     'ModelTestcaseVariation.ArchiveIxds': testcaseVariationArchiveIxds,
     'ModelTestcaseVariation.ReportPackageIxds': testcaseVariationReportPackageIxds,

@@ -1,6 +1,7 @@
 // See COPYRIGHT.md for copyright information
 
 import $ from 'jquery'
+import { numberMatchSearch, fullDateMatch } from './number-matcher.js'
 import { TableExport } from './tableExport.js'
 import { escapeRegex } from './util.js'
 import { IXNode } from './ixnode.js';
@@ -70,7 +71,22 @@ export class Viewer {
                     /* Call plugin promise for each document in turn */
                     (async function () {
                         for (const [docIndex, iframe] of viewer._iframes.toArray().entries()) {
-                            await viewer._iv.pluginPromise('preProcessiXBRL', $(iframe).contents().find("body").get(0), docIndex);
+                            const body = $(iframe).contents().find("body").get(0);
+                            await viewer._iv.pluginPromise('preProcessiXBRL', body, docIndex);
+                            if (viewer._iv.isReviewModeEnabled()) {
+                                await new Promise((resolve, _) => {
+                                    viewer._iv.setProgress("Finding untagged numbers and dates").then(() => {
+                                        // Temporarily hide all children of "body" to avoid constant
+                                        // re-layouts when wrapping untagged numbers
+                                        const children = $(body).children(':visible');
+                                        children.hide();
+                                        $(body).addClass("review");
+                                        viewer._wrapUntaggedNumbers($(body), docIndex, false);
+                                        children.show();
+                                        resolve();
+                                    });
+                                });
+                            }
                         }
                     })()
                         .then(() => viewer._iv.setProgress("Preparing document") )
@@ -116,7 +132,68 @@ export class Viewer {
             }
         }
         $(n).wrap(wrapper);
-        return $(n).parent();
+        return n.parentNode;
+    }
+
+
+    _wrapUntaggedNumbers(n, docIndex, ignoreFullMatch) {
+        const viewer = this;
+        const ixHiddenStyleRE = /(?:^|\s|;)-(?:sec|esef)-ix-hidden:\s*([^\s;]+)/;
+
+        n.contents().each(function () {
+            if (this.nodeType === Node.ELEMENT_NODE) {
+                const name = localName(this.nodeName.toUpperCase());
+                /*
+                 * Content in text tags should not be considered tagged, so carry
+                 * on searching if it's not:
+                 *
+                 *  1. nonFraction (a tagged number)
+                 *  2. nonNumerics with a format (mostly dates, not a text block)
+                 *  3. an element with a -sec-ix-hidden style.  This shouldn't be
+                 *     used on a text block, so we assume it's a more specific tag.
+                 *
+                 *  When we continue searching, if the element is a nonNumeric tag
+                 *  and it's entire contents match the number matcher, we consider
+                 *  that tagged.
+                 *
+                 */
+                if (!(
+                        name === 'NONFRACTION' ||
+                        (name === 'NONNUMERIC' && this.getAttribute('format') !== null) ||
+                        (this.hasAttribute('style') && this.getAttribute('style').match(ixHiddenStyleRE))
+                )) {
+                    viewer._wrapUntaggedNumbers($(this), docIndex, name === 'NONNUMERIC');
+                }
+            }
+            else if (this.nodeType === Node.TEXT_NODE) {
+                const input = this.nodeValue;
+                const output = $("<div></div>");
+                let pos = 0;
+                numberMatchSearch(input, function (m, do_not_want, is_date) {
+                    if (m.index > pos) {
+                        output.append(document.createTextNode(input.substring(pos, m.index)));
+                    }
+                    // If "ignoreFullMatch" is specified, we ignore a match which
+                    // covers the whole of n's text content.
+                    if (do_not_want ||
+                            (ignoreFullMatch && m.index === 0 && m.index + m[0].length === input.length && input === n.text())) {
+                        output.append(document.createTextNode(m[0]));
+                    }
+                    else {
+                        const c = is_date ? 'review-untagged-date' : 'review-untagged-number';
+                        $('<span></span>')
+                                .text(m[0])
+                                .addClass(c)
+                                .appendTo(output);
+                    }
+                    pos = m.index + m[0].length;
+                });
+                if (pos < input.length) {
+                    output.append(document.createTextNode(input.substring(pos, input.length)));
+                }
+                $(this).replaceWith(output.contents());
+            }
+        });
     }
 
     /*
@@ -173,40 +250,44 @@ export class Viewer {
         const v = this;
         /* Is the element the only significant content within a <td> or <th> ? If
          * so, use that as the wrapper element. */
-        var nodes = $(domNode).closest("td,th").eq(0);
+        const tableNode = domNode.closest("td,th");
+        const nodes = [];
         const innerText = $(domNode).text();
-        if (nodes.length == 1 && innerText.length > 0) {
+        if (tableNode !== null && innerText.length > 0) {
             // Use indexOf rather than a single regex because innerText may
             // be too long for the regex engine 
-            const outerText = $(nodes).text();
+            const outerText = $(tableNode).text();
             const start = outerText.indexOf(innerText);
             const wrapper = outerText.substring(0, start) + outerText.substring(start + innerText.length);
-            if (/[0-9A-Za-z]/.test(wrapper)) {
-                nodes = $();
+            if (!/[0-9A-Za-z]/.test(wrapper)) {
+                nodes.push(tableNode)
             } 
         }
         /* Otherwise, insert a <span> as wrapper */
         if (nodes.length == 0) {
-            nodes = this._wrapNode(domNode);
-            // Create a node set of current node and all absolutely positioned
+            nodes.push(this._wrapNode(domNode));
+
+            // Create a list of the wrapper node, and all absolutely positioned
             // descendants.
-            nodes = nodes.find("*").addBack().filter(function (n, e) {
-                return (this == nodes[0] || (getComputedStyle(this).getPropertyValue('position') === "absolute"));
-            });
+            for (const e of domNode.querySelectorAll("*")) { 
+                if (getComputedStyle(e).getPropertyValue('position') === "absolute") { 
+                    nodes.push(e);
+                } 
+            }
         }
-        nodes.each(function (i) {
+        for (const [i, n] of nodes.entries()) {
             // getBoundingClientRect blocks on layout, so only do it if we've actually got absolute nodes
             if (nodes.length > 1) {
-                this.classList.add("ixbrl-contains-absolute");
+                n.classList.add("ixbrl-contains-absolute");
             }
             if (i == 0) {
-                this.classList.add("ixbrl-element");
+                n.classList.add("ixbrl-element");
             }
             else {
-                this.classList.add("ixbrl-sub-element");
+                n.classList.add("ixbrl-sub-element");
             }
-        });
-        return nodes;
+        }
+        return $(nodes);
     }
 
 
@@ -319,13 +400,13 @@ export class Viewer {
                     nodes.addClass("ixbrl-element-hidden");
                 }
                 if (isContinuation) {
-                    $(nodes).addClass("ixbrl-continuation");
+                    nodes.addClass("ixbrl-continuation");
                 }
                 else {
                     this._docOrderItemIndex.addItem(id, docIndex);
                 }
                 if (isNonFraction) {
-                    $(nodes).addClass("ixbrl-element-nonfraction");
+                    nodes.addClass("ixbrl-element-nonfraction");
                     if (n.hasAttribute('scale')) {
                         const scale = Number(n.getAttribute('scale'));
                         // Set scale if the value is a valid number and is not a redundant 0/"ones" scale.
@@ -335,13 +416,13 @@ export class Viewer {
                     }
                 }
                 if (isNonNumeric) {
-                    $(nodes).addClass("ixbrl-element-nonnumeric");
+                    nodes.addClass("ixbrl-element-nonnumeric");
                     if (n.hasAttribute('escape') && n.getAttribute('escape').match(/^(true|1)$/)) {
                         ixn.escaped = true;
                     }
                 }
                 if (isFootnote) {
-                    $(nodes).addClass("ixbrl-element-footnote");
+                    nodes.addClass("ixbrl-element-footnote");
                     ixn.footnote = true;
                 }
             }

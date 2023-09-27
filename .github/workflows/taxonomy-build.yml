@@ -31,11 +31,11 @@ jobs:
         dest: iso_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: currency-PWD-2023-06-21/
+        files: currency-CR-2023-08-23/
         recursive: false
-        dest: currency-PWD-2023-06-21.zip
+        dest: currency-CR-2023-08-23.zip
     
-    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-PWD-2023-06-21.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v --logFile arelle-taxonomy-log.xml'
+    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v --logFile arelle-taxonomy-log.xml'
 
     - name: Read arelle-taxonomy-log.xml
       id: package

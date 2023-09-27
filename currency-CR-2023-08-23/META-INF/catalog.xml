@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-label-en.xml" rewritePrefix="../currency-label-en.xml" />
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-label-code.xml" rewritePrefix="../currency-label-code.xml" />
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-definition.xml" rewritePrefix="../currency-definition.xml" />
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-en.xsd" rewritePrefix="../currency-en.xsd" />
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd" rewritePrefix="../currency.xsd" />
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-elts.xsd" rewritePrefix="../currency-elts.xsd" />
+  
+    <rewriteURI uriStartString="https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-reference.xml" rewritePrefix="../currency-reference.xml" />
+  
+</catalog>

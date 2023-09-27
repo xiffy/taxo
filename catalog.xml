@@ -1,8 +1,8 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 
   <rewriteURI
-    uriStartString="https://www.minjenv.nl/taxonomy/2025-01-01/jenv_bw2_cor.xsd"
-    rewritePrefix="./jenv_taxonomy_2024/www.minjenv.nl/taxonomy/2025-01-01/jenv_bw2_cor.xsd" />
+    uriStartString="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd"
+    rewritePrefix="./jenv_taxonomy_2024/www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd" />
 
   <rewriteURI
     uriStartString="https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd"
@@ -15,9 +15,9 @@
   <rewriteURI
     uriStartString="https://www.iso.org/taxonomy/2025-01-01/iso_29160-4_2023.xsd"
     rewritePrefix="./iso_taxonomy_2024/www.iso.org/taxonomy/2025-01-01/iso_29160-4_2023.xsd" />
-
+ 
   <rewriteURI
-    uriStartString="https://xbrl.org/taxonomy/int/currency/2023-01-01/PWD/2023-06-21/currency.xsd"
-    rewritePrefix="./currency-PWD-2023-06-21/currency.xsd" />
+    uriStartString="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd"
+    rewritePrefix="./currency-CR-2023-08-23/currency.xsd" />
 
 </catalog>
