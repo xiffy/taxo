@@ -2,6 +2,8 @@ name: Taxonomy validation
 on:
   workflow_dispatch:
   push:
+    paths:
+      - taxonomies/**
 jobs:
   build:
     runs-on: windows-latest
