@@ -11,20 +11,20 @@ jobs:
     
     - uses: vimtor/action-zip@v1.1
       with:
-        files: taxonomies/jenv_taxonomy_2022/
-        dest: artifacts/jenv_taxonomy_2022.zip
+        files: taxonomies/jenv_taxonomy_2024/
+        dest: artifacts/jenv_taxonomy_2024.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: taxonomies/rj_taxonomy_2022/
-        dest: artifacts/rj_taxonomy_2022.zip
+        files: taxonomies/rj_taxonomy_2024/
+        dest: artifacts/rj_taxonomy_2024.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: taxonomies/nen_taxonomy_2022/
-        dest: artifacts/nen_taxonomy_2022.zip
+        files: taxonomies/nen_taxonomy_2024/
+        dest: artifacts/nen_taxonomy_2024.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: taxonomies/iso_taxonomy_2022/
-        dest: artifacts/iso_taxonomy_2022.zip
+        files: taxonomies/iso_taxonomy_2024/
+        dest: artifacts/iso_taxonomy_2024.zip
     - uses: vimtor/action-zip@v1.1
       with:
         files: taxonomies/currency-CR-2023-08-23/
