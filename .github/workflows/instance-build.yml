@@ -6,45 +6,45 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: jenv_taxonomy_2022/
-        recursive: false
-        dest: jenv_taxonomy_2022.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: rj_taxonomy_2022/
-        recursive: false
-        dest: rj_taxonomy_2022.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: nen_taxonomy_2022/
-        recursive: false
-        dest: nen_taxonomy_2022.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: iso_taxonomy_2022/
-        recursive: false
-        dest: iso_taxonomy_2022.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: currency-CR-2023-08-23/
-        recursive: false
-        dest: currency-CR-2023-08-23.zip
-    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "test.xbrl" -v --logFile arelle-instance-log.xml'
-    
-    - name: Read arelle-instance-log.xml
-      id: package
-      uses: juliangruber/read-file-action@v1.1.6
-      with:
-        path: ./arelle-instance-log.xml
-        
-    - name: echo line
-      run: echo "${{ steps.getxml.outputs.info }}"
-    
-    - uses: actions/upload-artifact@v3
-      with:
-        name: instance(s)
-        path: |
-          ${{ github.workspace }}/test.xbrl
+#    - uses: actions/checkout@v3
+#    - uses: vimtor/action-zip@v1.1
+#      with:
+#        files: jenv_taxonomy_2022/
+#        recursive: false
+#        dest: jenv_taxonomy_2022.zip
+#    - uses: vimtor/action-zip@v1.1
+#      with:
+#        files: rj_taxonomy_2022/
+#        recursive: false
+#        dest: rj_taxonomy_2022.zip
+#    - uses: vimtor/action-zip@v1.1
+#      with:
+#        files: nen_taxonomy_2022/
+#        recursive: false
+#        dest: nen_taxonomy_2022.zip
+#    - uses: vimtor/action-zip@v1.1
+#      with:
+#        files: iso_taxonomy_2022/
+#        recursive: false
+#        dest: iso_taxonomy_2022.zip
+#    - uses: vimtor/action-zip@v1.1
+#      with:
+#        files: currency-CR-2023-08-23/
+#        recursive: false
+#        dest: currency-CR-2023-08-23.zip
+#    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "test.xbrl" -v --logFile arelle-instance-log.xml'
+#
+#    - name: Read arelle-instance-log.xml
+#      id: package
+#      uses: juliangruber/read-file-action@v1.1.6
+#      with:
+#        path: ./arelle-instance-log.xml
+#
+#    - name: echo line
+#      run: echo "${{ steps.getxml.outputs.info }}"
+#
+#    - uses: actions/upload-artifact@v3
+#      with:
+#        name: instance(s)
+#        path: |
+#          ${{ github.workspace }}/test.xbrl
