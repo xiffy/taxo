@@ -7,10 +7,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: taxonomies/jenv_taxonomy_2024/
-        dest: artifacts/jenv_taxonomy_2024.zip
+#    - uses: vimtor/action-zip@v1.1
+#      with:
+#        files: taxonomies/jenv_taxonomy_2024/
+#        dest: artifacts/jenv_taxonomy_2024.zip
 #    - uses: vimtor/action-zip@v1.1
 #      with:
 #        files: rj_taxonomy_2022/
