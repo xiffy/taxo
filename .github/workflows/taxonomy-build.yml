@@ -12,27 +12,22 @@ jobs:
     - uses: vimtor/action-zip@v1.1
       with:
         files: taxonomies/jenv_taxonomy_2022/
-        recursive: true
         dest: artifacts/jenv_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
         files: taxonomies/rj_taxonomy_2022/
-        recursive: true
         dest: artifacts/rj_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
         files: taxonomies/nen_taxonomy_2022/
-        recursive: true
         dest: artifacts/nen_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
         files: taxonomies/iso_taxonomy_2022/
-        recursive: true
         dest: artifacts/iso_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
         files: taxonomies/currency-CR-2023-08-23/
-        recursive: true
         dest: artifacts/currency-CR-2023-08-23.zip
     
 #    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v --logFile arelle-taxonomy-log.xml'

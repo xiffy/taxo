@@ -43,8 +43,8 @@ jobs:
 #    - name: echo line
 #      run: echo "${{ steps.getxml.outputs.info }}"
 #
-#    - uses: actions/upload-artifact@v3
-#      with:
-#        name: instance(s)
-#        path: |
-#          ${{ github.workspace }}/test.xbrl
+    - uses: actions/upload-artifact@v3
+      with:
+        name: instance(s)
+        path: |
+          ${{ github.workspace }}/test.xbrl
