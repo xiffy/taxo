@@ -11,58 +11,58 @@ jobs:
     
     - uses: vimtor/action-zip@v1.1
       with:
-        files: jenv_taxonomy_2022/
+        files: taxonomies/jenv_taxonomy_2022/
         recursive: false
         dest: jenv_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: rj_taxonomy_2022/
+        files: taxonomies/rj_taxonomy_2022/
         recursive: false
         dest: rj_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: nen_taxonomy_2022/
+        files: taxonomies/nen_taxonomy_2022/
         recursive: false
         dest: nen_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: iso_taxonomy_2022/
+        files: taxonomies/iso_taxonomy_2022/
         recursive: false
         dest: iso_taxonomy_2022.zip
     - uses: vimtor/action-zip@v1.1
       with:
-        files: currency-CR-2023-08-23/
+        files: taxonomies/currency-CR-2023-08-23/
         recursive: false
         dest: currency-CR-2023-08-23.zip
     
-    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v --logFile arelle-taxonomy-log.xml'
-
-    - name: Read arelle-taxonomy-log.xml
-      id: package
-      uses: juliangruber/read-file-action@v1.1.6
-      with:
-        path: ./arelle-taxonomy-log.xml
-        
-    - name: Echo arelle-taxonomy-log.xml
-      run: echo "${{ steps.package.outputs.content }}"
-      
-    - name: Get Line Rate from output
-      id: get_line_rate
-      shell: pwsh  
-      run: |
-        [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
-        $document.load(".\arelle-taxonomy-log.xml")
-        $errors = $document.SelectSingleNode('//entry[@level="error"]')
-        Write-Output "::set-output name=errors::$errors"
-        
-    - name: Echo
-      run: echo "${{ steps.get_line_rate.outputs.errors }}"
-    
+#    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v --logFile arelle-taxonomy-log.xml'
+#
+#    - name: Read arelle-taxonomy-log.xml
+#      id: package
+#      uses: juliangruber/read-file-action@v1.1.6
+#      with:
+#        path: ./arelle-taxonomy-log.xml
+#
+#    - name: Echo arelle-taxonomy-log.xml
+#      run: echo "${{ steps.package.outputs.content }}"
+#
+#    - name: Get Line Rate from output
+#      id: get_line_rate
+#      shell: pwsh
+#      run: |
+#        [System.Xml.XmlDocument] $document = New-Object System.Xml.XmlDocument
+#        $document.load(".\arelle-taxonomy-log.xml")
+#        $errors = $document.SelectSingleNode('//entry[@level="error"]')
+#        Write-Output "::set-output name=errors::$errors"
+#
+#    - name: Echo
+#      run: echo "${{ steps.get_line_rate.outputs.errors }}"
+#
     - uses: actions/upload-artifact@v3
       with:
         name: taxonomy-packages
         path: |
-          ${{ github.workspace }}/jenv_taxonomy_2022.zip
-          ${{ github.workspace }}/rj_taxonomy_2022.zip
-          ${{ github.workspace }}/nen_taxonomy_2022.zip
-          ${{ github.workspace }}/iso_taxonomy_2022.zip
+          ${{ github.workspace }}/artifacts/jenv_taxonomy_2022.zip
+          ${{ github.workspace }}/artifacts/rj_taxonomy_2022.zip
+          ${{ github.workspace }}/artifacts/nen_taxonomy_2022.zip
+          ${{ github.workspace }}/artifacts/iso_taxonomy_2022.zip
