@@ -2,9 +2,6 @@ name: Taxonomy validation
 on:
   workflow_dispatch:
   push:
-    paths:
-      - taxonomies/**
-      - .github/**
     paths-ignore:
       - artifacts/**
 jobs:
