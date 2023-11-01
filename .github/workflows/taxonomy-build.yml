@@ -57,7 +57,7 @@ jobs:
       with:
         name: taxonomy-packages
         path: |
-          ${{ github.workspace }}/artifacts/jenv_taxonomy_2022.zip
-          ${{ github.workspace }}/artifacts/rj_taxonomy_2022.zip
-          ${{ github.workspace }}/artifacts/nen_taxonomy_2022.zip
-          ${{ github.workspace }}/artifacts/iso_taxonomy_2022.zip
+          ${{ github.workspace }}/artifacts/*.zip
+#          ${{ github.workspace }}/artifacts/rj_taxonomy_2024.zip
+#          ${{ github.workspace }}/artifacts/nen_taxonomy_2024.zip
+#          ${{ github.workspace }}/artifacts/iso_taxonomy_2024.zip
