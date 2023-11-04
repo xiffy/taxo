@@ -8,13 +8,14 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    
+    - name: Build Zip packages
     - uses: actions/checkout@v3
     - run: './script/cicd/make-artifacts.bat '
     - run: 'echo "WAARDE=lijstje-1|lijstje-2" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append'
 
-  test_packages:
-    - depends: build
+  arelle:
+    - name: Test taxonomy packages
+    - needs: build
     - run: 'echo $env:WAARDE; ./script/arelle/arelleCmdline.exe --packages ".\artifacts\rj_taxonomy_2024.zip|.\artifacts\jenv_taxonomy_2024.zip|.\artifacts\nen_taxonomy_2024.zip|.\artifacts\iso_taxonomy_2024.zip|.\artifacts\currency-CR-2023-08-23.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v ' # --logFile arelle-taxonomy-log.xml
 #
 #    - name: Read arelle-taxonomy-log.xml
