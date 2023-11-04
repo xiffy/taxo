@@ -10,28 +10,7 @@ jobs:
     steps:
     
     - uses: actions/checkout@v3
-    
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: taxonomies/jenv_taxonomy_2024/
-        dest: artifacts/jenv_taxonomy_2024.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: taxonomies/rj_taxonomy_2024/
-        dest: artifacts/rj_taxonomy_2024.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: taxonomies/nen_taxonomy_2024/
-        dest: artifacts/nen_taxonomy_2024.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: taxonomies/iso_taxonomy_2024/
-        dest: artifacts/iso_taxonomy_2024.zip
-    - uses: vimtor/action-zip@v1.1
-      with:
-        files: taxonomies/currency-CR-2023-08-23/
-        dest: artifacts/currency-CR-2023-08-23.zip
-    
+    - run: './script/cicd/make-artifacts.bat'
     - run: './script/arelle/arelleCmdline.exe --packages ".\artifacts\rj_taxonomy_2024.zip|.\artifacts\jenv_taxonomy_2024.zip|.\artifacts\nen_taxonomy_2024.zip|.\artifacts\iso_taxonomy_2024.zip|.\artifacts\currency-CR-2023-08-23.zip" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v ' # --logFile arelle-taxonomy-log.xml
 #
 #    - name: Read arelle-taxonomy-log.xml
