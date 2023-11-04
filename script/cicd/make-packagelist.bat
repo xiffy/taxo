@@ -10,4 +10,4 @@ set /p LIST=<_list.env
 del _list.env
 set "LIST=%LIST:~0,-1%"
 echo|set /p="%LIST%">>package_list.env
-
+exit /b 0
