@@ -7,10 +7,8 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Create Artifacts
-      - run: './script/cicd/make-artifacts.bat'
-    - name: Validate artifacts
-      - run: './script/arelle/arelleCmdline.exe --packages ".\artifacts\rj_taxonomy_2024.zip|.\artifacts\jenv_taxonomy_2024.zip|.\artifacts\nen_taxonomy_2024.zip|.\artifacts\iso_taxonomy_2024.zip|.\artifacts\currency-CR-2023-08-23.zip" --file "instances\test.xbrl" -v'
+    - run: './script/cicd/make-artifacts.bat'
+    - run: './script/arelle/arelleCmdline.exe --packages ".\artifacts\rj_taxonomy_2024.zip|.\artifacts\jenv_taxonomy_2024.zip|.\artifacts\nen_taxonomy_2024.zip|.\artifacts\iso_taxonomy_2024.zip|.\artifacts\currency-CR-2023-08-23.zip" --file "instances\test.xbrl" -v'
 #  --logFile arelle-instance-log.xml
 
 #    - name: Read arelle-instance-log.xml
