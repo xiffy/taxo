@@ -1,9 +1,13 @@
 @echo off
+setlocal enableDelayedExpansion
 cd .\artifacts
-echo|set /p="PACKAGE_LIST="> package_list.env
+del _list.env
+set LIST=
 for %%f in (*zip) do (
-    echo|set /p=".\artifacts\%%f|">> package_list.env
+    echo|set /p=".\artifacts\%%f|">> _list.env
 )
-type package_list.env
-cd ..
+echo|set /p="PACKAGE_LIST="> package_list.env
+set /p LIST=<_list.env
+set "LIST=%LIST:~0,-1%"
+echo|set /p="%LIST%">>package_list.env
 
