@@ -7,32 +7,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
-#    - uses: vimtor/action-zip@v1.1
-#      with:
-#        files: taxonomies/jenv_taxonomy_2024/
-#        dest: artifacts/jenv_taxonomy_2024.zip
-#    - uses: vimtor/action-zip@v1.1
-#      with:
-#        files: rj_taxonomy_2022/
-#        recursive: false
-#        dest: rj_taxonomy_2022.zip
-#    - uses: vimtor/action-zip@v1.1
-#      with:
-#        files: nen_taxonomy_2022/
-#        recursive: false
-#        dest: nen_taxonomy_2022.zip
-#    - uses: vimtor/action-zip@v1.1
-#      with:
-#        files: iso_taxonomy_2022/
-#        recursive: false
-#        dest: iso_taxonomy_2022.zip
-#    - uses: vimtor/action-zip@v1.1
-#      with:
-#        files: currency-CR-2023-08-23/
-#        recursive: false
-#        dest: currency-CR-2023-08-23.zip
-#    - run: './script/arelle/arelleCmdline.exe --packages ".\rj_taxonomy_2022.zip|.\jenv_taxonomy_2022.zip|.\nen_taxonomy_2022.zip|.\iso_taxonomy_2022.zip|.\currency-CR-2023-08-23.zip" --file "test.xbrl" -v --logFile arelle-instance-log.xml'
-#
+    - run: './script/cicd/make-artifacts.bat'
+    - run: './script/arelle/arelleCmdline.exe --packages ".\artifacts\rj_taxonomy_2022.zip|.\artifacts\jenv_taxonomy_2022.zip|.\artifacts\nen_taxonomy_2022.zip|.\artifacts\iso_taxonomy_2022.zip|.\artifacts\currency-CR-2023-08-23.zip" --file "instances\test.xbrl" -v'
+#  --logFile arelle-instance-log.xml
+
 #    - name: Read arelle-instance-log.xml
 #      id: package
 #      uses: juliangruber/read-file-action@v1.1.6
