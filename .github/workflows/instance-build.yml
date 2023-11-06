@@ -14,7 +14,7 @@ jobs:
     - run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
       -
     # create a list of testable files
-    - run: './script/cici/make-instancelist.bat'
+    - run: './script/cicd/make-instancelist.bat'
     - run: 'type ./instances/instance_list.env >> $env:GITHUB_ENV'
 
     - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:INSTANCE_LIST" -v'
