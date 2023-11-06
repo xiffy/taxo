@@ -10,10 +10,9 @@ jobs:
     - run: './script/cicd/make-artifacts.bat'
       # creates a usable list for arelle of available taxonomies
     - run: './script/cicd/make-packagelist.bat'
-    # passes the list to the global scope
+      # passes the list to the global scope
     - run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
-      -
-    # create a list of testable files
+      # create a list of testable files
     - run: './script/cicd/make-instancelist.bat'
     - run: 'type ./instances/instance_list.env >> $env:GITHUB_ENV'
 
