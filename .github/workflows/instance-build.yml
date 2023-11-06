@@ -8,7 +8,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: './script/cicd/make-artifacts.bat'
-    - run: './script/arelle/arelleCmdline.exe --packages ".\artifacts\rj_taxonomy_2024.zip|.\artifacts\jenv_taxonomy_2024.zip|.\artifacts\nen_taxonomy_2024.zip|.\artifacts\iso_taxonomy_2024.zip|.\artifacts\currency-CR-2023-08-23.zip" --file "instances\test.xbrl" -v'
+      # creates a usable list for arelle of available taxonomies
+    - run: './script/cicd/make-packagelist.bat'
+    # passes the list to the global scope
+    - run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
+
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "instances\test.xbrl" -v'
 #  --logFile arelle-instance-log.xml
 
 #    - name: Read arelle-instance-log.xml
@@ -24,4 +29,4 @@ jobs:
       with:
         name: instance(s)
         path: |
-          ${{ github.workspace }}/test.xbrl
+          ${{ github.workspace }}/instances/test.xbrl
