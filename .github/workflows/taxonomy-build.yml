@@ -16,8 +16,13 @@ jobs:
     - run: './script/cicd/make-packagelist.bat'
     # passes the list to the global scope
     - run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
+    # creates a usable list for arelle of available entrypoints
+    - run: './script/cicd/make-entrypointlist.bat'
+    # passes the list to the global scope
+    - run: 'type ./taxonomies/entrypoint_list.env >> $env:GITHUB_ENV'
+
     # validate the taxonomies and load some files ....
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" -v ' # --logFile arelle-taxonomy-log.xml
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" -v ' # --logFile arelle-taxonomy-log.xml
 #
 #    - name: Read arelle-taxonomy-log.xml
 #      id: package
