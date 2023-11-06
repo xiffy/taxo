@@ -12,8 +12,12 @@ jobs:
     - run: './script/cicd/make-packagelist.bat'
     # passes the list to the global scope
     - run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
+      -
+    # create a list of testable files
+    - run: './script/cici/make-instancelist.bat'
+    - run: 'type ./instances/instance_list.env >> $env:GITHUB_ENV'
 
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "instances\test.xbrl" -v'
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:INSTANCE_LIST" -v'
 #  --logFile arelle-instance-log.xml
 
 #    - name: Read arelle-instance-log.xml
