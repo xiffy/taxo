@@ -19,3 +19,4 @@ rem "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|
 rem https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|
 rem https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|
 rem https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd"
+rem but what's up with the currency? https://www.xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency-en.xsd does not load
