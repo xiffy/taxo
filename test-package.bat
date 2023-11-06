@@ -3,7 +3,7 @@ setlocal enableDelayedExpansion
 echo Building taxonomy-packages
 call .\script\cicd\make-artifacts.bat
 
-echo Creating package list & read into LIST
+echo Creating package list and read into LIST
 call .\script\cicd\make-packagelist.bat
 set /p TMP_LIST=<artifacts\package_list.env
 set "LIST=%TMP_LIST:~13%"
