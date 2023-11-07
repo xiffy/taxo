@@ -12,7 +12,7 @@
 		<tp:entryPoint>
 			<tp:name>ISO 19160-4:2023</tp:name>
 			<tp:description></tp:description>
-			<tp:entryPointDocument href="https://www.iso.org.nl/taxonomy/2025-01-01/iso_19160-4_2023.xsd" />
+			<tp:entryPointDocument href="https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd" />
 		</tp:entryPoint>
 	</tp:entryPoints>
 </tp:taxonomyPackage>
