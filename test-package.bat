@@ -14,8 +14,6 @@ set /p TMP_LIST=<taxonomies\entrypoint_list.env
 set "ENTRYPOINT_LIST=%TMP_LIST:~16%"
 
 echo calling Arelle
-.\script\arelle\arelleCmdLine.exe --validate --file="!ENTRYPOINT_LIST!" --packages "!PACKAGE_LIST!"
-rem "https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd|
-rem https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd|
-rem https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd|
-rem https://www.iso.org/taxonomy/2025-01-01/iso_19160-4_2023.xsd"
+for /f %%d in ("arelle.log") do del %%d
+.\script\arelle\arelleCmdLine.exe --validate --file="!ENTRYPOINT_LIST!" --packages "!PACKAGE_LIST!" --logFile=arelle-taxo.log --logLevel=warning
+type arelle-taxo.log
