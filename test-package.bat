@@ -15,5 +15,4 @@ set "ENTRYPOINT_LIST=%TMP_LIST:~16%"
 
 echo calling Arelle
 for /f %%d in ("arelle-taxo.log") do del %%d
-.\script\arelle\arelleCmdLine.exe --validate --file="!ENTRYPOINT_LIST!" --packages "!PACKAGE_LIST!" --logFile=arelle-taxo.log --logLevel=warning
-type arelle-taxo.log
+.\script\arelle\arelleCmdLine.exe --validate --file="!ENTRYPOINT_LIST!" --packages "!PACKAGE_LIST!"
