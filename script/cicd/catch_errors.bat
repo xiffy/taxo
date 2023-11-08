@@ -1,4 +1,5 @@
-@echo off
+rem @echo off
+echo "in de navy"
 setlocal enableDelayedExpansion
 for %%f in (arelle-taxo.log) do set "SIZE=%%~zf"
 if "!SIZE!" NEQ "0" (
