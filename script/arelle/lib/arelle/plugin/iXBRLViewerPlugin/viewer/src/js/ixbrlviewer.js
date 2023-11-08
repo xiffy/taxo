@@ -2,7 +2,7 @@
 
 import interact from 'interactjs'
 import $ from 'jquery'
-import { iXBRLReport } from "./report.js";
+import { ReportSet } from "./reportset.js";
 import { Viewer, DocumentTooLargeError } from "./viewer.js";
 import { Inspector } from "./inspector.js";
 
@@ -114,6 +114,11 @@ iXBRLViewer.prototype.isReviewModeEnabled = function () {
     return this.isFeatureEnabled('review');
 }
 
+iXBRLViewer.prototype.isViewerEnabled = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    return (urlParams.get('disable-viewer') ?? 'false') === 'false'
+}
+
 iXBRLViewer.prototype._loadInspectorHTML = function () {
     /* Insert HTML and CSS styles into body */
     $(require('../html/inspector.html')).prependTo('body');
@@ -137,7 +142,9 @@ iXBRLViewer.prototype._loadInspectorHTML = function () {
 iXBRLViewer.prototype._reparentDocument = function () {
     var iframeContainer = $('#ixv #iframe-container');
 
-    var iframe = $('<iframe title="iXBRL document view"/>').appendTo(iframeContainer)[0];
+    var iframe = $('<iframe title="iXBRL document view"/>')
+        .data("report-index", 0)
+        .appendTo(iframeContainer)[0];
 
     var doc = iframe.contentDocument || iframe.contentWindow.document;
     doc.open();
@@ -193,35 +200,51 @@ iXBRLViewer.prototype._checkDocumentSetBrowserSupport = function () {
 }
 
 iXBRLViewer.prototype.load = function () {
-    var iv = this;
-    var inspector = this.inspector;
+    const iv = this;
+    const inspector = this.inspector;
 
     setTimeout(function () {
+        const stubViewer = $('body').hasClass('ixv-stub-viewer');
+
+        // If viewer is disabled, but not in stub viewer mode, just abort
+        // loading to leave the iXBRL file as-is
+        if (!iv.isViewerEnabled() && !stubViewer) {
+            return;
+        }
+
+        // Loading mask starts here
+        iv._loadInspectorHTML();
+        var iframes;
 
         // We need to parse JSON first so that we can determine feature enablement before loading begins.
         const taxonomyData = iv._getTaxonomyData();
         const parsedTaxonomyData = taxonomyData && JSON.parse(taxonomyData);
         iv.setFeatures((parsedTaxonomyData && parsedTaxonomyData["features"]) || [], window.location.search);
 
-        iv._loadInspectorHTML();
-        var iframes;
-        const stubViewer = $('body').hasClass('ixv-stub-viewer');
+        const reportSet = new ReportSet(parsedTaxonomyData);
+
+        // Viewer disabled in stub viewer mode => redirect to first iXBRL document
+        if (!iv.isViewerEnabled()) {
+            window.location.replace(reportSet.reportFiles()[0].file); 
+            return;
+        }
+
+        if (parsedTaxonomyData === null) {
+            $('#ixv .loader .text').text("Error: Could not find viewer data");
+            $('#ixv .loader').removeClass("loading");
+            return;
+        }
+
         if (!stubViewer) {
             iframes = $(iv._reparentDocument());
         } 
         else {
             iframes = $();
         }
-        if (parsedTaxonomyData === null) {
-            $('#ixv .loader .text').text("Error: Could not find viewer data");
-            $('#ixv .loader').removeClass("loading");
-            return;
-        }
-        const report = new iXBRLReport(parsedTaxonomyData);
-        const ds = report.documentSetFiles();
-        var hasExternalIframe = false;
+        const ds = reportSet.reportFiles();
+        let hasExternalIframe = false;
         for (var i = stubViewer ? 0 : 1; i < ds.length; i++) {
-            const iframe = $("<iframe />").attr("src", ds[i]).appendTo("#ixv #iframe-container");
+            const iframe = $("<iframe />").attr("src", ds[i].file).data("report-index", ds[i].index).appendTo("#ixv #iframe-container");
             iframes = iframes.add(iframe);
             hasExternalIframe = true;
         }
@@ -244,10 +267,10 @@ iXBRLViewer.prototype.load = function () {
                 if (complete) {
                     clearInterval(timer);
 
-                    var viewer = iv.viewer = new Viewer(iv, iframes, report);
+                    var viewer = iv.viewer = new Viewer(iv, iframes, reportSet);
 
                     viewer.initialize()
-                        .then(() => inspector.initialize(report, viewer))
+                        .then(() => inspector.initialize(reportSet, viewer))
                         .then(() => {
                             interact('#viewer-pane').resizable({
                                 edges: { left: false, right: ".resize", bottom: false, top: false},
