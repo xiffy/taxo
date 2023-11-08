@@ -25,8 +25,8 @@ jobs:
     # This is how it runs on the server of Githhub, only warnings and errors
     # - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
     # - run: 'script\cicd\catch_errors.bat'
-    # Local you wannt it onscreen
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=info
+    # Local you want it onscreen
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=info'
 
 
 #    - name: Read arelle-taxonomy-log.xml
