@@ -22,7 +22,7 @@ jobs:
     - run: 'type ./taxonomies/entrypoint_list.env >> $env:GITHUB_ENV'
 
     # validate the taxonomies and load some files ....
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" -v ' --logFile arelle-tax.log
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" -v --logFile arelle-tax.log'
 
     - run: "./script/cicd/catch_errors.bat"
 
