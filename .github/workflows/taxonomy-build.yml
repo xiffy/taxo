@@ -23,7 +23,7 @@ jobs:
 
     # validate the taxonomies and load some files ....
     - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
-    - run: 'script\cicd\catch_errors.bat'
+    - run: 'script\cicd\catch_errors.bat arelle-taxo.log'
 
 
 #    - name: Read arelle-taxonomy-log.xml
