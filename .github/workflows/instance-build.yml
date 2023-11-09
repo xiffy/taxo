@@ -16,7 +16,8 @@ jobs:
     - run: './script/cicd/make-instancelist.bat'
     - run: 'type ./instances/instance_list.env >> $env:GITHUB_ENV'
 
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:INSTANCE_LIST" -v'
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:INSTANCE_LIST" -v --logfile=arelle-instance.log --loglevel=warning'
+    - run: 'script\cicd\catch_errors.bat arelle-instance.log'
 #  --logFile arelle-instance-log.xml
 
 #    - name: Read arelle-instance-log.xml
