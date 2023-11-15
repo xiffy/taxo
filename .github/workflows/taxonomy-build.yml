@@ -22,8 +22,10 @@ jobs:
     - run: 'type ./taxonomies/entrypoint_list.env >> $env:GITHUB_ENV'
 
     # validate the taxonomies and load some files ....
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" -v ' # --logFile arelle-taxonomy-log.xml
-#
+    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
+    - run: 'script\cicd\catch_errors.bat arelle-taxo.log'
+
+
 #    - name: Read arelle-taxonomy-log.xml
 #      id: package
 #      uses: juliangruber/read-file-action@v1.1.6
@@ -50,6 +52,7 @@ jobs:
         name: taxonomy-packages
         path: |
           ${{ github.workspace }}/artifacts/*.zip
+          ${{ github.workspace }}/arelle-tax.log
 #          ${{ github.workspace }}/artifacts/rj_taxonomy_2024.zip
 #          ${{ github.workspace }}/artifacts/nen_taxonomy_2024.zip
 #          ${{ github.workspace }}/artifacts/iso_taxonomy_2024.zip
