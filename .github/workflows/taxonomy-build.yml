@@ -33,7 +33,7 @@ jobs:
         run: 'script\cicd\catch_errors.bat arelle-taxo.log'
       - name: Errors found
         if: failure()
-        run: echo "::error file=arelle-taxo.log,line=1::$(cat arelle-taxo.log)"
+        run: echo "::error file=arelle-taxo.log::$(cat arelle-taxo.log)"
 
       #    - name: Read arelle-taxonomy-log.xml
       #      id: package

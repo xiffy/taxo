@@ -27,7 +27,7 @@ jobs:
         run: 'script\cicd\catch_errors.bat arelle-instance.log'
       - name: Errors found
         if: failure()
-        run: echo "::error file=arelle-instance.log,line=1::Missing semicolon"
+        run: echo "::error file=arelle-instance.log::$(cat arelle-instance.log)"
 
       #  --logFile arelle-instance-log.xml
 
