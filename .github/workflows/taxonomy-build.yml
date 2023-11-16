@@ -33,7 +33,7 @@ jobs:
         run: 'script\cicd\catch_errors.bat arelle-taxo.log'
       - name: Errors found
         if: failure()
-        run: 'cmd /c echo It failed'
+        run: echo "::error file=arelle-instance.log,line=1::Missing semicolon"
 
       #    - name: Read arelle-taxonomy-log.xml
       #      id: package
