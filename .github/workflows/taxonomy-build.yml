@@ -31,13 +31,9 @@ jobs:
         run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
       - name: Check for errors
         run: 'script\cicd\catch_errors.bat arelle-taxo.log'
-      - name: Read errors
-        id: errors
-        if: failure()
-        run: echo "LOG=$(cat arelle-taxo.log)" >> $GITHUB_ENV
       - name: Errors found
         if: failure()
-        run: echo "::error file=arelle-instance.log,line=1::<arelle-taxo.log"
+        run: echo "::error file=arelle-taxo.log,line=1::$(cat arelle-taxo.log)"
 
       #    - name: Read arelle-taxonomy-log.xml
       #      id: package
