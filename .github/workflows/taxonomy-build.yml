@@ -31,9 +31,13 @@ jobs:
         run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
       - name: Check for errors
         run: 'script\cicd\catch_errors.bat arelle-taxo.log'
+      - name: Read errors
+        id: errors
+        if: failure()
+        run: echo "log=$(cat arelle-taxo.log)" >> $GITHUB_OUTPUT
       - name: Errors found
         if: failure()
-        run: echo "::error file=arelle-instance.log,line=1::Missing semicolon"
+        run: echo "::error file=arelle-instance.log,line=1::${{ steps.errors.outputs.log }}"
 
       #    - name: Read arelle-taxonomy-log.xml
       #      id: package
