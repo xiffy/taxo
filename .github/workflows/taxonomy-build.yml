@@ -25,7 +25,8 @@ jobs:
     - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
     - run: 'script\cicd\catch_errors.bat arelle-taxo.log'
       if: ${{ failure() }}
-      run: 'cmd /c echo It failed'
+      steps:
+        - run: 'cmd /c echo It failed'
 
 #    - name: Read arelle-taxonomy-log.xml
 #      id: package
