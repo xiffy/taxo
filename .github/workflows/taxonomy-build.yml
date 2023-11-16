@@ -37,7 +37,7 @@ jobs:
         run: echo "LOG=$(cat arelle-taxo.log)" >> $GITHUB_ENV
       - name: Errors found
         if: failure()
-        run: echo "::error file=arelle-instance.log,line=1::$env:LOG"
+        run: echo "::error file=arelle-instance.log,line=1::<arelle-taxo.log"
 
       #    - name: Read arelle-taxonomy-log.xml
       #      id: package
