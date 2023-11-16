@@ -11,22 +11,28 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     # creates zipfiles in the artifacts directory
-    - run: './script/cicd/make-artifacts.bat '
+    - name: Create Artifacts
+      run: './script/cicd/make-artifacts.bat '
     # creates a usable list for arelle of available taxonomies
-    - run: './script/cicd/make-packagelist.bat'
+    - name: Create list
+      run: './script/cicd/make-packagelist.bat'
     # passes the list to the global scope
-    - run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
+    - name Read list
+      run: 'type ./artifacts/package_list.env >> $env:GITHUB_ENV'
     # creates a usable list for arelle of available entrypoints
-    - run: './script/cicd/make-entrypointlist.bat'
+    - name: Find entrypoints
+      run: './script/cicd/make-entrypointlist.bat'
     # passes the list to the global scope
-    - run: 'type ./taxonomies/entrypoint_list.env >> $env:GITHUB_ENV'
+    - name: Read entrypoints
+      run: 'type ./taxonomies/entrypoint_list.env >> $env:GITHUB_ENV'
 
     # validate the taxonomies and load some files ....
-    - run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
-    - run: 'script\cicd\catch_errors.bat arelle-taxo.log'
-      if: ${{ failure() }}
-      steps:
-        - run: 'cmd /c echo It failed'
+    - name: Validate taxonomies and load entrypoints
+      run: './script/arelle/arelleCmdline.exe --packages "$env:PACKAGE_LIST" --file "$env:ENTRYPOINT_LIST" --validate --logLevel=warning --logFile=arelle-taxo.log'
+    - name: Check for errors
+      run: 'script\cicd\catch_errors.bat arelle-taxo.log'
+      if: failure() 
+      run: 'cmd /c echo It failed'
 
 #    - name: Read arelle-taxonomy-log.xml
 #      id: package
