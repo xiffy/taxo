@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xbrli:xbrl xml:lang="nl" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2025-01-01/rj" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xbrli:xbrl xml:lang="nl" xmlns:rj_cor="https://www.rjnet.nl/taxonomy/2025-01-01/rj" xmlnss:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link:schemaRef xlink:type="simple" xlink:href="https://www.rjnet.nl/taxonomy/2025-01-01/rj_cor.xsd" />
   <xbrli:context id="context_1">
     <xbrli:entity>
