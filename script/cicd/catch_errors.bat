@@ -1,5 +1,6 @@
 @echo off
 setlocal enableDelayedExpansion
+dir
 for %%f in (%1) do set "SIZE=%%~zf"
 if "%SIZE%" NEQ "0" (
   type %1
