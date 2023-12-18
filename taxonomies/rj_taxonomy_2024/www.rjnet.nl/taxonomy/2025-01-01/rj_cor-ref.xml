@@ -14640,7 +14640,6 @@
     <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WeightedAverageNumberOrdinaryShares_loc" xlink:to="rj_RJ_2023-01-01_340_501_ref" xlink:type="arc"/>
     <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WhetherSpecificCodesOfConductAreMandatoryOrVoluntaryDescription_loc" xlink:to="rj_RJ_2023-01-01_655_514_ref" xlink:type="arc"/>
     <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WillingnessOfHedgingRisksAndUncertaintiesDescription_loc" xlink:to="rj_RJ_2023-01-01_400_1053_ref" xlink:type="arc"/>
-
     <link:loc xlink:href="rj_cor.xsd#rj_AccruedIncomeOtherAxis" xlink:label="rj_AccruedIncomeOtherAxis_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_AssetsOtherAxis" xlink:label="rj_AssetsOtherAxis_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_CentralGovernmentContributionsAxis" xlink:label="rj_CentralGovernmentContributionsAxis_loc" xlink:type="locator"/>
@@ -15580,5 +15579,371 @@
     <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TechnicalProvisionDiscretionaryProfitSharingObligationsMember_loc" xlink:to="rj_RJ_2023-01-01_605_405_ref" xlink:type="arc"/>
     <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_VocationalAdultEducationMember_loc" xlink:to="rj_RJ_2023-01-01_660_306_ref" xlink:type="arc"/>
     <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_VocationalAdultEducationMember_loc" xlink:to="rj_RJ_2023-01-01_660_307_ref" xlink:type="arc"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_AttendanceRateOfCommitteeMeetingsDescription" xlink:label="rj_AttendanceRateOfCommitteeMeetingsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ContributionRemunerationPolicyToLongTermValueCreationDescription" xlink:label="rj_ContributionRemunerationPolicyToLongTermValueCreationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_MainTopicsDuringCommitteesMeetingsDescription" xlink:label="rj_MainTopicsDuringCommitteesMeetingsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ReasonSeverancePayManagementDescription" xlink:label="rj_ReasonSeverancePayManagementDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_RemunerationPolicyDuringFinancialYearDescription" xlink:label="rj_RemunerationPolicyDuringFinancialYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_RemunerationRatesDescription" xlink:label="rj_RemunerationRatesDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_RemunerationScenarioAnalysisDescription" xlink:label="rj_RemunerationScenarioAnalysisDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription" xlink:label="rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheCompositionOfTheCommitteeDescription" xlink:label="rj_TheCompositionOfTheCommitteeDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription" xlink:label="rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription" xlink:label="rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription" xlink:label="rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription" xlink:label="rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheNumberOfCommitteeMeetingsDescription" xlink:label="rj_TheNumberOfCommitteeMeetingsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription" xlink:label="rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ValueCreationOfVariableRemunerationDescription" xlink:label="rj_ValueCreationOfVariableRemunerationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription" xlink:label="rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements" xlink:label="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorAdditionalPositions" xlink:label="rj_SupervisoryDirectorAdditionalPositions_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorAge" xlink:label="rj_SupervisoryDirectorAge_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate" xlink:label="rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate" xlink:label="rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorDateOfInitialAppointment" xlink:label="rj_SupervisoryDirectorDateOfInitialAppointment_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorMainFunction" xlink:label="rj_SupervisoryDirectorMainFunction_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorNationality" xlink:label="rj_SupervisoryDirectorNationality_loc" xlink:type="locator"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AttendanceRateOfCommitteeMeetingsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ContributionRemunerationPolicyToLongTermValueCreationDescription_loc" xlink:to="rj_RJ_2023-01-01_404_104_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_MainTopicsDuringCommitteesMeetingsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ReasonSeverancePayManagementDescription_loc" xlink:to="rj_RJ_2023-01-01_404_104_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_RemunerationPolicyDuringFinancialYearDescription_loc" xlink:to="rj_RJ_2023-01-01_404_104_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_RemunerationRatesDescription_loc" xlink:to="rj_RJ_2023-01-01_404_104_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_RemunerationScenarioAnalysisDescription_loc" xlink:to="rj_RJ_2023-01-01_404_104_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheCompositionOfTheCommitteeDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheNumberOfCommitteeMeetingsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ValueCreationOfVariableRemunerationDescription_loc" xlink:to="rj_RJ_2023-01-01_404_104_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorAdditionalPositions_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorAge_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorDateOfInitialAppointment_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorMainFunction_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorNationality_loc" xlink:to="rj_RJ_2023-01-01_405_105_ref" xlink:type="arc"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_CommitteeNameAxis" xlink:label="rj_CommitteeNameAxis_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorNameAxis" xlink:label="rj_SupervisoryDirectorNameAxis_loc" xlink:type="locator"/>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.2</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:label="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.3.5</ref:Paragraph>
+    </link:reference>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_CommitteeNameAxis_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorNameAxis_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_AllExistingOrPotentialAntiTakeoverMeasuresOfTheCompanyDescription" xlink:label="rj_AllExistingOrPotentialAntiTakeoverMeasuresOfTheCompanyDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_AnAlternativeMeasureRelatingToTheBestPracticeProvisionDescription" xlink:label="rj_AnAlternativeMeasureRelatingToTheBestPracticeProvisionDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_AnyMajorFailingsInTheInternalRiskManagementAndControlSystemsIdentifiedDuringTheFinancialYearAndTheDiscussionOfTheseTopicsWithTheAuditCommitteeAndTheSupervisoryBoardDescription" xlink:label="rj_AnyMajorFailingsInTheInternalRiskManagementAndControlSystemsIdentifiedDuringTheFinancialYearAndTheDiscussionOfTheseTopicsWithTheAuditCommitteeAndTheSupervisoryBoardDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_AttendanceRateOfCommitteeMeetingsDescription" xlink:label="rj_AttendanceRateOfCommitteeMeetingsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ComplianceCodeOfConductDescription" xlink:label="rj_ComplianceCodeOfConductDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_CompositionGenderExecutiveCommitteeDescription" xlink:label="rj_CompositionGenderExecutiveCommitteeDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_CompositionGenderTopDescription" xlink:label="rj_CompositionGenderTopDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ContributionRemunerationPolicyToLongTermValueCreationDescription" xlink:label="rj_ContributionRemunerationPolicyToLongTermValueCreationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_DeviationDiversityPolicyDescription" xlink:label="rj_DeviationDiversityPolicyDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ExplanationOfReasonsAsToWhyParticularBestPracticeProvisionAreNotApplied" xlink:label="rj_ExplanationOfReasonsAsToWhyParticularBestPracticeProvisionAreNotApplied_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_GoalsOfDiversityAndInclusionDescription" xlink:label="rj_GoalsOfDiversityAndInclusionDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_HowTheCompanyHasAppliedTheBestPracticeProvisionsOfTheDutchGovernanceCodeInThePastYearDescription" xlink:label="rj_HowTheCompanyHasAppliedTheBestPracticeProvisionsOfTheDutchGovernanceCodeInThePastYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_HowTheCompanyHasAppliedThePrinciplesOfTheDutchGovernanceCodeInThePastYearDescription" xlink:label="rj_HowTheCompanyHasAppliedThePrinciplesOfTheDutchGovernanceCodeInThePastYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_MainConclusionsEvaluationsSupervisoryDirectorsDescription" xlink:label="rj_MainConclusionsEvaluationsSupervisoryDirectorsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_MainTopicsDuringCommitteesMeetingsDescription" xlink:label="rj_MainTopicsDuringCommitteesMeetingsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_PlanGoalsOfDiversityAndInclusionDescription" xlink:label="rj_PlanGoalsOfDiversityAndInclusionDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ReasonSeverancePayManagementDescription" xlink:label="rj_ReasonSeverancePayManagementDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_RemunerationPolicyDuringFinancialYearDescription" xlink:label="rj_RemunerationPolicyDuringFinancialYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_RemunerationRatesDescription" xlink:label="rj_RemunerationRatesDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_RemunerationScenarioAnalysisDescription" xlink:label="rj_RemunerationScenarioAnalysisDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ResultsOfDiversityAndInclusionDescription" xlink:label="rj_ResultsOfDiversityAndInclusionDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_StatementOfManagementThatTheContinuityOfTheCompanyIsGuaranteedForTheNextTwelveMonths" xlink:label="rj_StatementOfManagementThatTheContinuityOfTheCompanyIsGuaranteedForTheNextTwelveMonths_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsFunctionedProperlyDuringTheFinancialYear" xlink:label="rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsFunctionedProperlyDuringTheFinancialYear_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsProvideReasonableDegreeOfAssuranceThatTheFinancialReportingContainsNoMaterialInaccuracies" xlink:label="rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsProvideReasonableDegreeOfAssuranceThatTheFinancialReportingContainsNoMaterialInaccuracies_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements" xlink:label="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryBoardReport" xlink:label="rj_SupervisoryBoardReport_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorAdditionalPositions" xlink:label="rj_SupervisoryDirectorAdditionalPositions_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorAge" xlink:label="rj_SupervisoryDirectorAge_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate" xlink:label="rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate" xlink:label="rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorDateOfInitialAppointment" xlink:label="rj_SupervisoryDirectorDateOfInitialAppointment_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorMainFunction" xlink:label="rj_SupervisoryDirectorMainFunction_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorNationality" xlink:label="rj_SupervisoryDirectorNationality_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheChoiceOfWorkingWithAnExecutiveCommitteeDescription" xlink:label="rj_TheChoiceOfWorkingWithAnExecutiveCommitteeDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription" xlink:label="rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheCompositionOfTheCommitteeDescription" xlink:label="rj_TheCompositionOfTheCommitteeDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription" xlink:label="rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheDesignOfTheInternalRiskManagementAndControlSystemsDescription" xlink:label="rj_TheDesignOfTheInternalRiskManagementAndControlSystemsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheDiscussionsHeldByTheSupervisoryBoardOnMattersOnWhichTheAuditCommitteeReportsDescription" xlink:label="rj_TheDiscussionsHeldByTheSupervisoryBoardOnMattersOnWhichTheAuditCommitteeReportsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription" xlink:label="rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription" xlink:label="rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription" xlink:label="rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheExecutionOfThePolicyOfInstitutionalInvestorsRelatingToTheExerciseOfVotingRightsInTheRelevantFinancialYearDescription" xlink:label="rj_TheExecutionOfThePolicyOfInstitutionalInvestorsRelatingToTheExerciseOfVotingRightsInTheRelevantFinancialYearDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheExecutionOfTheRiskAssessmentTheMainRisksTheCompanyFacesAndTheRiskAppetiteOfTheCompanyDescription" xlink:label="rj_TheExecutionOfTheRiskAssessmentTheMainRisksTheCompanyFacesAndTheRiskAppetiteOfTheCompanyDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheImplementationOfACultureWithinTheCompanThatIsFocusedOnLongtermValueCreationDescription" xlink:label="rj_TheImplementationOfACultureWithinTheCompanThatIsFocusedOnLongtermValueCreationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheMannerInWhichTheContactIsArrangedBetweenTheSupervisoryBoardAndTheExecutiveCommitteeDescription" xlink:label="rj_TheMannerInWhichTheContactIsArrangedBetweenTheSupervisoryBoardAndTheExecutiveCommitteeDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheNumberOfCommitteeMeetingsDescription" xlink:label="rj_TheNumberOfCommitteeMeetingsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheOperationOfTheInternalRiskManagementAndControlSystemsOverThePastYearAndHowTheseSystemsContributedToMitigateAndControlTheRisksDescription" xlink:label="rj_TheOperationOfTheInternalRiskManagementAndControlSystemsOverThePastYearAndHowTheseSystemsContributedToMitigateAndControlTheRisksDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheReasonsWhyTheSupervisoryBoardDoesNotFollowTheAdviceOfTheAuditCommitteeRegardingTheAppointmentOfTheExternalAuditorDescription" xlink:label="rj_TheReasonsWhyTheSupervisoryBoardDoesNotFollowTheAdviceOfTheAuditCommitteeRegardingTheAppointmentOfTheExternalAuditorDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheRoleDutiesAndCompositionOfTheExecutiveCommitteeDescription" xlink:label="rj_TheRoleDutiesAndCompositionOfTheExecutiveCommitteeDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription" xlink:label="rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TheWayTheCompanyHasDeviatedFromTheBestPracticeProvisionDescription" xlink:label="rj_TheWayTheCompanyHasDeviatedFromTheBestPracticeProvisionDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TransactionsBetweenTheCompanyAndNaturalOrLegalPersonsThatHoldAtLeastTenPercentOfTheSharesInTheCompanyThatAreAgreedAtArmsLengthDescription" xlink:label="rj_TransactionsBetweenTheCompanyAndNaturalOrLegalPersonsThatHoldAtLeastTenPercentOfTheSharesInTheCompanyThatAreAgreedAtArmsLengthDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_TransactionsInvolvingConflictsOfInterestOfManagingOrSupervisoryDirectorsDescription" xlink:label="rj_TransactionsInvolvingConflictsOfInterestOfManagingOrSupervisoryDirectorsDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ValueCreationOfVariableRemunerationDescription" xlink:label="rj_ValueCreationOfVariableRemunerationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_ValuesAndMethodEmbeddedValuesDescription" xlink:label="rj_ValuesAndMethodEmbeddedValuesDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription" xlink:label="rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_WhenTheCompanyExpectsToComplyWithTheBestPracticeProvisionAgainDescription" xlink:label="rj_WhenTheCompanyExpectsToComplyWithTheBestPracticeProvisionAgainDescription_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_WhichSupervisoryDirectorsHaveBeenFrequentlyAbsentFromMeetingsOfTheSupervisoryBoardDescription" xlink:label="rj_WhichSupervisoryDirectorsHaveBeenFrequentlyAbsentFromMeetingsOfTheSupervisoryBoardDescription_loc" xlink:type="locator"/>
+    <link:reference id="rj_RJ_2023-01-01_400_207_ref" xlink:label="rj_RJ_2023-01-01_400_207_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>400</ref:Chapter>
+      <ref:IssueDate>2023-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>207</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_RJ_2023-01-01_405_105c_ref" xlink:label="rj_RJ_2023-01-01_405_105c_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>405</ref:Chapter>
+      <ref:IssueDate>2023-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>105c</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_P_ref" xlink:label="rj_NCGC_2022_P_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Preambule</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_1.1.3_ref" xlink:label="rj_NCGC_2022_PEBPB_1.1.3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>1.1.3</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_1.3.6_ref" xlink:label="rj_NCGC_2022_PEBPB_1.3.6_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>1.3.6</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_1.4.2_ref" xlink:label="rj_NCGC_2022_PEBPB_1.4.2_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>1.4.2</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_1.4.3_ref" xlink:label="rj_NCGC_2022_PEBPB_1.4.3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>1.4.3</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_1.5.4_ref" xlink:label="rj_NCGC_2022_PEBPB_1.5.4_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>1.5.4</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_1.6.3_ref" xlink:label="rj_NCGC_2022_PEBPB_1.6.3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>1.6.3</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.1.3_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.3</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.6</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.1.7_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.7_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.7</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.1.8_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.8_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.8</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.1.9_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.9_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.9</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.2.2_ref" xlink:label="rj_NCGC_2022_PEBPB_2.2.2_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.2.2</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.2.8_ref" xlink:label="rj_NCGC_2022_PEBPB_2.2.8_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.2.8</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.3.11_ref" xlink:label="rj_NCGC_2022_PEBPB_2.3.11_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.3.11</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.4.3_ref" xlink:label="rj_NCGC_2022_PEBPB_2.4.3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.4.3</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.5.4_ref" xlink:label="rj_NCGC_2022_PEBPB_2.5.4_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.5.4</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.5.5_ref" xlink:label="rj_NCGC_2022_PEBPB_2.5.5_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.5.5</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.6.3_ref" xlink:label="rj_NCGC_2022_PEBPB_2.6.3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.6.3</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_2.6.4_ref" xlink:label="rj_NCGC_2022_PEBPB_2.6.4_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.6.4</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:label="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>3.4.1</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_4.2.7_ref" xlink:label="rj_NCGC_2022_PEBPB_4.2.7_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>4.2.7</ref:Paragraph>
+    </link:reference>
+    <link:reference id="rj_NCGC_2022_PEBPB_4.3.6_ref" xlink:label="rj_NCGC_2022_PEBPB_4.3.6_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>4.3.6</ref:Paragraph>
+    </link:reference>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AllExistingOrPotentialAntiTakeoverMeasuresOfTheCompanyDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_4.2.7_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AllExistingOrPotentialAntiTakeoverMeasuresOfTheCompanyDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AnAlternativeMeasureRelatingToTheBestPracticeProvisionDescription_loc" xlink:to="rj_NCGC_2022_P_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AnyMajorFailingsInTheInternalRiskManagementAndControlSystemsIdentifiedDuringTheFinancialYearAndTheDiscussionOfTheseTopicsWithTheAuditCommitteeAndTheSupervisoryBoardDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AnyMajorFailingsInTheInternalRiskManagementAndControlSystemsIdentifiedDuringTheFinancialYearAndTheDiscussionOfTheseTopicsWithTheAuditCommitteeAndTheSupervisoryBoardDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AttendanceRateOfCommitteeMeetingsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.4.4_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_AttendanceRateOfCommitteeMeetingsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105i_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ComplianceCodeOfConductDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.5.4_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_CompositionGenderExecutiveCommitteeDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_CompositionGenderTopDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ContributionRemunerationPolicyToLongTermValueCreationDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ContributionRemunerationPolicyToLongTermValueCreationDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_DeviationDiversityPolicyDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ExplanationOfReasonsAsToWhyParticularBestPracticeProvisionAreNotApplied_loc" xlink:to="rj_NCGC_2022_P_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_GoalsOfDiversityAndInclusionDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_HowTheCompanyHasAppliedTheBestPracticeProvisionsOfTheDutchGovernanceCodeInThePastYearDescription_loc" xlink:to="rj_NCGC_2022_P_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_HowTheCompanyHasAppliedThePrinciplesOfTheDutchGovernanceCodeInThePastYearDescription_loc" xlink:to="rj_NCGC_2022_P_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_MainConclusionsEvaluationsSupervisoryDirectorsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.2.8_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_MainTopicsDuringCommitteesMeetingsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_MainTopicsDuringCommitteesMeetingsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105g_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_PlanGoalsOfDiversityAndInclusionDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ReasonSeverancePayManagementDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_RemunerationPolicyDuringFinancialYearDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_RemunerationRatesDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_RemunerationScenarioAnalysisDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ResultsOfDiversityAndInclusionDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfManagementThatTheContinuityOfTheCompanyIsGuaranteedForTheNextTwelveMonths_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfManagementThatTheContinuityOfTheCompanyIsGuaranteedForTheNextTwelveMonths_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsFunctionedProperlyDuringTheFinancialYear_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsProvideReasonableDegreeOfAssuranceThatTheFinancialReportingContainsNoMaterialInaccuracies_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfManagementThatTheInternalRiskManagementAndControlSystemsProvideReasonableDegreeOfAssuranceThatTheFinancialReportingContainsNoMaterialInaccuracies_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.7_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.8_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.9_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_StatementOfSupervisoryBoardOnComplianceWithTheIndependenceRequirements_loc" xlink:to="rj_RJ_2023-01-01_405_105d_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryBoardReport_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.11_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorAdditionalPositions_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorAdditionalPositions_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorAge_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorAge_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorCurrentPeriodOfAppointmentEndDate_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorCurrentPeriodOfAppointmentStartDate_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorDateOfInitialAppointment_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorDateOfInitialAppointment_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorMainFunction_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorMainFunction_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorNationality_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_SupervisoryDirectorNationality_loc" xlink:to="rj_RJ_2023-01-01_405_105c_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheChoiceOfWorkingWithAnExecutiveCommitteeDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheChoiceOfWorkingWithAnExecutiveCommitteeDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.2.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheCircumstancesWarrantingTheSecondReappointmentOfASupervisoryDirectorDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105e_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheCompositionOfTheCommitteeDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheCompositionOfTheCommitteeDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105g_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.3.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheConclusionsAndAnyRecommendationsFromTheAnnualAnalysisOfTheAuditCommitteeRegardingTheNeedForAnInternalAuditFunctionAndAnAssessmentIfAppropriateAlternativeMeasuresHaveBeenTakenDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105b_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheDesignOfTheInternalRiskManagementAndControlSystemsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheDesignOfTheInternalRiskManagementAndControlSystemsDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheDiscussionsHeldByTheSupervisoryBoardOnMattersOnWhichTheAuditCommitteeReportsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.5.4_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.2.8_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheEvaluationOfManagementAndIndividualManagingDirectorsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105f_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.2.8_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheEvaluationOfTheSupervisoryBoardSeparateCommitteesAndIndividualSupervisoryDirectorsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105f_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheExecutionOfTasksByTheCommitteesDuringTheFinancialYearDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105g_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheExecutionOfThePolicyOfInstitutionalInvestorsRelatingToTheExerciseOfVotingRightsInTheRelevantFinancialYearDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_4.3.6_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheExecutionOfTheRiskAssessmentTheMainRisksTheCompanyFacesAndTheRiskAppetiteOfTheCompanyDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheImplementationOfACultureWithinTheCompanThatIsFocusedOnLongtermValueCreationDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.5.5_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheMannerInWhichTheContactIsArrangedBetweenTheSupervisoryBoardAndTheExecutiveCommitteeDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheMannerInWhichTheContactIsArrangedBetweenTheSupervisoryBoardAndTheExecutiveCommitteeDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheNumberOfCommitteeMeetingsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheNumberOfCommitteeMeetingsDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105g_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheOperationOfTheInternalRiskManagementAndControlSystemsOverThePastYearAndHowTheseSystemsContributedToMitigateAndControlTheRisksDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.4.2_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheOperationOfTheInternalRiskManagementAndControlSystemsOverThePastYearAndHowTheseSystemsContributedToMitigateAndControlTheRisksDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheReasonsWhyTheSupervisoryBoardDoesNotFollowTheAdviceOfTheAuditCommitteeRegardingTheAppointmentOfTheExternalAuditorDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.6.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheRoleDutiesAndCompositionOfTheExecutiveCommitteeDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheRoleDutiesAndCompositionOfTheExecutiveCommitteeDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_1.1.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheVisionOfManagementOnLongTermValueCreationTheStrategyForRealisingLongTermValueAndHowThePastYearHasContributedToThisDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105a_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TheWayTheCompanyHasDeviatedFromTheBestPracticeProvisionDescription_loc" xlink:to="rj_NCGC_2022_P_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TransactionsBetweenTheCompanyAndNaturalOrLegalPersonsThatHoldAtLeastTenPercentOfTheSharesInTheCompanyThatAreAgreedAtArmsLengthDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.6.4_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TransactionsBetweenTheCompanyAndNaturalOrLegalPersonsThatHoldAtLeastTenPercentOfTheSharesInTheCompanyThatAreAgreedAtArmsLengthDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TransactionsInvolvingConflictsOfInterestOfManagingOrSupervisoryDirectorsDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.6.3_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_TransactionsInvolvingConflictsOfInterestOfManagingOrSupervisoryDirectorsDescription_loc" xlink:to="rj_RJ_2023-01-01_400_207_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ValueCreationOfVariableRemunerationDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_3.4.1_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_ValuesAndMethodEmbeddedValuesDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.5.4_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.2.8_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WhatIsOrWillBeDoneWithTheConclusionsOfTheEvaluationDescription_loc" xlink:to="rj_RJ_2023-01-01_405_105f_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WhenTheCompanyExpectsToComplyWithTheBestPracticeProvisionAgainDescription_loc" xlink:to="rj_NCGC_2022_P_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="rj_WhichSupervisoryDirectorsHaveBeenFrequentlyAbsentFromMeetingsOfTheSupervisoryBoardDescription_loc" xlink:to="rj_NCGC_2022_PEBPB_2.4.3_ref" xlink:type="arc"/>
   </link:referenceLink>
 </link:linkbase>

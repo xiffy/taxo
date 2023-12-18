@@ -4,7 +4,6 @@
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role" xlink:type="simple" />
   <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label" xlink:type="simple" />
   <gen:link xlink:role="http://www.xbrl.org/2008/role/link" xlink:type="extended">
-    <!-- start of typed domains -->
     <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_CategoryEmployeesManagerialPositionsTypedMember_loc" xlink:to="jenv-bw2_CategoryEmployeesManagerialPositionsTypedMember_label_en" xlink:type="arc" />
     <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_DerivativeFinancialInstrumentTypedMember_loc" xlink:to="jenv-bw2_DerivativeFinancialInstrumentTypedMember_label_en" xlink:type="arc" />
     <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_FinancialInstrumentsCurrentValueTypedMember_loc" xlink:to="jenv-bw2_FinancialInstrumentsCurrentValueTypedMember_label_en" xlink:type="arc" />
@@ -71,6 +70,5 @@
     <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ShareCapitalNumberOfSharesTypedMember" xlink:label="jenv-bw2_ShareCapitalNumberOfSharesTypedMember_loc" xlink:type="locator" />
     <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ShareCapitalTypedMember" xlink:label="jenv-bw2_ShareCapitalTypedMember_loc" xlink:type="locator" />
     <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_SupervisoryDirectorTypedMember" xlink:label="jenv-bw2_SupervisoryDirectorTypedMember_loc" xlink:type="locator" />
-    <!-- end of typed domains -->
   </gen:link>
 </link:linkbase>

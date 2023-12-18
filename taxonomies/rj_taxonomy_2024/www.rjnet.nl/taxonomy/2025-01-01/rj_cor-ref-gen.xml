@@ -592,5 +592,65 @@
       <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
       <ref:Paragraph>313</ref:Paragraph>
     </reference:reference>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_CommitteeNameTypedMember_loc" xlink:to="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_SupervisoryDirectorNameTypedMember_loc" xlink:to="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:type="arc"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_CommitteeNameTypedMember" xlink:label="rj_CommitteeNameTypedMember_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorNameTypedMember" xlink:label="rj_SupervisoryDirectorNameTypedMember_loc" xlink:type="locator"/>
+    <reference:reference id="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:label="rj_NCGC_2022_PEBPB_2.1.2_ref" xlink:role="http://www.xbrl.org/2008/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.1.2</ref:Paragraph>
+    </reference:reference>
+    <reference:reference id="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:label="rj_NCGC_2022_PEBPB_2.3.5_ref" xlink:role="http://www.xbrl.org/2008/role/reference" xlink:type="resource">
+      <ref:Chapter>Principes en best practice bepalingen</ref:Chapter>
+      <ref:IssueDate>2022</ref:IssueDate>
+      <ref:Name>Nederlandse Corporate Governance Code</ref:Name>
+      <ref:Paragraph>2.3.5</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialRemuneration1700OrLessAntiCumulationTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_1_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialRemuneration1700OrLessAntiCumulationTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_4_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialRemuneration1700OrLessAntiCumulationTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_5_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialRemuneration1700OrMoreAccumulatedTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_1_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialRemuneration1700OrMoreAccumulatedTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_4_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialRemuneration1700OrMoreAccumulatedTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_5_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_1_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_4_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSeniorOfficialTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_5_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_NameOfSupervisorySeniorOfficialWithoutEmploymentTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5_1_A_ref" xlink:type="arc"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="rj_PositionOfNonSeniorOfficialsTypedMember_loc" xlink:to="rj_UWNT_2018-01-01_5a_1_A_ref" xlink:type="arc"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_NameOfSeniorOfficialRemuneration1700OrLessAntiCumulationTypedMember" xlink:label="rj_NameOfSeniorOfficialRemuneration1700OrLessAntiCumulationTypedMember_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_NameOfSeniorOfficialRemuneration1700OrMoreAccumulatedTypedMember" xlink:label="rj_NameOfSeniorOfficialRemuneration1700OrMoreAccumulatedTypedMember_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_NameOfSeniorOfficialTypedMember" xlink:label="rj_NameOfSeniorOfficialTypedMember_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_NameOfSupervisorySeniorOfficialWithoutEmploymentTypedMember" xlink:label="rj_NameOfSupervisorySeniorOfficialWithoutEmploymentTypedMember_loc" xlink:type="locator"/>
+    <link:loc xlink:href="rj_cor.xsd#rj_PositionOfNonSeniorOfficialsTypedMember" xlink:label="rj_PositionOfNonSeniorOfficialsTypedMember_loc" xlink:type="locator"/>
+    <reference:reference id="rj_UWNT_2018-01-01_5_1_A_ref" xlink:label="rj_UWNT_2018-01-01_5_1_A_ref" xlink:role="http://www.xbrl.org/2008/role/reference" xlink:type="resource">
+      <ref:Article>5</ref:Article>
+      <ref:IssueDate>2018-01-01</ref:IssueDate>
+      <ref:Name>Uitvoeringsregeling WNT</ref:Name>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </reference:reference>
+    <reference:reference id="rj_UWNT_2018-01-01_5_4_A_ref" xlink:label="rj_UWNT_2018-01-01_5_4_A_ref" xlink:role="http://www.xbrl.org/2008/role/reference" xlink:type="resource">
+      <ref:Article>5</ref:Article>
+      <ref:IssueDate>2018-01-01</ref:IssueDate>
+      <ref:Name>Uitvoeringsregeling WNT</ref:Name>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </reference:reference>
+    <reference:reference id="rj_UWNT_2018-01-01_5_5_A_ref" xlink:label="rj_UWNT_2018-01-01_5_5_A_ref" xlink:role="http://www.xbrl.org/2008/role/reference" xlink:type="resource">
+      <ref:Article>5</ref:Article>
+      <ref:IssueDate>2018-01-01</ref:IssueDate>
+      <ref:Name>Uitvoeringsregeling WNT</ref:Name>
+      <ref:Paragraph>5</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </reference:reference>
+    <reference:reference id="rj_UWNT_2018-01-01_5a_1_A_ref" xlink:label="rj_UWNT_2018-01-01_5a_1_A_ref" xlink:role="http://www.xbrl.org/2008/role/reference" xlink:type="resource">
+      <ref:Article>5a</ref:Article>
+      <ref:IssueDate>2018-01-01</ref:IssueDate>
+      <ref:Name>Uitvoeringsregeling WNT</ref:Name>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </reference:reference>
   </gen:link>
 </link:linkbase>

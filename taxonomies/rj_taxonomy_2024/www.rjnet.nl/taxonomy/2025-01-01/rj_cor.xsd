@@ -16,6 +16,7 @@
       </link:roleType>
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-gen-en.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-ref-gen.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
