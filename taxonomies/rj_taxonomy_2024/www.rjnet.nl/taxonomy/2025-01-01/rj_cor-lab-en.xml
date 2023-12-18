@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://www.w3.org/1999/xlink http://www.xbrl.org/2003/xlink-2003-12-31.xsd">
   <link:labelLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
-    <!-- start of item concept labels -->
     <link:label id="rj_AmortisationSharePremiumDiscounts_label_en" xlink:label="rj_AmortisationSharePremiumDiscounts_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">(Amortization of) share premium and discounts</link:label>
     <link:label id="rj_MagnitudeAndMethodRemunerationDescription_label_en" xlink:label="rj_MagnitudeAndMethodRemunerationDescription_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">A description of the extent of any discretionary powers and a description of how or not use has been made</link:label>
     <link:label id="rj_AccommodationCosts_label_en" xlink:label="rj_AccommodationCosts_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Accommodation costs</link:label>
@@ -9902,9 +9901,6 @@
     <link:loc xlink:href="rj_cor.xsd#rj_WeightedAverageNumberOrdinaryShares" xlink:label="rj_WeightedAverageNumberOrdinaryShares_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_WhetherSpecificCodesOfConductAreMandatoryOrVoluntaryDescription" xlink:label="rj_WhetherSpecificCodesOfConductAreMandatoryOrVoluntaryDescription_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_WillingnessOfHedgingRisksAndUncertaintiesDescription" xlink:label="rj_WillingnessOfHedgingRisksAndUncertaintiesDescription_loc" xlink:type="locator"/>
-    <!-- end of item concept labels -->
-
-    <!-- start of dimension labels -->
     <link:label id="rj_AcquisitionCostsAxis_label_en" xlink:label="rj_AcquisitionCostsAxis_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Acquisition costs are the costs directly or indirectly related to the conclusion of insurance contracts (Article 2:440 paragraph 2 of the Dutch Civil Code).</link:label>
     <link:label id="rj_AcquisitionCostsCapitalisedAxis_label_en" xlink:label="rj_AcquisitionCostsCapitalisedAxis_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Acquisition costs capitalised</link:label>
     <link:label id="rj_AuditorsFeesAxis_label_en" xlink:label="rj_AuditorsFeesAxis_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Auditors Fees</link:label>
@@ -10412,9 +10408,6 @@
     <link:loc xlink:href="rj_cor.xsd#rj_TechnicalProvisionsOtherAxis" xlink:label="rj_TechnicalProvisionsOtherAxis_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_TurnoverRatioSubfundsAxis" xlink:label="rj_TurnoverRatioSubfundsAxis_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_YearAxis" xlink:label="rj_YearAxis_loc" xlink:type="locator"/>
-    <!-- end of dimension labels -->
-
-    <!-- start of domain members labels -->
     <link:label id="rj_AcquiredIntangibleAssetsMember_label_en" xlink:label="rj_AcquiredIntangibleAssetsMember_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Acquired intangible assets</link:label>
     <link:label id="rj_AcquisitionCostsMember_label_en" xlink:label="rj_AcquisitionCostsMember_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">AcquisitionCosts</link:label>
     <link:label id="rj_ActiveParticipantsMember_label_en" xlink:label="rj_ActiveParticipantsMember_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Active participants</link:label>
@@ -11249,12 +11242,5 @@
     <link:loc xlink:href="rj_cor.xsd#rj_TaxReceivablesMember" xlink:label="rj_TaxReceivablesMember_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_TechnicalProvisionDiscretionaryProfitSharingObligationsMember" xlink:label="rj_TechnicalProvisionDiscretionaryProfitSharingObligationsMember_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_VocationalAdultEducationMember" xlink:label="rj_VocationalAdultEducationMember_loc" xlink:type="locator"/>
-    <!-- end of domain members labels -->
-
-    <!-- start of extensible enumeration item concept labels -->
-    <!-- start of extensible enumeration item concept labels -->
-
-    <!-- start of enumeration members -->
-    <!-- end of enumeration members -->
   </link:labelLink>
 </link:linkbase>

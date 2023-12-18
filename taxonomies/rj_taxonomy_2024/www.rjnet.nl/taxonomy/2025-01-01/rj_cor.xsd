@@ -29,7 +29,6 @@
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
   <xsd:import namespace="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency" schemaLocation="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd" />
   <xsd:import namespace="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2" schemaLocation="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd" />
-  <!-- start of item concepts -->
   <xsd:element name="ALMPolicyDescription" id="rj_ALMPolicyDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccommodationCosts" id="rj_AccommodationCosts" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
   <xsd:element name="AccommodationCostsDisclosure" id="rj_AccommodationCostsDisclosure" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
@@ -3319,9 +3318,6 @@
   <xsd:element name="PolicyValuationCostsProcessedMajorMaintenanceProvisionDescription" id="rj_PolicyValuationCostsProcessedMajorMaintenanceProvisionDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="EmissionCostsEquity" id="rj_EmissionCostsEquity" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
   <xsd:element name="ActivitiesEcologicalSustainabilityDescription" id="rj_ActivitiesEcologicalSustainabilityDescription" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <!-- end of item concepts -->
-
-  <!-- start of domain members -->
   <xsd:element name="AccrualsAndDeferredIncomeNoncurrentMember" id="rj_AccrualsAndDeferredIncomeNoncurrentMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AcquiredIntangibleAssetsMember" id="rj_AcquiredIntangibleAssetsMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AcquisitionCostsMember" id="rj_AcquisitionCostsMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
@@ -3600,9 +3596,6 @@
   <xsd:element name="TaxReceivablesMember" id="rj_TaxReceivablesMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="TechnicalProvisionDiscretionaryProfitSharingObligationsMember" id="rj_TechnicalProvisionDiscretionaryProfitSharingObligationsMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="VocationalAdultEducationMember" id="rj_VocationalAdultEducationMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
-  <!-- end of domain members -->
-
-  <!-- start of dimensions -->
   <xsd:element name="AcquisitionCostsAxis" id="rj_AcquisitionCostsAxis" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AcquisitionCostsCapitalisedAxis" id="rj_AcquisitionCostsCapitalisedAxis" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AuditorsFeesAxis" id="rj_AuditorsFeesAxis" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
@@ -3655,9 +3648,6 @@
   <xsd:element name="ResultsAppropriationAxis" id="rj_ResultsAppropriationAxis" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="SettlementYearAxis" id="rj_SettlementYearAxis" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="TechnicalAccountAxis" id="rj_TechnicalAccountAxis" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <!-- end of dimensions -->
-
-  <!-- start of enumeration item concepts -->
   <xsd:element name="FinancialReportingPeriodDifferentThanAnnualStatus" id="rj_FinancialReportingPeriodDifferentThanAnnualStatus" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RelatedPartyMainActivitiesContractTeachingIndication" id="rj_RelatedPartyMainActivitiesContractTeachingIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RelatedPartyMainActivitiesContractualResearchIndication" id="rj_RelatedPartyMainActivitiesContractualResearchIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
@@ -3665,18 +3655,11 @@
   <xsd:element name="RelatedPartyMainActivitiesRealEstateIndication" id="rj_RelatedPartyMainActivitiesRealEstateIndication" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RelatedPartySeverallyLiableForLiabilities" id="rj_RelatedPartySeverallyLiableForLiabilities" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="SubsidyIncomeActivitiesFullyPerformedAndCompletedAtPeriodEndInAccordanceWithConditions" id="rj_SubsidyIncomeActivitiesFullyPerformedAndCompletedAtPeriodEndInAccordanceWithConditions" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <!-- start of enumeration item concepts -->
-
-  <!-- start of extensible enumeration item concepts -->
   <xsd:element name="DocumentPresentationCurrency" id="rj_DocumentPresentationCurrency" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="cur:CurrencyDomain" enum2:headUsable="false" enum2:linkrole="http://www.xbrl.org/taxonomy/int/currency/roles/currency" abstract="false" nillable="true" xbrli:periodType="duration" />
-
   <xsd:element name="DocumentRelatesToIndividualEntityOrGroup" id="rj_DocumentRelatesToIndividualEntityOrGroup" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj:FinancialStatementDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2025-01-01/rj/financial-statement-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="FinancingDeficitSurplusToBeSettledInRatesStageOfAdoption" id="rj_FinancingDeficitSurplusToBeSettledInRatesStageOfAdoption" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj:StagesOfAdoptionDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2025-01-01/rj/stages-of-adoption-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RelatedPartyLegalForm" id="rj_RelatedPartyLegalForm" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv-bw2:LegalFormDomain" enum2:headUsable="false" enum2:linkrole="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2/legal-form-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RelatedPartyMainActivitiesIndication" id="rj_RelatedPartyMainActivitiesIndication" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj:RelatedPartyMainActivitiesDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2025-01-01/rj/related-party-main-activities-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <!-- start of extensible enumeration item concepts -->
-
-  <!-- start of enumeration members -->
   <xsd:element name="FinancialStatementDomain" id="rj_FinancialStatementDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="FinancialStatementConsolidated" id="rj_FinancialStatementConsolidated" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="FinancialStatementConsolidatedSeparate" id="rj_FinancialStatementConsolidatedSeparate" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
@@ -3690,9 +3673,6 @@
   <xsd:element name="ContractResearch" id="rj_ContractResearch" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="RealEstate" id="rj_RealEstate" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="OtherActivities" id="rj_OtherActivities" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
-  <!-- end of enumeration members -->
-
-  <!-- start of typed dimensions -->
   <xsd:element name="ExpenseClaimsPaymentsManagingDirectorsAxis" id="rj_ExpenseClaimsPaymentsManagingDirectorsAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ManagingDirectorTypedMember" />
   <xsd:element name="ReceivablesOtherAxis" id="rj_ReceivablesOtherAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ReceivablesOtherTypedMember" />
   <xsd:element name="AccruedIncomeOtherAxis" id="rj_AccruedIncomeOtherAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#rj_AccruedIncomeOtherTypedMember" />
@@ -3810,9 +3790,6 @@
   <xsd:element name="TangibleAssetsOtherAxis" id="rj_TangibleAssetsOtherAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#rj_TangibleAssetsOtherTypedMember" />
   <xsd:element name="TechnicalProvisionsOtherAxis" id="rj_TechnicalProvisionsOtherAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#rj_TechnicalProvisionOtherTypedMember" />
   <xsd:element name="YearAxis" id="rj_YearAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#rj_YearTypedMember" />
-  <!-- end of typed dimensions -->
-
-  <!-- start of typed domains -->
   <xsd:element name="AccruedIncomeOtherTypedMember" id="rj_AccruedIncomeOtherTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="AssetsCashFlowGeneratingUnitTypedMember" id="rj_AssetsCashFlowGeneratingUnitTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="AssetsFinancialLeasesTypedMember" id="rj_AssetsFinancialLeasesTypedMember" abstract="false" nillable="true" type="xsd:string" />
@@ -3921,5 +3898,4 @@
   <xsd:element name="TangibleAssetsOtherTypedMember" id="rj_TangibleAssetsOtherTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="TechnicalProvisionOtherTypedMember" id="rj_TechnicalProvisionOtherTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="YearTypedMember" id="rj_YearTypedMember" abstract="false" nillable="true" type="xsd:string" />
-  <!-- end of typed domains -->
 </xsd:schema>
