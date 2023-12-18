@@ -20,7 +20,9 @@
       </link:roleType>
       <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
       <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-lab-nl.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
       <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-lab-gen-en.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-lab-gen-nl.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
       <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
       <link:linkbaseRef xlink:type="simple" xlink:href="jenv-bw2_cor-ref-gen.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     </xsd:appinfo>
@@ -30,10 +32,8 @@
   <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
   <xsd:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd" />
   <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
-  <!-- start of item concepts -->
   <xsd:element name="ChamberOfCommerceRegistrationNumber" id="jenv-bw2_ChamberOfCommerceRegistrationNumber" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="LegalEntityName" id="jenv-bw2_LegalEntityName" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-
   <xsd:element name="AccommodationCostsAllocatedToInvestmentsInLandAndBuildingsForOwnUse" id="jenv-bw2_AccommodationCostsAllocatedToInvestmentsInLandAndBuildingsForOwnUse" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" abstract="false" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
   <xsd:element name="AccountingPrinciplesForDeterminingTheResult" id="jenv-bw2_AccountingPrinciplesForDeterminingTheResult" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccountingPrinciplesForTheValuationOfAssetsAndEquityAndLiabilities" id="jenv-bw2_AccountingPrinciplesForTheValuationOfAssetsAndEquityAndLiabilities" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
@@ -1672,9 +1672,6 @@
   <xsd:element name="NumberOfWomenBoard" id="jenv-bw2_NumberOfWomenBoard" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="NumberOfWomenSupervisoryBoard" id="jenv-bw2_NumberOfWomenSupervisoryBoard" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="NumberOfWomenManagerialPositions" id="jenv-bw2_NumberOfWomenManagerialPositions" substitutionGroup="xbrli:item" type="xbrli:integerItemType" abstract="false" nillable="true" xbrli:periodType="instant" />
-  <!-- end of item concepts -->
-
-  <!-- start of domain members -->
   <xsd:element name="AccidentsAndIllnessesMember" id="jenv-bw2_AccidentsAndIllnessesMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccrualsAndDeferredIncomeMember" id="jenv-bw2_AccrualsAndDeferredIncomeMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="AccruedIncomeMember" id="jenv-bw2_AccruedIncomeMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
@@ -1899,9 +1896,6 @@
   <xsd:element name="VariousPecuniaryLossesMember" id="jenv-bw2_VariousPecuniaryLossesMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="WagesSalariesMember" id="jenv-bw2_WagesSalariesMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="WorkInProgressMember" id="jenv-bw2_WorkInProgressMember" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
-  <!-- end of domain members -->
-
-  <!-- start of dimensions -->
   <xsd:element name="BasisOfPreparationAxis" id="jenv-bw2_BasisOfPreparationAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="ClassesOfDirectorsAndPersonnelAxis" id="jenv-bw2_ClassesOfDirectorsAndPersonnelAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="ClassesOfDirectorsAxis" id="jenv-bw2_ClassesOfDirectorsAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
@@ -1918,21 +1912,12 @@
   <xsd:element name="GeographicAreaInsuranceContractsAxis" id="jenv-bw2_GeographicAreaInsuranceContractsAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="LifeInsuranceAndReinsuranceAxis" id="jenv-bw2_LifeInsuranceAndReinsuranceAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="LifeInsuranceAxis" id="jenv-bw2_LifeInsuranceAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
-  <!-- end of dimensions -->
-
-  <!-- start of enumeration item concepts -->
   <xsd:element name="DirectorSignedStatus" id="jenv-bw2_DirectorSignedStatus" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="DocumentAdoptionStatus" id="jenv-bw2_DocumentAdoptionStatus" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <!-- start of enumeration item concepts -->
-
-  <!-- start of extensible enumeration item concepts -->
   <xsd:element name="BalanceSheetBeforeAfterAppropriationResults" id="jenv-bw2_BalanceSheetBeforeAfterAppropriationResults" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv-bw2:ProfitAppropriationDomain" enum2:headUsable="false" enum2:linkrole="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2/profit-appropriation-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="BasisOfPreparation" id="jenv-bw2_BasisOfPreparation" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv-bw2:BasisOfPreparationDomain" enum2:headUsable="false" enum2:linkrole="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2/basis-of-preparation-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="DirectorType" id="jenv-bw2_DirectorType" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv-bw2:DirectorDomain" enum2:headUsable="false" enum2:linkrole="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2/director-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="LegalEntityLegalForm" id="jenv-bw2_LegalEntityLegalForm" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv-bw2:LegalFormDomain" enum2:headUsable="false" enum2:linkrole="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2/legal-form-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
-  <!-- end of extensible enumaration item concepts -->
-
-  <!-- start of enumeration members -->
   <xsd:element name="BasisOfPreparationDomain" id="jenv-bw2_BasisOfPreparationDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="BasisOfPreparationCommercial" id="jenv-bw2_BasisOfPreparationCommercial" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="BasisOfPreparationFiscal" id="jenv-bw2_BasisOfPreparationFiscal" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
@@ -1953,9 +1938,6 @@
   <xsd:element name="ProfitAppropriationDomain" id="jenv-bw2_ProfitAppropriationDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="ProfitAppropriationBefore" id="jenv-bw2_ProfitAppropriationBefore" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
   <xsd:element name="ProfitAppropriationAfter" id="jenv-bw2_ProfitAppropriationAfter" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
-  <!-- end of enumeration members -->
-
-  <!-- start of typed dimensions -->
   <xsd:element name="DerivativesAxis" id="jenv-bw2_DerivativesAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv-bw2_DerivativeFinancialInstrumentTypedMember" />
   <xsd:element name="FinancialInstrumentsCurrentValueAxis" id="jenv-bw2_FinancialInstrumentsCurrentValueAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv-bw2_FinancialInstrumentsCurrentValueTypedMember" />
   <xsd:element name="FinancialInstrumentsHigherValueThanFairValueAxis" id="jenv-bw2_FinancialInstrumentsHigherValueThanFairValueAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv-bw2_FinancialInstrumentsHigherValueThanFairValueTypedMember" />
@@ -1992,9 +1974,6 @@
   <xsd:element name="SupervisoryDirectorNamesRightsGrantedNotYetExercisedAxis" id="jenv-bw2_SupervisoryDirectorNamesRightsGrantedNotYetExercisedAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv-bw2_SupervisoryDirectorTypedMember" />
   <xsd:element name="SupervisoryDirectorNamesRightsGrantedNotYetExercisedMovementAxis" id="jenv-bw2_SupervisoryDirectorNamesRightsGrantedNotYetExercisedMovementAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv-bw2_SupervisoryDirectorTypedMember" />
   <xsd:element name="CategoryEmployeesManagerialPositionsAxis" id="jenv-bw2_CategoryEmployeesManagerialPositionsAxis" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" nillable="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#jenv-bw2_CategoryEmployeesManagerialPositionsTypedMember" />
-  <!-- end of typed dimensions -->
-
-  <!-- start of typed domains -->
   <xsd:element name="DerivativeFinancialInstrumentTypedMember" id="jenv-bw2_DerivativeFinancialInstrumentTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="FinancialInstrumentsCurrentValueTypedMember" id="jenv-bw2_FinancialInstrumentsCurrentValueTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="FinancialInstrumentsHigherValueThanFairValueTypedMember" id="jenv-bw2_FinancialInstrumentsHigherValueThanFairValueTypedMember" abstract="false" nillable="true" type="xsd:string" />
@@ -2017,5 +1996,4 @@
   <xsd:element name="ShareCapitalTypedMember" id="jenv-bw2_ShareCapitalTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="SupervisoryDirectorTypedMember" id="jenv-bw2_SupervisoryDirectorTypedMember" abstract="false" nillable="true" type="xsd:string" />
   <xsd:element name="CategoryEmployeesManagerialPositionsTypedMember" id="jenv-bw2_CategoryEmployeesManagerialPositionsTypedMember" abstract="false" nillable="true" type="xsd:string" />
-  <!-- end of typed domains -->
 </xsd:schema>
