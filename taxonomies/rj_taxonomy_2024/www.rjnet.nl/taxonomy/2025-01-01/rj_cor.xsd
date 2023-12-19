@@ -6,6 +6,10 @@
         <link:definition>Financial Statement EE</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
+      <link:roleType id="rj_FinancialStatementWNTEE" roleURI="https://www.rjnet.nl/taxonomy/2025-01-01/rj/financial-statement-wnt-ee">
+        <link:definition>Financial Statement WNT EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
       <link:roleType id="rj_StagesOfAdoptionEE" roleURI="https://www.rjnet.nl/taxonomy/2025-01-01/rj/stages-of-adoption-ee">
         <link:definition>Stages of Adoption EE</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
@@ -14,10 +18,15 @@
         <link:definition>Related Party Main Activities EE</link:definition>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
+      <link:roleType id="rj_GenderEE" roleURI="https://www.rjnet.nl/taxonomy/2025-01-01/rj/gender-ee">
+        <link:definition>Gender EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
-    <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-nl.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-gen-en.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-lab-gen-nl.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj_cor-ref-gen.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
     <link:linkbaseRef xlink:type="simple" xlink:href="rj-jenv-bw2_cor-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
@@ -4085,4 +4094,11 @@
   <xsd:element name="NameOfSupervisorySeniorOfficialWithoutEmploymentTypedMember" id="rj_NameOfSupervisorySeniorOfficialWithoutEmploymentTypedMember" abstract="false" nillable="true" type="xsd:string"/>
   <xsd:element name="PositionOfNonSeniorOfficialsTypedMember" id="rj_PositionOfNonSeniorOfficialsTypedMember" abstract="false" nillable="true" type="xsd:string"/>
   <xsd:element name="WNTInstitutionTypedMember" id="rj_WNTInstitutionTypedMember" abstract="false" nillable="true" type="xsd:string"/>
+  <xsd:element name="GenderDomain" id="rj_GenderDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />  
+  <xsd:element name="Female" id="rj_Female" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="Male" id="rj_Male" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="Unknown" id="rj_Unknown" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SupervisoryDirectorGender" id="rj_SupervisoryDirectorGender" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj:GenderDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2025-01-01/rj/gender-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="FinancialStatementOther" id="rj_FinancialStatementOther" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PublicationWNTInTheConsolidatedStatutoryAccounts" id="rj_PublicationWNTInTheConsolidatedStatutoryAccounts" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="rj:FinancialStatementDomain" enum2:headUsable="false" enum2:linkrole="https://www.rjnet.nl/taxonomy/2025-01-01/rj/financial-statement-wnt-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
 </xsd:schema>

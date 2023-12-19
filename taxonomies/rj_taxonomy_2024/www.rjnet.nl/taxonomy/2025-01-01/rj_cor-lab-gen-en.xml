@@ -3,6 +3,7 @@
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label"/>
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/documentation" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#documentation" xlink:type="simple"/>
+  <link:roleRef roleURI="http://www.xbrl.org/2008/role/verboseLabel" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#verbose-label" xlink:type="simple"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label"/>
   <gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_AccruedIncomeOtherTypedMember" xlink:label="rj_AccruedIncomeOtherTypedMember_loc"/>
@@ -363,5 +364,8 @@
     <label:label id="rj_SupervisoryDirectorNameTypedMember_label_en" xlink:label="rj_SupervisoryDirectorNameTypedMember_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="en">Name of supervisory director</label:label>
     <link:loc xlink:href="rj_cor.xsd#rj_CommitteeNameTypedMember" xlink:label="rj_CommitteeNameTypedMember_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorNameTypedMember" xlink:label="rj_SupervisoryDirectorNameTypedMember_loc" xlink:type="locator"/>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_SubsidyIncomeTypedMember_loc" xlink:to="rj_SubsidyIncomeTypedMember_verboseLabel_en" xlink:type="arc"/>
+    <label:label id="rj_SubsidyIncomeTypedMember_verboseLabel_en" xlink:label="rj_SubsidyIncomeTypedMember_verboseLabel_en" xlink:role="http://www.xbrl.org/2008/role/verboseLabel" xlink:type="resource" xml:lang="en">Description of subsidy income</label:label>
+    <link:loc xlink:href="rj_cor.xsd#rj_SubsidyIncomeTypedMember" xlink:label="rj_SubsidyIncomeTypedMember_loc" xlink:type="locator"/>
   </gen:link>
 </link:linkbase>

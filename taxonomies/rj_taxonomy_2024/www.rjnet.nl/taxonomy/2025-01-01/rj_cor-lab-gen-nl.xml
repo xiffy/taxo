@@ -3,6 +3,7 @@
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label"/>
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/documentation" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#documentation" xlink:type="simple"/>
+  <link:roleRef roleURI="http://www.xbrl.org/2008/role/verboseLabel" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#verbose-label" xlink:type="simple"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label"/>
   <gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
     <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_AccruedIncomeOtherTypedMember_loc" xlink:to="rj_AccruedIncomeOtherTypedMember_label_nl" xlink:type="arc"/>
