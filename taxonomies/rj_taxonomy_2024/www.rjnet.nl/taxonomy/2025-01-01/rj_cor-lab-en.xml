@@ -14834,6 +14834,7 @@
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_PublicationWNTInTheConsolidatedStatutoryAccounts_loc" xlink:to="rj_PublicationWNTInTheConsolidatedStatutoryAccounts_Label_en" xlink:type="arc"/>
     <link:loc xlink:href="rj_cor.xsd#rj_FinancialStatementDomain" xlink:label="rj_FinancialStatementDomain_loc" xlink:type="locator" />
     <link:loc xlink:href="rj_cor.xsd#rj_FinancialStatementConsolidated" xlink:label="rj_FinancialStatementConsolidated_loc" xlink:type="locator" />
+    <link:loc xlink:href="rj_cor.xsd#rj_FinancialStatementOther" xlink:label="rj_FinancialStatementOther_loc" xlink:type="locator" />
     <link:loc xlink:href="rj_cor.xsd#rj_FinancialStatementConsolidatedSeparate" xlink:label="rj_FinancialStatementConsolidatedSeparate_loc" xlink:type="locator" />
     <link:loc xlink:href="rj_cor.xsd#rj_FinancialStatementSeparate" xlink:label="rj_FinancialStatementSeparate_loc" xlink:type="locator" />
     <link:loc xlink:href="rj_cor.xsd#rj_StagesOfAdoptionDomain" xlink:label="rj_StagesOfAdoptionDomain_loc" xlink:type="locator" />
@@ -14847,6 +14848,7 @@
     <link:loc xlink:href="rj_cor.xsd#rj_OtherActivities" xlink:label="rj_OtherActivities_loc" xlink:type="locator" />
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_FinancialStatementDomain_loc" xlink:to="rj_FinancialStatementDomain_Label_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_FinancialStatementConsolidated_loc" xlink:to="rj_FinancialStatementConsolidated_Label_en" xlink:type="arc"/>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_FinancialStatementOther_loc" xlink:to="rj_FinancialStatementOther_Label_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_FinancialStatementConsolidatedSeparate_loc" xlink:to="rj_FinancialStatementConsolidatedSeparate_Label_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_FinancialStatementSeparate_loc" xlink:to="rj_FinancialStatementSeparate_Label_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_StagesOfAdoptionDomain_loc" xlink:to="rj_StagesOfAdoptionDomain_Label_en" xlink:type="arc"/>
@@ -14860,6 +14862,7 @@
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_OtherActivities_loc" xlink:to="rj_OtherActivities_Label_en" xlink:type="arc"/>
     <link:label id="rj_FinancialStatementDomain_Label_en" xlink:label="rj_FinancialStatementDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Financial statement domain</link:label>
     <link:label id="rj_FinancialStatementConsolidated_Label_en" xlink:label="rj_FinancialStatementConsolidated_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Consolidated</link:label>
+    <link:label id="rj_FinancialStatementOther_Label_en" xlink:label="rj_FinancialStatementOther_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Publication WNT in the consolidated and / or statutory annual accounts</link:label>
     <link:label id="rj_FinancialStatementConsolidatedSeparate_Label_en" xlink:label="rj_FinancialStatementConsolidatedSeparate_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Consolidated and separate</link:label>
     <link:label id="rj_FinancialStatementSeparate_Label_en" xlink:label="rj_FinancialStatementSeparate_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Separate</link:label>
     <link:label id="rj_StagesOfAdoptionDomain_Label_en" xlink:label="rj_StagesOfAdoptionDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Stages of adoption domain</link:label>
