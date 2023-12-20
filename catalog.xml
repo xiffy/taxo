@@ -1,23 +1,27 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 
   <rewriteURI
-    uriStartString="https://www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd"
-    rewritePrefix="./jenv_taxonomy_2024/www.minjenv.nl/taxonomy/2025-01-01/jenv-bw2_cor.xsd" />
+    uriStartString="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd"
+    rewritePrefix="./taxonomies/jenv_taxonomy_2024/www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd" />
 
   <rewriteURI
-    uriStartString="https://www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd"
-    rewritePrefix="./nen_taxonomy_2024/www.nen.nl/taxonomy/2025-01-01/nen_1888_2002.xsd" />
+    uriStartString="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd"
+    rewritePrefix="./taxonomies/rj_taxonomy_2024/www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd" />
 
   <rewriteURI
-    uriStartString="https://www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd"
-    rewritePrefix="./nen_taxonomy_2024/www.nen.nl/taxonomy/2025-01-01/nen_5825_2002.xsd" />
+    uriStartString="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002.xsd"
+    rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002.xsd" />
 
   <rewriteURI
-    uriStartString="https://www.iso.org/taxonomy/2025-01-01/iso_29160-4_2023.xsd"
-    rewritePrefix="./iso_taxonomy_2024/www.iso.org/taxonomy/2025-01-01/iso_29160-4_2023.xsd" />
+    uriStartString="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_5825_2002.xsd"
+    rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_5825_2002.xsd" />
+
+  <rewriteURI
+    uriStartString="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_29160-4_2023.xsd"
+    rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_29160-4_2023.xsd" />
  
   <rewriteURI
     uriStartString="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd"
-    rewritePrefix="./currency-CR-2023-08-23/currency.xsd" />
+    rewritePrefix="./taxonomies/currency-CR-2023-08-23/currency.xsd" />
 
 </catalog>
