@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtr="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:rj="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj" xmlns:cur="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23" xmlns:kvk="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk" xmlns:jenv-bw2="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2" xmlns:iso_19160-4_2023="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_19160-4_2023" xmlns:nen_1888_2002="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk" elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType id="kvk_LegalFormEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-form-ee">
+        <link:definition>Legal Form EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="kvk_LegalSizeCriteriaClassificationMicroEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-micro-ee">
+        <link:definition>Legal Size Criteria Classification Micro EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="kvk_LegalSizeCriteriaClassificationSmallEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-small-ee">
+        <link:definition>Legal Size Criteria Classification Small EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="kvk_LegalSizeCriteriaClassificationMediumEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-medium-ee">
+        <link:definition>Legal Size Criteria Classification Medium EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="kvk_LegalSizeCriteriaClassificationLargeEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-large-ee">
+        <link:definition>Legal Size Criteria Classification Large EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="kvk_IncomeStatementClassificationEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/income-statement-classification-ee">
+        <link:definition>Income Statement Classification EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="kvk_CashFlowStatementMethodEE" roleURI="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/cash-flow-statement-method-ee">
+        <link:definition>Cash Flow Statement Method EE</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    <link:linkbaseRef xlink:type="simple" xlink:href="kvk_cor-def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="kvk_cor-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="kvk_cor-lab-nl.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="kvk_cor-lab-gen-en.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="kvk_cor-lab-gen-nl.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    <link:linkbaseRef xlink:type="simple" xlink:href="kvk_cor-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+  </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xsd:import namespace="http://xbrl.org/2020/extensible-enumerations-2.0" schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" />
+  <xsd:import namespace="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency" schemaLocation="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd" />
+  <xsd:import namespace="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_19160-4_2023" schemaLocation="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_19160-4_2023.xsd" />
+  <xsd:import namespace="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002" schemaLocation="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002.xsd" />
+  <xsd:import namespace="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_5825_2002" schemaLocation="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_5825_2002.xsd" />
+  <xsd:import namespace="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj" schemaLocation="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd" />
+  <xsd:import namespace="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2" schemaLocation="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd" />
+  <xsd:element name="BusinessNames" id="kvk_BusinessNames" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="DocumentResubmissionDueToTechnicalAndOrProcesRelatedInaccuracies" id="kvk_DocumentResubmissionDueToTechnicalAndOrProcesRelatedInaccuracies" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="DocumentResubmissionDueToTechnicalAndOrProcesRelatedInaccuraciesExplanation" id="kvk_DocumentResubmissionDueToTechnicalAndOrProcesRelatedInaccuraciesExplanation" substitutionGroup="xbrli:item" abstract="false" nillable="true" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+  <xsd:element name="DocumentResubmissionDueToUnsurmountableInaccuracies" id="kvk_DocumentResubmissionDueToUnsurmountableInaccuracies" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" abstract="false" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="DocumentResubmissionDueToUnsurmountableInaccuraciesExplanation" id="kvk_DocumentResubmissionDueToUnsurmountableInaccuraciesExplanation" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="CashFlowStatementMethodType" id="kvk_CashFlowStatementMethodType" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="kvk:CashFlowStatementMethodDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/cash-flow-statement-method-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="IncomeStatementClassificationType" id="kvk_IncomeStatementClassificationType" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="kvk:IncomeStatementClassificationDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/income-statement-classification-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalEntityLegalFormFT" id="kvk_LegalEntityLegalFormFT" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="jenv-bw2:LegalFormDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-form-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeCriteriaClassification" id="kvk_LegalSizeCriteriaClassification" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="kvk:LegalSizeCriteriaClassificationDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeCriteriaClassificationMedium" id="kvk_LegalSizeCriteriaClassificationMedium" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="kvk:LegalSizeCriteriaClassificationDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-medium-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeCriteriaClassificationSmall" id="kvk_LegalSizeCriteriaClassificationSmall" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="kvk:LegalSizeCriteriaClassificationDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-small-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeCriteriaClassificationMicro" id="kvk_LegalSizeCriteriaClassificationMicro" substitutionGroup="xbrli:item" type="enum2:enumerationItemType" enum2:domain="kvk:LegalSizeCriteriaClassificationDomain" enum2:headUsable="false" enum2:linkrole="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk/legal-size-criteria-classification-micro-ee" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="TitleOfTheDocument" id="kvk_TitleOfTheDocument" substitutionGroup="xbrli:item" type="xbrli:stringItemType" abstract="false" nillable="true" xbrli:periodType="duration"/>
+  <xsd:element name="LegalSizeMicro" id="kvk_LegalSizeMicro" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeSmall" id="kvk_LegalSizeSmall" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeMedium" id="kvk_LegalSizeMedium" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeLarge" id="kvk_LegalSizeLarge" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="OwnersAssociation" id="kvk_OwnersAssociation" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalEntityGovernedByPublicLaw" id="kvk_LegalEntityGovernedByPublicLaw" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ChurchDenomination" id="kvk_ChurchDenomination" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ForeignLegalForm" id="kvk_ForeignLegalForm" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="IncomeStatementNatureOfExpense" id="kvk_IncomeStatementNatureOfExpense" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="IncomeStatementFunctionOfExpense" id="kvk_IncomeStatementFunctionOfExpense" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="IncomeStatementNotApplicable" id="kvk_IncomeStatementNotApplicable" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="CashFlowStatementMethodDirect" id="kvk_CashFlowStatementMethodDirect" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="CashFlowStatementMethodIndirect" id="kvk_CashFlowStatementMethodIndirect" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="CashFlowStatementMethodNotApplicable" id="kvk_CashFlowStatementMethodNotApplicable" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="CashFlowStatementMethodDomain" id="kvk_CashFlowStatementMethodDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="IncomeStatementClassificationDomain" id="kvk_IncomeStatementClassificationDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LegalSizeCriteriaClassificationDomain" id="kvk_LegalSizeCriteriaClassificationDomain" substitutionGroup="xbrli:item" type="dtr:domainItemType" abstract="true" nillable="true" xbrli:periodType="duration" />
+</xsd:schema>

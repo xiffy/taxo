@@ -17,8 +17,8 @@
     rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_5825_2002.xsd" />
 
   <rewriteURI
-    uriStartString="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_29160-4_2023.xsd"
-    rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_29160-4_2023.xsd" />
+    uriStartString="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_19160-4_2023.xsd"
+    rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/iso_19160-4_2023.xsd" />
  
   <rewriteURI
     uriStartString="https://xbrl.org/taxonomy/int/currency/2023-01-01/CR/2023-08-23/currency.xsd"
