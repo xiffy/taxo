@@ -4,6 +4,26 @@
   <link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
   <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label"/>
   <gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
-    
+    <link:loc xlink:href="kvk_cor.xsd#kvk_LegalFormEE" xlink:label="kvk_LegalFormEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_LegalFormEE_label_nl" xlink:label="kvk_LegalFormEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Rechtsvorm</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_LegalFormEE_loc" xlink:to="kvk_LegalFormEE_label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_LegalSizeCriteriaClassificationMicroEE" xlink:label="kvk_LegalSizeCriteriaClassificationMicroEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_LegalSizeCriteriaClassificationMicroEE_label_nl" xlink:label="kvk_LegalSizeCriteriaClassificationMicroEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Grootte rechtspersoon</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_LegalSizeCriteriaClassificationMicroEE_loc" xlink:to="kvk_LegalSizeCriteriaClassificationMicroEE_label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_LegalSizeCriteriaClassificationSmallEE" xlink:label="kvk_LegalSizeCriteriaClassificationSmallEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_LegalSizeCriteriaClassificationSmallEE_label_nl" xlink:label="kvk_LegalSizeCriteriaClassificationSmallEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Grootte rechtspersoon</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_LegalSizeCriteriaClassificationSmallEE_loc" xlink:to="kvk_LegalSizeCriteriaClassificationSmallEE_label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_LegalSizeCriteriaClassificationMediumEE" xlink:label="kvk_LegalSizeCriteriaClassificationMediumEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_LegalSizeCriteriaClassificationMediumEE_label_nl" xlink:label="kvk_LegalSizeCriteriaClassificationMediumEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Grootte rechtspersoon</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_LegalSizeCriteriaClassificationMediumEE_loc" xlink:to="kvk_LegalSizeCriteriaClassificationMediumEE_label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_LegalSizeCriteriaClassificationLargeEE" xlink:label="kvk_LegalSizeCriteriaClassificationLargeEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_LegalSizeCriteriaClassificationLargeEE_label_nl" xlink:label="kvk_LegalSizeCriteriaClassificationLargeEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Grootte rechtspersoon</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_LegalSizeCriteriaClassificationLargeEE_loc" xlink:to="kvk_LegalSizeCriteriaClassificationLargeEE_label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_IncomeStatementClassificationEE" xlink:label="kvk_IncomeStatementClassificationEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_IncomeStatementClassificationEE_label_nl" xlink:label="kvk_IncomeStatementClassificationEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Classificatie winst-en-verliesrekening</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_IncomeStatementClassificationEE_loc" xlink:to="kvk_IncomeStatementClassificationEE_label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_CashFlowStatementMethodEE" xlink:label="kvk_CashFlowStatementMethodEE_loc" xlink:type="locator"/>
+    <label:label id="kvk_CashFlowStatementMethodEE_label_nl" xlink:label="kvk_CashFlowStatementMethodEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Methode kasstroomoverzicht</label:label>
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="kvk_CashFlowStatementMethodEE_loc" xlink:to="kvk_CashFlowStatementMethodEE_label_nl" xlink:type="arc"/>
   </gen:link>
 </link:linkbase>
