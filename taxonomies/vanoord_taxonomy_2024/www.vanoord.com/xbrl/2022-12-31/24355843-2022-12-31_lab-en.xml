@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_AmortisationIntangibleAssets" xlink:label="jenv-bw2_AmortisationIntangibleAssets_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_AmortisationIntangibleAssets_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Amortisation of intangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_AmortisationIntangibleAssets_loc" xlink:to="jenv-bw2_AmortisationIntangibleAssets_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_AssetsNoncurrent" xlink:label="jenv-bw2_AssetsNoncurrent_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_AssetsNoncurrent_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/totalLabel" xml:lang="en">Total of fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_AssetsNoncurrent_loc" xlink:to="jenv-bw2_AssetsNoncurrent_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_CashAndCashEquivalents" xlink:label="jenv-bw2_CashAndCashEquivalents_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_CashAndCashEquivalents_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Cash at bank and in hand</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_CashAndCashEquivalents_loc" xlink:to="jenv-bw2_CashAndCashEquivalents_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_DepreciationPropertyPlantEquipment" xlink:label="jenv-bw2_DepreciationPropertyPlantEquipment_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_DepreciationPropertyPlantEquipment_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Depreciation of tangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_DepreciationPropertyPlantEquipment_loc" xlink:to="jenv-bw2_DepreciationPropertyPlantEquipment_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Equity" xlink:label="jenv-bw2_Equity_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_Equity_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Shareholders' equity</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_Equity_loc" xlink:to="jenv-bw2_Equity_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Expenses" xlink:label="jenv-bw2_Expenses_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_Expenses_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Costs</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_Expenses_loc" xlink:to="jenv-bw2_Expenses_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_FinancialAssets" xlink:label="jenv-bw2_FinancialAssets_loc_2"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_FinancialAssets_totalLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Financial fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_FinancialAssets_loc_2" xlink:to="jenv-bw2_FinancialAssets_totalLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_IntangibleAssets" xlink:label="jenv-bw2_IntangibleAssets_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_IntangibleAssets_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Intangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_IntangibleAssets_loc" xlink:to="jenv-bw2_IntangibleAssets_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Inventories" xlink:label="jenv-bw2_Inventories_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_Inventories_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Stock</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_Inventories_loc" xlink:to="jenv-bw2_Inventories_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_LiabilitiesNoncurrent" xlink:label="jenv-bw2_LiabilitiesNoncurrent_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_LiabilitiesNoncurrent_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Long-term liabilities</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_LiabilitiesNoncurrent_loc" xlink:to="jenv-bw2_LiabilitiesNoncurrent_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_NetResultAfterTax" xlink:label="jenv-bw2_NetResultAfterTax_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_NetResultAfterTax_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/negativeVerboseLabel" xml:lang="en">Consolidated profit (loss) attributable to Van Oord N.V.</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_NetResultAfterTax_loc" xlink:to="jenv-bw2_NetResultAfterTax_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_PropertyPlantEquipment" xlink:label="jenv-bw2_PropertyPlantEquipment_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_PropertyPlantEquipment_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Tangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_PropertyPlantEquipment_loc" xlink:to="jenv-bw2_PropertyPlantEquipment_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ConstructionContractsAmountRecordedAsLiability" xlink:label="rj_ConstructionContractsAmountRecordedAsLiability_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_ConstructionContractsAmountRecordedAsLiability_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Work in progress</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_ConstructionContractsAmountRecordedAsLiability_loc" xlink:to="rj_ConstructionContractsAmountRecordedAsLiability_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ConstructionContractsAmount" xlink:label="rj_ConstructionContractsAmount_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_ConstructionContractsAmount_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Work in progress</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_ConstructionContractsAmount_loc" xlink:to="rj_ConstructionContractsAmount_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_FinancialIncomeExpenses" xlink:label="rj_FinancialIncomeExpenses_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_FinancialIncomeExpenses_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Net interest expense</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_FinancialIncomeExpenses_loc" xlink:to="rj_FinancialIncomeExpenses_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncreaseDecreaseInInventories" xlink:label="rj_IncreaseDecreaseInInventories_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_IncreaseDecreaseInInventories_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Decrease (increase) stock</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_IncreaseDecreaseInInventories_loc" xlink:to="rj_IncreaseDecreaseInInventories_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ProceedsFromBorrowings" xlink:label="rj_ProceedsFromBorrowings_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_ProceedsFromBorrowings_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Proceeds from loans</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_ProceedsFromBorrowings_loc" xlink:to="rj_ProceedsFromBorrowings_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ProceedsSalesPropertyPlantAndEquipment" xlink:label="rj_ProceedsSalesPropertyPlantAndEquipment_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_ProceedsSalesPropertyPlantAndEquipment_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Divestments of tangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_ProceedsSalesPropertyPlantAndEquipment_loc" xlink:to="rj_ProceedsSalesPropertyPlantAndEquipment_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_PurchasePropertyPlantEquipment" xlink:label="rj_PurchasePropertyPlantEquipment_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_PurchasePropertyPlantEquipment_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Additions to tangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_PurchasePropertyPlantEquipment_loc" xlink:to="rj_PurchasePropertyPlantEquipment_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_RepaymentsBorrowings" xlink:label="rj_RepaymentsBorrowings_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_RepaymentsBorrowings_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Repayments of loans</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_RepaymentsBorrowings_loc" xlink:to="rj_RepaymentsBorrowings_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd#kvk_AssetsNoncurrentTitle" xlink:label="jenv-bw2_AssetsNoncurrentAbstract_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_AssetsNoncurrentAbstract_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_AssetsNoncurrentAbstract_loc" xlink:to="jenv-bw2_AssetsNoncurrentAbstract_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="http://www.nltaxonomie.nl/nt17/rj/20221214/dictionary/rj-cp-data.xsd#rj-cp-i_IncreaseDecreaseInOtherPayables" xlink:label="rj-cp-i_IncreaseDecreaseInOtherPayables_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj-cp-i_IncreaseDecreaseInOtherPayables_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Increase (decrease) other liabilities</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj-cp-i_IncreaseDecreaseInOtherPayables_loc" xlink:to="rj-cp-i_IncreaseDecreaseInOtherPayables_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_CostOfWork" xlink:label="vanoord_CostOfWork_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_CostOfWork_totalLabel_en" xlink:role="http://www.xbrl.org/2003/role/totalLabel" xml:lang="en">Total cost of work</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_CostOfWork_loc" xlink:to="vanoord_CostOfWork_totalLabel_en"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_CostOfWork_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Cost of work</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_CostOfWork_loc" xlink:to="vanoord_CostOfWork_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfit" xlink:label="vanoord_GrossProfit_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_GrossProfit_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Gross profit</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_GrossProfit_loc" xlink:to="vanoord_GrossProfit_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustedForAbstract" xlink:label="vanoord_AdjustmentsForAbstract_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_AdjustmentsForAbstract_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Adjusted for</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_AdjustmentsForAbstract_loc" xlink:to="vanoord_AdjustmentsForAbstract_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsDepreciationTangibleFixedAssets" xlink:label="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_AdjustmentsDepreciationTangibleFixedAssets_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Depreciation of tangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc" xlink:to="vanoord_AdjustmentsDepreciationTangibleFixedAssets_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsAmortisationIntangibleFixedAssets" xlink:label="vanoord_AmortisationIntangibleFixedAssets_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_AmortisationIntangibleFixedAssets_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Amortisation intangible fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_AmortisationIntangibleFixedAssets_loc" xlink:to="vanoord_AmortisationIntangibleFixedAssets_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ResultOnSaleParticipatingInterest" xlink:label="vanoord_ResultOnSaleParticipatingInterest_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_ResultOnSaleParticipatingInterest_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Result on sale of participating interest</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_ResultOnSaleParticipatingInterest_loc" xlink:to="vanoord_ResultOnSaleParticipatingInterest_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ChangesInWorkingCapitalAbstract" xlink:label="vanoord_ChangesInWorkingCapitalAbstract_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_ChangesInWorkingCapitalAbstract_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Changes in working capital</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_ChangesInWorkingCapitalAbstract_loc" xlink:to="vanoord_ChangesInWorkingCapitalAbstract_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseReceivables" xlink:label="vanoord_IncreaseDecreaseInReceivables_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_IncreaseDecreaseInReceivables_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Decrease (increase) receivables</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_IncreaseDecreaseInReceivables_loc" xlink:to="vanoord_IncreaseDecreaseInReceivables_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseWorkInProgress" xlink:label="vanoord_IncreaseDecreaseWorkInProgress_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_IncreaseDecreaseWorkInProgress_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Increase (decrease) work in progress</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_IncreaseDecreaseWorkInProgress_loc" xlink:to="vanoord_IncreaseDecreaseWorkInProgress_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_InvestmentsInFinancialFixedAssets" xlink:label="vanoord_InvestmentsInFinancialFixedAssets_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_InvestmentsInFinancialFixedAssets_verboseLabel_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Investments in financial fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_InvestmentsInFinancialFixedAssets_loc" xlink:to="vanoord_InvestmentsInFinancialFixedAssets_verboseLabel_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ReceiptsFromFinancialFixedAssets" xlink:label="vanoord_ReceiptsFromFinancialFixedAssets_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_ReceiptsFromFinancialFixedAssets_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Receipts from financial fixed assets</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_ReceiptsFromFinancialFixedAssets_loc" xlink:to="vanoord_ReceiptsFromFinancialFixedAssets_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalDistributionsToShareholders" xlink:label="vanoord_TotalDistributionsToShareholders_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_TotalDistributionsToShareholders_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Total distributions to shareholders</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_TotalDistributionsToShareholders_loc" xlink:to="vanoord_TotalDistributionsToShareholders_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TranslationDifferencesForeignParticipatingInterests" xlink:label="vanoord_TranslationDifferencesForeignParticipatingInterests_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_TranslationDifferencesForeignParticipatingInterests_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Translation differences arising on foreign participating interests</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_TranslationDifferencesForeignParticipatingInterests_loc" xlink:to="vanoord_TranslationDifferencesForeignParticipatingInterests_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalDirectChangesShareholderEquityVanOordNV" xlink:label="vanoord_TotalDirectChangesShareholderEquityVanOordNV_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_TotalDirectChangesShareholderEquityVanOordNV_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Total direct changes in shareholders equity of Van Oord N.V.</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_TotalDirectChangesShareholderEquityVanOordNV_loc" xlink:to="vanoord_TotalDirectChangesShareholderEquityVanOordNV_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalProfitLossLegalEntity" xlink:label="vanoord_TotalProfitLossLegalEntity_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_TotalProfitLossLegalEntity_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Total profit (loss) of the legal entity</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_TotalProfitLossLegalEntity_loc" xlink:to="vanoord_TotalProfitLossLegalEntity_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfitDisclosure" xlink:label="vanoord_GrossProfitDisclosure_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_GrossProfitDisclosure_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Disclosure of gross profit</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_GrossProfitDisclosure_loc" xlink:to="vanoord_GrossProfitDisclosure_label_en"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_FinancialReportingPeriodDisclosure" xlink:label="vanoord_FinancialReportingPeriodDisclosure_loc"/>
+    <link:label xlink:type="resource" xlink:label="vanoord_FinancialReportingPeriodDisclosure_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Disclosure of financial reporting period</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="vanoord_FinancialReportingPeriodDisclosure_loc" xlink:to="vanoord_FinancialReportingPeriodDisclosure_label_en"/>
+  </link:labelLink>
+</link:linkbase>

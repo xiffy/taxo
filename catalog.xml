@@ -9,6 +9,10 @@
     rewritePrefix="./taxonomies/rj_taxonomy_2024/www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd" />
 
   <rewriteURI
+    uriStartString="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd"
+    rewritePrefix="./taxonomies/kvk_taxonomy_2024/www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd" />
+
+  <rewriteURI
     uriStartString="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002.xsd"
     rewritePrefix="./taxonomies/sbr_taxonomy_2024/www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002.xsd" />
 
