@@ -14823,7 +14823,7 @@
     <link:label id="rj_Unknown_label_en" xlink:label="rj_Unknown_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Unknown</link:label>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_GenderDomain_loc" xlink:to="rj_GenderDomain_label_en" xlink:type="arc"/>
     <link:loc xlink:href="rj_cor.xsd#rj_GenderDomain" xlink:label="rj_GenderDomain_loc" xlink:type="locator"/>
-    <link:label id="rj_GenderDomain_label_en" xlink:label="rj_GenderDomain_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Gender domain</link:label>
+    <link:label id="rj_GenderDomain_label_en" xlink:label="rj_GenderDomain_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Gender (domain)</link:label>
     <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorGender" xlink:label="rj_SupervisoryDirectorGender_loc" xlink:type="locator"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_SupervisoryDirectorGender_loc" xlink:to="rj_SupervisoryDirectorGender_label_en" xlink:type="arc"/>
     <link:label id="rj_SupervisoryDirectorGender_label_en" xlink:label="rj_SupervisoryDirectorGender_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Gender of supervisory director or the wish of genderidentity</link:label>
@@ -14860,16 +14860,16 @@
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_ContractResearch_loc" xlink:to="rj_ContractResearch_Label_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_RealEstate_loc" xlink:to="rj_RealEstate_Label_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_OtherActivities_loc" xlink:to="rj_OtherActivities_Label_en" xlink:type="arc"/>
-    <link:label id="rj_FinancialStatementDomain_Label_en" xlink:label="rj_FinancialStatementDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Financial statement domain</link:label>
+    <link:label id="rj_FinancialStatementDomain_Label_en" xlink:label="rj_FinancialStatementDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Financial statement (domain)</link:label>
     <link:label id="rj_FinancialStatementConsolidated_Label_en" xlink:label="rj_FinancialStatementConsolidated_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Consolidated</link:label>
     <link:label id="rj_FinancialStatementOther_Label_en" xlink:label="rj_FinancialStatementOther_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Publication WNT in the consolidated and / or statutory annual accounts</link:label>
     <link:label id="rj_FinancialStatementConsolidatedSeparate_Label_en" xlink:label="rj_FinancialStatementConsolidatedSeparate_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Consolidated and separate</link:label>
     <link:label id="rj_FinancialStatementSeparate_Label_en" xlink:label="rj_FinancialStatementSeparate_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Separate</link:label>
-    <link:label id="rj_StagesOfAdoptionDomain_Label_en" xlink:label="rj_StagesOfAdoptionDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Stages of adoption domain</link:label>
+    <link:label id="rj_StagesOfAdoptionDomain_Label_en" xlink:label="rj_StagesOfAdoptionDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Stages of adoption (domain)</link:label>
     <link:label id="rj_DefinitiveAdoptionNZA_Label_en" xlink:label="rj_DefinitiveAdoptionNZA_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Definitive adoption by NZA</link:label>
     <link:label id="rj_InternalCalculation_Label_en" xlink:label="rj_InternalCalculation_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Internal calculation</link:label>
     <link:label id="rj_AgreementHealthcareInsurer_Label_en" xlink:label="rj_AgreementHealthcareInsurer_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Agreement with healthcare insurer</link:label>
-    <link:label id="rj_RelatedPartyMainActivitiesDomain_Label_en" xlink:label="rj_RelatedPartyMainActivitiesDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Related party main activities domain</link:label>
+    <link:label id="rj_RelatedPartyMainActivitiesDomain_Label_en" xlink:label="rj_RelatedPartyMainActivitiesDomain_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Related party main activities (domain)</link:label>
     <link:label id="rj_ContractTeaching_Label_en" xlink:label="rj_ContractTeaching_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract teaching</link:label>
     <link:label id="rj_ContractResearch_Label_en" xlink:label="rj_ContractResearch_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract research</link:label>
     <link:label id="rj_RealEstate_Label_en" xlink:label="rj_RealEstate_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Real estate</link:label>

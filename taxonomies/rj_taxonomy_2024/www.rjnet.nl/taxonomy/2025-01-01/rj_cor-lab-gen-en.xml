@@ -368,19 +368,19 @@
     <label:label id="rj_SubsidyIncomeTypedMember_verboseLabel_en" xlink:label="rj_SubsidyIncomeTypedMember_verboseLabel_en" xlink:role="http://www.xbrl.org/2008/role/verboseLabel" xlink:type="resource" xml:lang="en">Description of subsidy income</label:label>
     <link:loc xlink:href="rj_cor.xsd#rj_SubsidyIncomeTypedMember" xlink:label="rj_SubsidyIncomeTypedMember_loc" xlink:type="locator"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_FinancialStatementEE" xlink:label="rj_FinancialStatementEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_FinancialStatementEE_label_en">Financial statement EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_FinancialStatementEE_label_en">Financial statement (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_FinancialStatementEE_loc" xlink:to="rj_FinancialStatementEE_label_en"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_FinancialStatementWNTEE" xlink:label="rj_FinancialStatementWNTEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementWNTEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_FinancialStatementWNTEE_label_en">Financial statement WNT EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementWNTEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_FinancialStatementWNTEE_label_en">Financial statement WNT (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_FinancialStatementWNTEE_loc" xlink:to="rj_FinancialStatementWNTEE_label_en"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_StagesOfAdoptionEE" xlink:label="rj_StagesOfAdoptionEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_StagesOfAdoptionEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_StagesOfAdoptionEE_label_en">Stages of adoption EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_StagesOfAdoptionEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_StagesOfAdoptionEE_label_en">Stages of adoption (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_StagesOfAdoptionEE_loc" xlink:to="rj_StagesOfAdoptionEE_label_en"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_RelatedPartyMainActivitiesEE" xlink:label="rj_RelatedPartyMainActivitiesEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_RelatedPartyMainActivitiesEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_RelatedPartyMainActivitiesEE_label_en">Related party main activities EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_RelatedPartyMainActivitiesEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_RelatedPartyMainActivitiesEE_label_en">Related party main activities (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_RelatedPartyMainActivitiesEE_loc" xlink:to="rj_RelatedPartyMainActivitiesEE_label_en"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_GenderEE" xlink:label="rj_GenderEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_GenderEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_GenderEE_label_en">Gender EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_GenderEE_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en" id="rj_GenderEE_label_en">Gender (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_GenderEE_loc" xlink:to="rj_GenderEE_label_en"/>
   </gen:link>
 </link:linkbase>

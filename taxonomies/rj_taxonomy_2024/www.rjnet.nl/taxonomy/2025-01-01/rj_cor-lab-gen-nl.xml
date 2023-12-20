@@ -372,19 +372,19 @@
     <link:loc xlink:href="rj_cor.xsd#rj_CommitteeNameTypedMember" xlink:label="rj_CommitteeNameTypedMember_loc" xlink:type="locator"/>
     <link:loc xlink:href="rj_cor.xsd#rj_SupervisoryDirectorNameTypedMember" xlink:label="rj_SupervisoryDirectorNameTypedMember_loc" xlink:type="locator"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_FinancialStatementEE" xlink:label="rj_FinancialStatementEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_FinancialStatementEE_label_nl">Grondslag EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_FinancialStatementEE_label_nl">Grondslag Jaarrekening (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_FinancialStatementEE_loc" xlink:to="rj_FinancialStatementEE_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_FinancialStatementWNTEE" xlink:label="rj_FinancialStatementWNTEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementWNTEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_FinancialStatementWNTEE_label_nl">Grondslag WNT EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_FinancialStatementWNTEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_FinancialStatementWNTEE_label_nl">Grondslag Jaarrekening WNT (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_FinancialStatementWNTEE_loc" xlink:to="rj_FinancialStatementWNTEE_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_StagesOfAdoptionEE" xlink:label="rj_StagesOfAdoptionEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_StagesOfAdoptionEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_StagesOfAdoptionEE_label_nl">Stadium van vaststelling EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_StagesOfAdoptionEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_StagesOfAdoptionEE_label_nl">Stadium van vaststelling (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_StagesOfAdoptionEE_loc" xlink:to="rj_StagesOfAdoptionEE_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_RelatedPartyMainActivitiesEE" xlink:label="rj_RelatedPartyMainActivitiesEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_RelatedPartyMainActivitiesEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_RelatedPartyMainActivitiesEE_label_nl">Belangrijkste activiteiten van de verbonden partij EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_RelatedPartyMainActivitiesEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_RelatedPartyMainActivitiesEE_label_nl">Belangrijkste activiteiten van de verbonden partij (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_RelatedPartyMainActivitiesEE_loc" xlink:to="rj_RelatedPartyMainActivitiesEE_label_nl"/>
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_GenderEE" xlink:label="rj_GenderEE_loc"/>
-    <label:label xlink:type="resource" xlink:label="rj_GenderEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_GenderEE_label_nl">Geslacht EE</label:label>
+    <label:label xlink:type="resource" xlink:label="rj_GenderEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="nl" id="rj_GenderEE_label_nl">Geslacht (EE)</label:label>
     <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="rj_GenderEE_loc" xlink:to="rj_GenderEE_label_nl"/>
   </gen:link>
 </link:linkbase>

@@ -70,5 +70,17 @@
     <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ShareCapitalNumberOfSharesTypedMember" xlink:label="jenv-bw2_ShareCapitalNumberOfSharesTypedMember_loc" xlink:type="locator" />
     <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ShareCapitalTypedMember" xlink:label="jenv-bw2_ShareCapitalTypedMember_loc" xlink:type="locator" />
     <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_SupervisoryDirectorTypedMember" xlink:label="jenv-bw2_SupervisoryDirectorTypedMember_loc" xlink:type="locator" />
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_BasisOfPreparationEE" xlink:label="jenv-bw2_BasisOfPreparationEE_loc" xlink:type="locator" />
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_BasisOfPreparationEE_loc" xlink:to="jenv-bw2_BasisOfPreparationEE_label_nl" xlink:type="arc"/>
+    <label:label id="jenv-bw2_BasisOfPreparationEE_label_nl" xlink:label="jenv-bw2_BasisOfPreparationEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Type grondslag (EE)</label:label>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_DirectorEE" xlink:label="jenv-bw2_DirectorEE_loc" xlink:type="locator" />
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_DirectorEE_loc" xlink:to="jenv-bw2_DirectorEE_label_nl" xlink:type="arc"/>
+    <label:label id="jenv-bw2_DirectorEE_label_nl" xlink:label="jenv-bw2_DirectorEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Bestuurder / commissaris (EE)</label:label>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LegalFormEE" xlink:label="jenv-bw2_LegalFormEE_loc" xlink:type="locator" />
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_LegalFormEE_loc" xlink:to="jenv-bw2_LegalFormEE_label_nl" xlink:type="arc"/>
+    <label:label id="jenv-bw2_LegalFormEE_label_nl" xlink:label="jenv-bw2_LegalFormEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Rechtsvorm (EE)</label:label>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ProfitAppropriationEE" xlink:label="jenv-bw2_ProfitAppropriationEE_loc" xlink:type="locator" />
+    <gen:arc xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="jenv-bw2_ProfitAppropriationEE_loc" xlink:to="jenv-bw2_ProfitAppropriationEE_label_nl" xlink:type="arc"/>
+    <label:label id="jenv-bw2_ProfitAppropriationEE_label_nl" xlink:label="jenv-bw2_ProfitAppropriationEE_label_nl" xlink:role="http://www.xbrl.org/2008/role/label" xlink:type="resource" xml:lang="nl">Resultaat bestemming (EE)</label:label>
   </gen:link>
 </link:linkbase>

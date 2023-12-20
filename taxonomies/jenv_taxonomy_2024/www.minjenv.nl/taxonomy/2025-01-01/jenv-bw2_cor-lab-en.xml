@@ -8315,5 +8315,65 @@
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_SubordinatedLiabilitiesNoncurrentMember_loc" xlink:to="jenv-bw2_SubordinatedLiabilitiesNoncurrentMember_terseLabel_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_TaxesSocialSecurityContributionsPayableNoncurrentMember_loc" xlink:to="jenv-bw2_TaxesSocialSecurityContributionsPayableNoncurrentMember_terseLabel_en" xlink:type="arc"/>
     <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_TradePayablesNoncurrentMember_loc" xlink:to="jenv-bw2_TradePayablesNoncurrentMember_terseLabel_en" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_BasisOfPreparationDomain" xlink:label="jenv-bw2_BasisOfPreparationDomain_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_BasisOfPreparationDomain_Label_nl" xlink:label="jenv-bw2_BasisOfPreparationDomain_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Basis of preparation (domain)</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_BasisOfPreparationDomain_loc" xlink:to="jenv-bw2_BasisOfPreparationDomain_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_BasisOfPreparationCommercial" xlink:label="jenv-bw2_BasisOfPreparationCommercial_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_BasisOfPreparationCommercial_Label_nl" xlink:label="jenv-bw2_BasisOfPreparationCommercial_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Commercial</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_BasisOfPreparationCommercial_loc" xlink:to="jenv-bw2_BasisOfPreparationCommercial_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_BasisOfPreparationFiscal" xlink:label="jenv-bw2_BasisOfPreparationFiscal_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_BasisOfPreparationFiscal_Label_nl" xlink:label="jenv-bw2_BasisOfPreparationFiscal_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Fiscal</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_BasisOfPreparationFiscal_loc" xlink:to="jenv-bw2_BasisOfPreparationFiscal_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_DirectorDomain" xlink:label="jenv-bw2_DirectorDomain_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_DirectorDomain_Label_nl" xlink:label="jenv-bw2_DirectorDomain_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Director (domain)</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_DirectorDomain_loc" xlink:to="jenv-bw2_DirectorDomain_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ManagingDirectorCurrent" xlink:label="jenv-bw2_ManagingDirectorCurrent_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_ManagingDirectorCurrent_Label_nl" xlink:label="jenv-bw2_ManagingDirectorCurrent_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Current managing director</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ManagingDirectorCurrent_loc" xlink:to="jenv-bw2_ManagingDirectorCurrent_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ManagingDirectorFormer" xlink:label="jenv-bw2_ManagingDirectorFormer_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_ManagingDirectorFormer_Label_nl" xlink:label="jenv-bw2_ManagingDirectorFormer_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Managing director (former)</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ManagingDirectorFormer_loc" xlink:to="jenv-bw2_ManagingDirectorFormer_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_SupervisoryDirectorCurrent" xlink:label="jenv-bw2_SupervisoryDirectorCurrent_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_SupervisoryDirectorCurrent_Label_nl" xlink:label="jenv-bw2_SupervisoryDirectorCurrent_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Current supervisory director</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_SupervisoryDirectorCurrent_loc" xlink:to="jenv-bw2_SupervisoryDirectorCurrent_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_SupervisoryDirectorFormer" xlink:label="jenv-bw2_SupervisoryDirectorFormer_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_SupervisoryDirectorFormer_Label_nl" xlink:label="jenv-bw2_SupervisoryDirectorFormer_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Supervisory director (former)</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_SupervisoryDirectorFormer_loc" xlink:to="jenv-bw2_SupervisoryDirectorFormer_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LegalFormDomain" xlink:label="jenv-bw2_LegalFormDomain_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_LegalFormDomain_Label_nl" xlink:label="jenv-bw2_LegalFormDomain_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Legal form (domain)</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_LegalFormDomain_loc" xlink:to="jenv-bw2_LegalFormDomain_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_PrivateLimitedLiabilityCompany" xlink:label="jenv-bw2_PrivateLimitedLiabilityCompany_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_PrivateLimitedLiabilityCompany_Label_nl" xlink:label="jenv-bw2_PrivateLimitedLiabilityCompany_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Private limited liability company</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_PrivateLimitedLiabilityCompany_loc" xlink:to="jenv-bw2_PrivateLimitedLiabilityCompany_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LimitedPartnership" xlink:label="jenv-bw2_LimitedPartnership_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_LimitedPartnership_Label_nl" xlink:label="jenv-bw2_LimitedPartnership_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Limited partnership</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_LimitedPartnership_loc" xlink:to="jenv-bw2_LimitedPartnership_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_Cooperative" xlink:label="jenv-bw2_Cooperative_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_Cooperative_Label_nl" xlink:label="jenv-bw2_Cooperative_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Cooperative</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_Cooperative_loc" xlink:to="jenv-bw2_Cooperative_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_PublicLimitedLiabilityCompany" xlink:label="jenv-bw2_PublicLimitedLiabilityCompany_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_PublicLimitedLiabilityCompany_Label_nl" xlink:label="jenv-bw2_PublicLimitedLiabilityCompany_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Public limited liability company</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_PublicLimitedLiabilityCompany_loc" xlink:to="jenv-bw2_PublicLimitedLiabilityCompany_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_MutualInsuranceCompany" xlink:label="jenv-bw2_MutualInsuranceCompany_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_MutualInsuranceCompany_Label_nl" xlink:label="jenv-bw2_MutualInsuranceCompany_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Mutual insurance company</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_MutualInsuranceCompany_loc" xlink:to="jenv-bw2_MutualInsuranceCompany_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_Foundation" xlink:label="jenv-bw2_Foundation_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_Foundation_Label_nl" xlink:label="jenv-bw2_Foundation_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Foundation</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_Foundation_loc" xlink:to="jenv-bw2_Foundation_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_GeneralPartnership" xlink:label="jenv-bw2_GeneralPartnership_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_GeneralPartnership_Label_nl" xlink:label="jenv-bw2_GeneralPartnership_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">General partnership</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_GeneralPartnership_loc" xlink:to="jenv-bw2_GeneralPartnership_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_Association" xlink:label="jenv-bw2_Association_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_Association_Label_nl" xlink:label="jenv-bw2_Association_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Association</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_Association_loc" xlink:to="jenv-bw2_Association_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ProfitAppropriationDomain" xlink:label="jenv-bw2_ProfitAppropriationDomain_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_ProfitAppropriationDomain_Label_nl" xlink:label="jenv-bw2_ProfitAppropriationDomain_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Profit appropriation (domain)</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ProfitAppropriationDomain_loc" xlink:to="jenv-bw2_ProfitAppropriationDomain_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ProfitAppropriationBefore" xlink:label="jenv-bw2_ProfitAppropriationBefore_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_ProfitAppropriationBefore_Label_nl" xlink:label="jenv-bw2_ProfitAppropriationBefore_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">Before profit appropriation</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ProfitAppropriationBefore_loc" xlink:to="jenv-bw2_ProfitAppropriationBefore_Label_nl" xlink:type="arc"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ProfitAppropriationAfter" xlink:label="jenv-bw2_ProfitAppropriationAfter_loc" xlink:type="locator"/>
+    <link:label id="jenv-bw2_ProfitAppropriationAfter_Label_nl" xlink:label="jenv-bw2_ProfitAppropriationAfter_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="nl">After profit appropriation</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ProfitAppropriationAfter_loc" xlink:to="jenv-bw2_ProfitAppropriationAfter_Label_nl" xlink:type="arc"/>
   </link:labelLink>
 </link:linkbase>
