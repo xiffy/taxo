@@ -14873,5 +14873,11 @@
     <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_OtherActivities" xlink:label="rj_OtherActivities_loc"/>
     <link:label xlink:type="resource" xlink:label="rj_OtherActivities_Label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="rj_OtherActivities_Label_en">Other activities</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_OtherActivities_loc" xlink:to="rj_OtherActivities_Label_en"/>
+    <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_DocumentPresentationCurrency" xlink:label="rj_DocumentPresentationCurrency_loc"/>
+    <link:label xlink:type="resource" xlink:label="rj_DocumentPresentationCurrency_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl" id="rj_DocumentPresentationCurrency_label_nl">Rapporteringsvaluta van het document</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_DocumentPresentationCurrency_loc" xlink:to="rj_DocumentPresentationCurrency_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="rj_cor.xsd#rj_DocumentPresentationCurrency" xlink:label="rj_DocumentPresentationCurrency_loc"/>
+    <link:label xlink:type="resource" xlink:label="rjl_DocumentPresentationCurrency_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="rj_DocumentPresentationCurrency_label_en">Presentation currency of the document</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="rj_DocumentPresentationCurrency_loc" xlink:to="rjl_DocumentPresentationCurrency_label_en"/>
   </link:labelLink>
 </link:linkbase>
