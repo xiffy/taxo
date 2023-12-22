@@ -4104,5 +4104,10 @@
     <link:loc xlink:type="locator" xlink:href="kvk_cor.xsd#kvk_EquityLineItemsTitle" xlink:label="kvk_EquityLineItemsTitle_loc"/>
     <link:label xlink:type="resource" xlink:label="kvk_EquityLineItemsTitle_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="kvk_EquityLineItemsTitle_label_en">Equity (line items)</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_EquityLineItemsTitle_loc" xlink:to="kvk_EquityLineItemsTitle_label_en"/>
+    <link:loc xlink:href="kvk_cor.xsd#kvk_SbiBusinessCode" xlink:label="kvk_SbiBusinessCode_loc" xlink:type="locator"/>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_SbiBusinessCode_loc" xlink:to="kvk_SbiBusinessCode_label_en" xlink:type="arc"/>
+    <link:label id="kvk_SbiBusinessCode_label_en" xlink:label="kvk_SbiBusinessCode_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">SBI-code</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="kvk_SbiBusinessCode_loc" xlink:to="kvk_SbiBusinessCode_documentation_en" xlink:type="arc"/>
+    <link:label id="kvk_SbiBusinessCode_documentation_en" xlink:label="kvk_SbiBusinessCode_documentation_en" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The SBI-code (Standaard Bedrijfsindeling 2008) is a code that indicates the economic activities of the entity.</link:label>
   </link:labelLink>
 </link:linkbase>

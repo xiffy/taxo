@@ -7657,5 +7657,67 @@
     <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_WagesSalariesMember_loc" xlink:to="jenv-bw2_BW2_2023-01-01_377_3_E_ref"/>
     <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_WorkInProgressMember" xlink:label="jenv-bw2_WorkInProgressMember_loc"/>
     <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_WorkInProgressMember_loc" xlink:to="jenv-bw2_BW2_2023-01-01_369_B_ref"/>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ChamberOfCommerceRegistrationNumber" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:type="locator"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_BW2_2019-01-01_380b_D_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_RJ_2019-01-01_300_104a_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_RJk_2019-01-01_C1_303a_ref" xlink:type="arc"/>
+    <link:reference id="jenv-bw2_BW2_2019-01-01_380b_D_ref" xlink:label="jenv-bw2_BW2_2019-01-01_380b_D_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Article>380b</ref:Article>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Burgerlijk wetboek boek 2</ref:Name>
+      <ref:Paragraph>d</ref:Paragraph>
+    </link:reference>
+    <link:reference id="jenv-bw2_RJ_2019-01-01_300_104a_ref" xlink:label="jenv-bw2_RJ_2019-01-01_300_104a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>300</ref:Chapter>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>104a</ref:Paragraph>
+    </link:reference>
+    <link:reference id="jenv-bw2_RJk_2019-01-01_C1_303a_ref" xlink:label="jenv-bw2_RJk_2019-01-01_C1_303a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>C1</ref:Chapter>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Paragraph>303a</ref:Paragraph>
+    </link:reference>
+    <link:loc xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LegalEntityName" xlink:label="jenv-bw2_LegalEntityName_loc" xlink:type="locator"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_BW2_2019-01-01_380b_A_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_RJ_2019-01-01_110_103_A_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_RJ_2019-01-01_300_104a_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_RJ_2019-01-01_640_401a_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_RJk_2019-01-01_A1_306_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_RJk_2019-01-01_B18_104_A_ref" xlink:type="arc"/>
+    <link:referenceArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_RJk_2019-01-01_C1_303a_ref" xlink:type="arc"/>
+    <link:reference id="jenv-bw2_BW2_2019-01-01_380b_A_ref" xlink:label="jenv-bw2_BW2_2019-01-01_380b_A_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Article>380b</ref:Article>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Burgerlijk wetboek boek 2</ref:Name>
+      <ref:Paragraph>a</ref:Paragraph>
+    </link:reference>
+    <link:reference id="jenv-bw2_RJ_2019-01-01_110_103_A_ref" xlink:label="jenv-bw2_RJ_2019-01-01_110_103_A_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>110</ref:Chapter>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>103</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </link:reference>
+    <link:reference id="jenv-bw2_RJ_2019-01-01_640_401a_ref" xlink:label="jenv-bw2_RJ_2019-01-01_640_401a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>640</ref:Chapter>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>401a</ref:Paragraph>
+    </link:reference>
+    <link:reference id="jenv-bw2_RJk_2019-01-01_A1_306_ref" xlink:label="jenv-bw2_RJk_2019-01-01_A1_306_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>A1</ref:Chapter>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Paragraph>306</ref:Paragraph>
+    </link:reference>
+    <link:reference id="jenv-bw2_RJk_2019-01-01_B18_104_A_ref" xlink:label="jenv-bw2_RJk_2019-01-01_B18_104_A_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+      <ref:Chapter>B18</ref:Chapter>
+      <ref:IssueDate>2019-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Paragraph>104</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </link:reference>
   </link:referenceLink>
 </link:linkbase>

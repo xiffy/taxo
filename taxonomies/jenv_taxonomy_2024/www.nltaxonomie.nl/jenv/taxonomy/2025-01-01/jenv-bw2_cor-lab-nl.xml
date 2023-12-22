@@ -11681,5 +11681,9 @@
     <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ChamberOfCommerceRegistrationNumber" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc"/>
     <link:label xlink:type="resource" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl" id="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_nl">Registratienummer bij de Kamer van Koophandel</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_nl"/>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_ChamberOfCommerceRegistrationNumber_documentation_nl" xlink:type="arc"/>
+    <link:label id="jenv-bw2_ChamberOfCommerceRegistrationNumber_documentation_nl" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_documentation_nl" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="nl">Het registratienummer bij de kamer van koophandel.</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_ChamberOfCommerceRegistrationNumber_terseLabel_nl" xlink:type="arc"/>
+    <link:label id="jenv-bw2_ChamberOfCommerceRegistrationNumber_terseLabel_nl" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_terseLabel_nl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:type="resource" xml:lang="nl">KvK nummer</link:label>
   </link:labelLink>
 </link:linkbase>
