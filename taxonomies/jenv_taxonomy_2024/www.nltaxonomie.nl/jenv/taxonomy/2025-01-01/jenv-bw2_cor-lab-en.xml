@@ -8378,13 +8378,8 @@
     <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LegalEntityName" xlink:label="jenv-bw2_LegalEntityName_loc"/>
     <link:label xlink:type="resource" xlink:label="jenv-bw2_LegalEntityName_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="jenv-bw2_LegalEntityName_label_en">Name of the legal entity</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_LegalEntityName_label_en"/>
-    <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LegalEntityName" xlink:label="LegalEntityName"/>
-    <link:label xlink:type="resource" xlink:label="jenv-bw2_LegalEntityName_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="jenv-bw2_LegalEntityName_label_en">Naam van de rechtspersoon</link:label>
-    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LegalEntityName" xlink:to="jenv-bw2_LegalEntityName_label_en"/>
     <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ChamberOfCommerceRegistrationNumber" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc"/>
     <link:label xlink:type="resource" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_en">Registration number at the Chamber of Commerce</link:label>
-    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_en"/>
-    <link:label xlink:type="resource" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_en" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en" id="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_en">Registratienummer bij de Kamer van Koophandel</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_en"/>
   </link:labelLink>
 </link:linkbase>

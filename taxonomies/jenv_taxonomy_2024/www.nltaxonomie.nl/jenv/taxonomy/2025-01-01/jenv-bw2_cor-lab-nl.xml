@@ -11675,5 +11675,11 @@
     <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ProfitAppropriationAfter" xlink:label="jenv-bw2_ProfitAppropriationAfter_loc"/>
     <link:label xlink:type="resource" xlink:label="jenv-bw2_ProfitAppropriationAfter_Label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl" id="jenv-bw2_ProfitAppropriationAfter_Label_nl">Na resultaatbestemming</link:label>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ProfitAppropriationAfter_loc" xlink:to="jenv-bw2_ProfitAppropriationAfter_Label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_LegalEntityName" xlink:label="jenv-bw2_LegalEntityName_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_LegalEntityName_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl" id="jenv-bw2_LegalEntityName_label_nl">Naam van de rechtspersoon</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_LegalEntityName_loc" xlink:to="jenv-bw2_LegalEntityName_label_nl"/>
+    <link:loc xlink:type="locator" xlink:href="jenv-bw2_cor.xsd#jenv-bw2_ChamberOfCommerceRegistrationNumber" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc"/>
+    <link:label xlink:type="resource" xlink:label="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_nl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl" id="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_nl">Registratienummer bij de Kamer van Koophandel</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jenv-bw2_ChamberOfCommerceRegistrationNumber_loc" xlink:to="jenv-bw2_ChamberOfCommerceRegistrationNumber_label_nl"/>
   </link:labelLink>
 </link:linkbase>
