@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xml:lang="en"
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:jenv_bw2_cor="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2"
+  xmlns:kvk_cor="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:rj_cor="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj"
+  xmlns:vanoord="https://www.vanoord.com/xbrl/2022-12-31"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef
+      xlink:href="https://www.vanoord.com/xbrl/2022-12-31/24355843-2022-12-31.xsd"
+      xlink:type="simple"/>
+    <context id="context_1">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <startDate>2022-01-01</startDate>
+            <endDate>2022-12-31</endDate>
+        </period>
+    </context>
+    <context id="context_2">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <instant>2022-12-31</instant>
+        </period>
+    </context>
+    <context id="context_3">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <instant>2021-12-31</instant>
+        </period>
+    </context>
+    <context id="context_4">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <startDate>2021-01-01</startDate>
+            <endDate>2021-12-31</endDate>
+        </period>
+    </context>
+    <context id="context_5">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <instant>2020-12-31</instant>
+        </period>
+    </context>
+    <context id="context_6">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <instant>2022-12-31</instant>
+        </period>
+        <scenario>
+            <xbrldi:explicitMember dimension="jenv_bw2_cor:ClassesOfEquityAxis">jenv_bw2_cor:EquityMember</xbrldi:explicitMember>
+        </scenario>
+    </context>
+    <context id="context_7">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <instant>2021-12-31</instant>
+        </period>
+        <scenario>
+            <xbrldi:explicitMember dimension="jenv_bw2_cor:ClassesOfEquityAxis">jenv_bw2_cor:EquityMember</xbrldi:explicitMember>
+        </scenario>
+    </context>
+    <context id="context_8">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <instant>2020-12-31</instant>
+        </period>
+        <scenario>
+            <xbrldi:explicitMember dimension="jenv_bw2_cor:ClassesOfEquityAxis">jenv_bw2_cor:EquityMember</xbrldi:explicitMember>
+        </scenario>
+    </context>
+    <context id="context_9">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <startDate>2022-01-01</startDate>
+            <endDate>2022-12-31</endDate>
+        </period>
+        <scenario>
+            <xbrldi:explicitMember dimension="jenv_bw2_cor:ClassesOfEquityAxis">jenv_bw2_cor:EquityMember</xbrldi:explicitMember>
+        </scenario>
+    </context>
+    <context id="context_10">
+        <entity>
+            <identifier scheme="http://www.kvk.nl/kvk-id">24355843</identifier>
+        </entity>
+        <period>
+            <startDate>2021-01-01</startDate>
+            <endDate>2021-12-31</endDate>
+        </period>
+        <scenario>
+            <xbrldi:explicitMember dimension="jenv_bw2_cor:ClassesOfEquityAxis">jenv_bw2_cor:EquityMember</xbrldi:explicitMember>
+        </scenario>
+    </context>
+    <unit id="EUR">
+        <measure>iso4217:EUR</measure>
+    </unit>
+    <kvk_cor:TitleOfTheDocument contextRef="context_1" id="ID000010">
+          
+            
+              Annual Report
+              Royal Van Oord 
+            
+            '22
+          
+        </kvk_cor:TitleOfTheDocument>
+    <jenv_bw2_cor:FinancialReportingPeriodCurrentEndDate contextRef="context_1" id="ID0000050">2022-12-31</jenv_bw2_cor:FinancialReportingPeriodCurrentEndDate>
+    <jenv_bw2_cor:IntangibleAssets
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001010"
+      unitRef="EUR">9019000</jenv_bw2_cor:IntangibleAssets>
+    <jenv_bw2_cor:IntangibleAssets
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001020"
+      unitRef="EUR">18282000</jenv_bw2_cor:IntangibleAssets>
+    <jenv_bw2_cor:PropertyPlantEquipment
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001030"
+      unitRef="EUR">1825871000</jenv_bw2_cor:PropertyPlantEquipment>
+    <jenv_bw2_cor:PropertyPlantEquipment
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001040"
+      unitRef="EUR">1684149000</jenv_bw2_cor:PropertyPlantEquipment>
+    <jenv_bw2_cor:FinancialAssets
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001050"
+      unitRef="EUR">55424000</jenv_bw2_cor:FinancialAssets>
+    <jenv_bw2_cor:FinancialAssets
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001060"
+      unitRef="EUR">84542000</jenv_bw2_cor:FinancialAssets>
+    <jenv_bw2_cor:AssetsNoncurrent
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001070"
+      unitRef="EUR">1890314000</jenv_bw2_cor:AssetsNoncurrent>
+    <jenv_bw2_cor:AssetsNoncurrent
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001080"
+      unitRef="EUR">1786973000</jenv_bw2_cor:AssetsNoncurrent>
+    <jenv_bw2_cor:Inventories
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001090"
+      unitRef="EUR">63784000</jenv_bw2_cor:Inventories>
+    <jenv_bw2_cor:Inventories
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001100"
+      unitRef="EUR">56175000</jenv_bw2_cor:Inventories>
+    <rj_cor:ConstructionContractsAmount
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001110"
+      unitRef="EUR">227008000</rj_cor:ConstructionContractsAmount>
+    <rj_cor:ConstructionContractsAmount
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001120"
+      unitRef="EUR">97012000</rj_cor:ConstructionContractsAmount>
+    <jenv_bw2_cor:Receivables
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001130"
+      unitRef="EUR">457458000</jenv_bw2_cor:Receivables>
+    <jenv_bw2_cor:Receivables
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001140"
+      unitRef="EUR">425298000</jenv_bw2_cor:Receivables>
+    <jenv_bw2_cor:CashAndCashEquivalents
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001150"
+      unitRef="EUR">400393000</jenv_bw2_cor:CashAndCashEquivalents>
+    <jenv_bw2_cor:CashAndCashEquivalents
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001160"
+      unitRef="EUR">372637000</jenv_bw2_cor:CashAndCashEquivalents>
+    <jenv_bw2_cor:AssetsCurrent
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001170"
+      unitRef="EUR">1148643000</jenv_bw2_cor:AssetsCurrent>
+    <jenv_bw2_cor:AssetsCurrent
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001180"
+      unitRef="EUR">951122000</jenv_bw2_cor:AssetsCurrent>
+    <jenv_bw2_cor:Assets
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001190"
+      unitRef="EUR">3038957000</jenv_bw2_cor:Assets>
+    <jenv_bw2_cor:Assets
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001200"
+      unitRef="EUR">2738095000</jenv_bw2_cor:Assets>
+    <jenv_bw2_cor:Equity
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001210"
+      unitRef="EUR">984504000</jenv_bw2_cor:Equity>
+    <jenv_bw2_cor:Equity
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001220"
+      unitRef="EUR">914885000</jenv_bw2_cor:Equity>
+    <jenv_bw2_cor:Provisions
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001230"
+      unitRef="EUR">211188000</jenv_bw2_cor:Provisions>
+    <jenv_bw2_cor:Provisions
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001240"
+      unitRef="EUR">219938000</jenv_bw2_cor:Provisions>
+    <jenv_bw2_cor:LiabilitiesNoncurrent
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001250"
+      unitRef="EUR">578770000</jenv_bw2_cor:LiabilitiesNoncurrent>
+    <jenv_bw2_cor:LiabilitiesNoncurrent
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001260"
+      unitRef="EUR">434923000</jenv_bw2_cor:LiabilitiesNoncurrent>
+    <rj_cor:ConstructionContractsAmountRecordedAsLiability
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001270"
+      unitRef="EUR">484356000</rj_cor:ConstructionContractsAmountRecordedAsLiability>
+    <rj_cor:ConstructionContractsAmountRecordedAsLiability
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001280"
+      unitRef="EUR">502412000</rj_cor:ConstructionContractsAmountRecordedAsLiability>
+    <rj_cor:LiabilitiesOther
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001290"
+      unitRef="EUR">780139000</rj_cor:LiabilitiesOther>
+    <rj_cor:LiabilitiesOther
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001300"
+      unitRef="EUR">665937000</rj_cor:LiabilitiesOther>
+    <jenv_bw2_cor:LiabilitiesCurrent
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001310"
+      unitRef="EUR">1264495000</jenv_bw2_cor:LiabilitiesCurrent>
+    <jenv_bw2_cor:LiabilitiesCurrent
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001320"
+      unitRef="EUR">1168349000</jenv_bw2_cor:LiabilitiesCurrent>
+    <jenv_bw2_cor:EquityAndLiabilities
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0001330"
+      unitRef="EUR">3038957000</jenv_bw2_cor:EquityAndLiabilities>
+    <jenv_bw2_cor:EquityAndLiabilities
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0001340"
+      unitRef="EUR">2738095000</jenv_bw2_cor:EquityAndLiabilities>
+    <jenv_bw2_cor:NetRevenue
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002010"
+      unitRef="EUR">2020815000</jenv_bw2_cor:NetRevenue>
+    <jenv_bw2_cor:NetRevenue
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002020"
+      unitRef="EUR">1516635000</jenv_bw2_cor:NetRevenue>
+    <jenv_bw2_cor:Expenses
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002030"
+      unitRef="EUR">1608619000</jenv_bw2_cor:Expenses>
+    <jenv_bw2_cor:Expenses
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002040"
+      unitRef="EUR">1319931000</jenv_bw2_cor:Expenses>
+    <jenv_bw2_cor:DepreciationPropertyPlantEquipment
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002050"
+      unitRef="EUR">156146000</jenv_bw2_cor:DepreciationPropertyPlantEquipment>
+    <jenv_bw2_cor:DepreciationPropertyPlantEquipment
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002060"
+      unitRef="EUR">155537000</jenv_bw2_cor:DepreciationPropertyPlantEquipment>
+    <jenv_bw2_cor:AmortisationIntangibleAssets
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002070"
+      unitRef="EUR">9263000</jenv_bw2_cor:AmortisationIntangibleAssets>
+    <jenv_bw2_cor:AmortisationIntangibleAssets
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002080"
+      unitRef="EUR">9254000</jenv_bw2_cor:AmortisationIntangibleAssets>
+    <vanoord:CostOfWork
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002090"
+      unitRef="EUR">1774028000</vanoord:CostOfWork>
+    <vanoord:CostOfWork
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002100"
+      unitRef="EUR">1484722000</vanoord:CostOfWork>
+    <vanoord:GrossProfit
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002110"
+      unitRef="EUR">246787000</vanoord:GrossProfit>
+    <vanoord:GrossProfit
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002120"
+      unitRef="EUR">31913000</vanoord:GrossProfit>
+    <jenv_bw2_cor:GeneralAdministrativeExpenses
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002130"
+      unitRef="EUR">169225000</jenv_bw2_cor:GeneralAdministrativeExpenses>
+    <jenv_bw2_cor:GeneralAdministrativeExpenses
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002140"
+      unitRef="EUR">135701000</jenv_bw2_cor:GeneralAdministrativeExpenses>
+    <jenv_bw2_cor:OperatingIncome
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002150"
+      unitRef="EUR">77562000</jenv_bw2_cor:OperatingIncome>
+    <jenv_bw2_cor:OperatingIncome
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002160"
+      unitRef="EUR">-103788000</jenv_bw2_cor:OperatingIncome>
+    <rj_cor:FinancialIncomeExpenses
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002170"
+      unitRef="EUR">-10124000</rj_cor:FinancialIncomeExpenses>
+    <rj_cor:FinancialIncomeExpenses
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002180"
+      unitRef="EUR">-8296000</rj_cor:FinancialIncomeExpenses>
+    <jenv_bw2_cor:ResultBeforeTax
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002190"
+      unitRef="EUR">67438000</jenv_bw2_cor:ResultBeforeTax>
+    <jenv_bw2_cor:ResultBeforeTax
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002200"
+      unitRef="EUR">-112084000</jenv_bw2_cor:ResultBeforeTax>
+    <jenv_bw2_cor:IncomeTaxExpense
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002210"
+      unitRef="EUR">7314000</jenv_bw2_cor:IncomeTaxExpense>
+    <jenv_bw2_cor:IncomeTaxExpense
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002220"
+      unitRef="EUR">-43732000</jenv_bw2_cor:IncomeTaxExpense>
+    <jenv_bw2_cor:ShareInResultsParticipatingInterests
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002230"
+      unitRef="EUR">239000</jenv_bw2_cor:ShareInResultsParticipatingInterests>
+    <jenv_bw2_cor:ShareInResultsParticipatingInterests
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002240"
+      unitRef="EUR">5919000</jenv_bw2_cor:ShareInResultsParticipatingInterests>
+    <jenv_bw2_cor:NetResultAfterTax
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0002250"
+      unitRef="EUR">60363000</jenv_bw2_cor:NetResultAfterTax>
+    <jenv_bw2_cor:NetResultAfterTax
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0002260"
+      unitRef="EUR">-62433000</jenv_bw2_cor:NetResultAfterTax>
+    <rj_cor:CashAndCashEquivalentsCashFlow
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0003010"
+      unitRef="EUR">372637000</rj_cor:CashAndCashEquivalentsCashFlow>
+    <rj_cor:CashAndCashEquivalentsCashFlow
+      contextRef="context_5"
+      decimals="-3"
+      id="ID0003020"
+      unitRef="EUR">268424000</rj_cor:CashAndCashEquivalentsCashFlow>
+    <rj_cor:CashFlowOperatingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003030"
+      unitRef="EUR">61808000</rj_cor:CashFlowOperatingActivities>
+    <rj_cor:CashFlowOperatingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003040"
+      unitRef="EUR">49729000</rj_cor:CashFlowOperatingActivities>
+    <rj_cor:CashFlowInvestingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003050"
+      unitRef="EUR">-186565000</rj_cor:CashFlowInvestingActivities>
+    <rj_cor:CashFlowInvestingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003060"
+      unitRef="EUR">-97870000</rj_cor:CashFlowInvestingActivities>
+    <rj_cor:CashFlowFinancingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003070"
+      unitRef="EUR">143257000</rj_cor:CashFlowFinancingActivities>
+    <rj_cor:CashFlowFinancingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003080"
+      unitRef="EUR">174007000</rj_cor:CashFlowFinancingActivities>
+    <rj_cor:NetCashFlows
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003090"
+      unitRef="EUR">18500000</rj_cor:NetCashFlows>
+    <rj_cor:NetCashFlows
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003100"
+      unitRef="EUR">125866000</rj_cor:NetCashFlows>
+    <rj_cor:EffectExchangeRateChangesCashAndCashEquivalents
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003110"
+      unitRef="EUR">9256000</rj_cor:EffectExchangeRateChangesCashAndCashEquivalents>
+    <rj_cor:EffectExchangeRateChangesCashAndCashEquivalents
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003120"
+      unitRef="EUR">-21653000</rj_cor:EffectExchangeRateChangesCashAndCashEquivalents>
+    <rj_cor:IncreaseDecreaseCashAndCashEquivalents
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003130"
+      unitRef="EUR">27756000</rj_cor:IncreaseDecreaseCashAndCashEquivalents>
+    <rj_cor:IncreaseDecreaseCashAndCashEquivalents
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003140"
+      unitRef="EUR">104213000</rj_cor:IncreaseDecreaseCashAndCashEquivalents>
+    <rj_cor:CashAndCashEquivalentsCashFlow
+      contextRef="context_2"
+      decimals="-3"
+      id="ID0003150"
+      unitRef="EUR">400393000</rj_cor:CashAndCashEquivalentsCashFlow>
+    <rj_cor:CashAndCashEquivalentsCashFlow
+      contextRef="context_3"
+      decimals="-3"
+      id="ID0003160"
+      unitRef="EUR">372637000</rj_cor:CashAndCashEquivalentsCashFlow>
+    <rj_cor:OperatingResultCashFlow
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003170"
+      unitRef="EUR">77562000</rj_cor:OperatingResultCashFlow>
+    <rj_cor:OperatingResultCashFlow
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003180"
+      unitRef="EUR">-103788000</rj_cor:OperatingResultCashFlow>
+    <vanoord:AdjustmentsDepreciationTangibleFixedAssets
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003190"
+      unitRef="EUR">156146000</vanoord:AdjustmentsDepreciationTangibleFixedAssets>
+    <vanoord:AdjustmentsDepreciationTangibleFixedAssets
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003200"
+      unitRef="EUR">155537000</vanoord:AdjustmentsDepreciationTangibleFixedAssets>
+    <vanoord:AdjustmentsAmortisationIntangibleFixedAssets
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003210"
+      unitRef="EUR">9263000</vanoord:AdjustmentsAmortisationIntangibleFixedAssets>
+    <vanoord:AdjustmentsAmortisationIntangibleFixedAssets
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003220"
+      unitRef="EUR">9254000</vanoord:AdjustmentsAmortisationIntangibleFixedAssets>
+    <vanoord:ResultOnSaleParticipatingInterest
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003230"
+      unitRef="EUR">-7152000</vanoord:ResultOnSaleParticipatingInterest>
+    <vanoord:ResultOnSaleParticipatingInterest
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003240"
+      unitRef="EUR">-54484000</vanoord:ResultOnSaleParticipatingInterest>
+    <rj_cor:IncreaseDecreaseInInventories
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003250"
+      unitRef="EUR">-7609000</rj_cor:IncreaseDecreaseInInventories>
+    <rj_cor:IncreaseDecreaseInInventories
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003260"
+      unitRef="EUR">-4306000</rj_cor:IncreaseDecreaseInInventories>
+    <vanoord:IncreaseDecreaseReceivables
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003270"
+      unitRef="EUR">-27429000</vanoord:IncreaseDecreaseReceivables>
+    <vanoord:IncreaseDecreaseReceivables
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003280"
+      unitRef="EUR">-58820000</vanoord:IncreaseDecreaseReceivables>
+    <vanoord:IncreaseDecreaseWorkInProgress
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003290"
+      unitRef="EUR">-148052000</vanoord:IncreaseDecreaseWorkInProgress>
+    <vanoord:IncreaseDecreaseWorkInProgress
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003300"
+      unitRef="EUR">212727000</vanoord:IncreaseDecreaseWorkInProgress>
+    <rj_cor:IncreaseDecreaseInOtherPayables
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003310"
+      unitRef="EUR">44052000</rj_cor:IncreaseDecreaseInOtherPayables>
+    <rj_cor:IncreaseDecreaseInOtherPayables
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003320"
+      unitRef="EUR">-10723000</rj_cor:IncreaseDecreaseInOtherPayables>
+    <rj_cor:ChangesWorkingCapital
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003330"
+      unitRef="EUR">-139039000</rj_cor:ChangesWorkingCapital>
+    <rj_cor:ChangesWorkingCapital
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003340"
+      unitRef="EUR">138878000</rj_cor:ChangesWorkingCapital>
+    <rj_cor:IncreaseDecreaseProvisions
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003350"
+      unitRef="EUR">-8750000</rj_cor:IncreaseDecreaseProvisions>
+    <rj_cor:IncreaseDecreaseProvisions
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003360"
+      unitRef="EUR">-83356000</rj_cor:IncreaseDecreaseProvisions>
+    <rj_cor:CashFlowFromOperations
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003370"
+      unitRef="EUR">88030000</rj_cor:CashFlowFromOperations>
+    <rj_cor:CashFlowFromOperations
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003380"
+      unitRef="EUR">62041000</rj_cor:CashFlowFromOperations>
+    <rj_cor:InterestPaidClassifiedAsOperatingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003390"
+      unitRef="EUR">9158000</rj_cor:InterestPaidClassifiedAsOperatingActivities>
+    <rj_cor:InterestPaidClassifiedAsOperatingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003400"
+      unitRef="EUR">7786000</rj_cor:InterestPaidClassifiedAsOperatingActivities>
+    <rj_cor:IncomeTaxPaidClassifiedAsOperatingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003410"
+      unitRef="EUR">17064000</rj_cor:IncomeTaxPaidClassifiedAsOperatingActivities>
+    <rj_cor:IncomeTaxPaidClassifiedAsOperatingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003420"
+      unitRef="EUR">4526000</rj_cor:IncomeTaxPaidClassifiedAsOperatingActivities>
+    <rj_cor:CashFlowOperatingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003430"
+      unitRef="EUR">61808000</rj_cor:CashFlowOperatingActivities>
+    <rj_cor:CashFlowOperatingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003440"
+      unitRef="EUR">49729000</rj_cor:CashFlowOperatingActivities>
+    <rj_cor:PurchasePropertyPlantEquipment
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003450"
+      unitRef="EUR">226876000</rj_cor:PurchasePropertyPlantEquipment>
+    <rj_cor:PurchasePropertyPlantEquipment
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003460"
+      unitRef="EUR">208410000</rj_cor:PurchasePropertyPlantEquipment>
+    <rj_cor:ProceedsSalesPropertyPlantAndEquipment
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003470"
+      unitRef="EUR">9283000</rj_cor:ProceedsSalesPropertyPlantAndEquipment>
+    <rj_cor:ProceedsSalesPropertyPlantAndEquipment
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003480"
+      unitRef="EUR">5723000</rj_cor:ProceedsSalesPropertyPlantAndEquipment>
+    <vanoord:InvestmentsInFinancialFixedAssets
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003490"
+      unitRef="EUR">2837000</vanoord:InvestmentsInFinancialFixedAssets>
+    <vanoord:InvestmentsInFinancialFixedAssets
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003500"
+      unitRef="EUR">3844000</vanoord:InvestmentsInFinancialFixedAssets>
+    <vanoord:ReceiptsFromFinancialFixedAssets
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003510"
+      unitRef="EUR">33865000</vanoord:ReceiptsFromFinancialFixedAssets>
+    <vanoord:ReceiptsFromFinancialFixedAssets
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003520"
+      unitRef="EUR">108661000</vanoord:ReceiptsFromFinancialFixedAssets>
+    <rj_cor:CashFlowInvestingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003530"
+      unitRef="EUR">-186565000</rj_cor:CashFlowInvestingActivities>
+    <rj_cor:CashFlowInvestingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003540"
+      unitRef="EUR">-97870000</rj_cor:CashFlowInvestingActivities>
+    <rj_cor:DividendsPaidClassifiedAsFinancingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003550"
+      unitRef="EUR">0</rj_cor:DividendsPaidClassifiedAsFinancingActivities>
+    <rj_cor:DividendsPaidClassifiedAsFinancingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003560"
+      unitRef="EUR">15963000</rj_cor:DividendsPaidClassifiedAsFinancingActivities>
+    <rj_cor:RepaymentsBorrowings
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003570"
+      unitRef="EUR">56503000</rj_cor:RepaymentsBorrowings>
+    <rj_cor:RepaymentsBorrowings
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003580"
+      unitRef="EUR">40030000</rj_cor:RepaymentsBorrowings>
+    <rj_cor:ProceedsFromBorrowings
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003590"
+      unitRef="EUR">199760000</rj_cor:ProceedsFromBorrowings>
+    <rj_cor:ProceedsFromBorrowings
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003600"
+      unitRef="EUR">230000000</rj_cor:ProceedsFromBorrowings>
+    <rj_cor:CashFlowFinancingActivities
+      contextRef="context_1"
+      decimals="-3"
+      id="ID0003610"
+      unitRef="EUR">143257000</rj_cor:CashFlowFinancingActivities>
+    <rj_cor:CashFlowFinancingActivities
+      contextRef="context_4"
+      decimals="-3"
+      id="ID0003620"
+      unitRef="EUR">174007000</rj_cor:CashFlowFinancingActivities>
+    <jenv_bw2_cor:AccountingStandardsUsedToPrepareFinancialStatementsDescription contextRef="context_1" id="ID0004000">Van Oord N.V. (Chamber of Commerce number 24355843) has its registered office in Rotterdam, Schaardijk 211, 3063 NH, the Netherlands, and is the holding company owning the shares of the Van Oord group companies. The financial statements have been prepared in accordance with generally accepted accounting principles in the Netherlands (Dutch GAAP) and comply with the financial reporting requirements included in Part 9 of Book 2 of the Dutch Civil Code. The financial statements have been prepared upon a going concern basis.</jenv_bw2_cor:AccountingStandardsUsedToPrepareFinancialStatementsDescription>
+    <jenv_bw2_cor:LegalEntityName contextRef="context_1" id="ID000020">Van Oord N.V.</jenv_bw2_cor:LegalEntityName>
+    <jenv_bw2_cor:ChamberOfCommerceRegistrationNumber contextRef="context_1" id="ID0000040">24355843</jenv_bw2_cor:ChamberOfCommerceRegistrationNumber>
+    <jenv_bw2_cor:LegalEntityRegisteredOffice contextRef="context_1" id="ID000030">Rotterdam</jenv_bw2_cor:LegalEntityRegisteredOffice>
+    <vanoord:FinancialReportingPeriodDisclosure contextRef="context_1" id="ID0004010">The financial statements cover the financial year ending on 31 December 2022.</vanoord:FinancialReportingPeriodDisclosure>
+    <rj_cor:FunctionalCurrencyDescription contextRef="context_1" id="ID0004020">The financial statements are presented in euro (EUR), which is the company's functional currency. All financial information is presented in EUR (rounded to the nearest thousand), unless otherwise stated. </rj_cor:FunctionalCurrencyDescription>
+    <jenv_bw2_cor:ConsolidationDisclosure contextRef="context_1" id="ID0004030">The consolidated financial statements include the financial information of Van Oord N.V. and its wholly-owned group companies using the full consolidation method. Participating interests and contracting consortiums are consolidated proportionally, provided that the company exercises at least the same influence on policy as each of the other participants. Joint and several liability for the commitments of contracting consortiums is taken into account if necessary. The abbreviated company profit and loss account is prepared in accordance with Section 402 of Part 9 of Book 2 of the Dutch Civil Code.</jenv_bw2_cor:ConsolidationDisclosure>
+    <rj_cor:MergersAcquisitionsDisclosure contextRef="context_1" id="ID0004040">Acquisitions are recognised using the purchase accounting method, whereby the acquired party's identifiable assets and liabilities as at the date of acquisition are recognised in the consolidated balance sheet at fair value based on the policies of Van Oord. The difference between the acquisition price and the fair value of all of the acquired party's identifiable assets and liabilities is recognised by Van Oord as goodwill in the balance sheet.</rj_cor:MergersAcquisitionsDisclosure>
+    <jenv_bw2_cor:GroupStructureDisclosure contextRef="context_1" id="ID0004050">&lt;h4&gt;Overview of most important group companies&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header header-column"&gt;Group companies 100%&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Van Oord Dredging and Marine Contractors B.V.&lt;/td&gt;
+              &lt;td&gt;Rotterdam&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Van Oord Nederland B.V.&lt;/td&gt;
+              &lt;td&gt;Rotterdam&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Van Oord Offshore Wind B.V.&lt;/td&gt;
+              &lt;td&gt;Gorinchem&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Van Oord Offshore B.V.&lt;/td&gt;
+              &lt;td&gt;Gorinchem&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Van Oord Equipment B.V.&lt;/td&gt;
+              &lt;td&gt;Gorinchem&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Van Oord Finance B.V.&lt;/td&gt;
+              &lt;td&gt;Rotterdam&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;A list of participating interests and contracting consortiums included in the consolidation has been filed at the offices of the Chamber of Commerce in Woerden (the Netherlands) in accordance with section 379 and section 414 of Part 9 of Book 2 of the Dutch Civil Code. The list also indicates for which companies Van Oord N.V. has been filed declarations of joint and several liability with the Chamber of Commerce and includes contracting consortiums in the Netherlands (VOF's) for which the company is jointly and severally liable for the non-consolidated part of the liabilities. A limited number of companies on the list in which Van Oord does not hold a majority of the shares, are consolidated as by means of deeds, agreements and arrangements control is obtained.&lt;/p&gt;</jenv_bw2_cor:GroupStructureDisclosure>
+    <jenv_bw2_cor:ForeignCurrencyTranslationPolicy contextRef="context_1" id="ID0004060">Balance sheet items of foreign group companies denominated in foreign currencies are translated at the exchange rates at the balance sheet date. Income and expenses in foreign currencies, to the extent that these are hedged by forward exchange transactions, are translated at the forward exchange rates. All other items are translated at average exchange rates or at the exchange rates at the balance sheet date. Other exchange gains or losses are taken to the profit and loss account directly. Translation differences arising on the translation of foreign participating interests are taken to reserves.</jenv_bw2_cor:ForeignCurrencyTranslationPolicy>
+    <rj_cor:AccountingStandardsAppliedEarlierDescription contextRef="context_1" id="ID0004070">Revised accounting standards
+        The Dutch Accounting Standards Board (DASB) has issued 2 revised Standards, RJ 221 Construction Contracts and RJ 270 The Income Statement, which are effective as from 1 January 2022. The Company has applied the transitional method in which the changes as a result of RJ 270 are processed prospectively and effectively from 1 January 2022.</rj_cor:AccountingStandardsAppliedEarlierDescription>
+    <rj_cor:EstimatesDisclosure contextRef="context_1" id="ID0004080">&lt;p&gt;The preparation of financial statements requires management to make judgements, assumptions and estimates which affect the application of accounting policies and the reported amounts of assets, liabilities, income and expenses. The actual results may differ from these estimates. Estimates and related assumptions are continually reviewed. Revisions to accounting estimates are recognised in the period in which the estimate is revised and in future periods if affected by the revision.&lt;/p&gt;
+        The most critical accounting policies in presenting the financial position and which require estimates and assumptions are those applying to the valuation of:
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;Tangible fixed assets&lt;/li&gt;
+          &lt;li&gt;Receivables&lt;/li&gt;
+          &lt;li&gt;Work in progress&lt;/li&gt;
+          &lt;li&gt;Provisions&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;At each reporting date the company assesses whether there is objective evidence that an asset or group of assets is impaired. In case of such evidence, the value in use is calculated with the discounted future cash flows which are derived from cash flow projections included in, management approved, projections for a period of five years. These are extrapolated for the later years and discounted against the estimated discount rate. The cash flow projections contain various assumptions and estimates of future expectations. The value in use is sensitive for the used discount rate and expected future cash flows.&lt;/p&gt;
+        &lt;p&gt;As regards to work in progress, Van Oord has substantial contracts in progress and in its order book which, by their nature, are potentially high risk due to their size, complexity, and (long) duration. These projects are accounted for using best estimates of: the degree to which project revenue is achievable (allowing for contract variations), project expenses, and the expected profit on any contractually related maintenance phase. Because of their size, complexity and (long) duration, projects may also have a relatively large impact on the company's result. Project revenue, project expenses and hence the result made on projects at the time of completion may differ substantially from current estimates, amongst others as a consequence of negotiations with customers. &lt;/p&gt;</rj_cor:EstimatesDisclosure>
+    <rj_cor:FinancialInstrumentsPolicy contextRef="context_1" id="ID0004090">Financial instruments include both primary financial instruments, such as receivables, payables and derivative financial instruments. All purchases and sales of financial assets made according to standard market conventions are recognised as at the transaction date, being the date on which the group enters into a binding agreement. For the accounting policies applicable to primary financial instruments, please refer to the relevant individual balance sheet items. For the valuation and recognition of derivatives, please refer to the section 'Derivatives and hedge accounting'.</rj_cor:FinancialInstrumentsPolicy>
+    <jenv_bw2_cor:IntangibleAssetsPolicy contextRef="context_1" id="ID0004100">Goodwill is the difference between the purchase price for newly acquired participating interests and the value of the company's share in the fair value determined in accordance with the Van Oord N.V. accounting policies. Goodwill is amortised on a straight-line base on its expected useful economic life.</jenv_bw2_cor:IntangibleAssetsPolicy>
+    <jenv_bw2_cor:PropertyPlantEquipmentPolicy contextRef="context_1" id="ID0004110">Tangible fixed assets are stated at the lower of cost and net realisable value, less straight-line depreciation and / or impairments of tangible fixed assets based on their expected useful economic lives as stated in the notes to the consolidated balance sheet. Investments made during the year are depreciated from the date of purchase in sofar these have become operational. Retired tangible fixed assets are carried at the carrying amount or their net realizable value, whichever is lower. A tangible fixed asset is derecognised upon sale or when no further economic benefits are expected from its continued use or sale. The gain or losses arising on the disposal is taken to the profit and loss account. Repair and maintenance costs are recognised by means of a maintenance provision.</jenv_bw2_cor:PropertyPlantEquipmentPolicy>
+    <jenv_bw2_cor:FinancialAssetsPolicy contextRef="context_1" id="ID0004120">Participating interests over whose financial and operating policies significant influence is exercised, even when less than 20% is held, are stated at the proportional share of their net asset value determined in accordance with the accounting policies of Van Oord N.V. Participating interests over whose financial and operational policies no significant influence is exercised are carried at cost less any impairment. Dividend is designated as income and recognised under financial income and expenses. Long-term receivables are stated at amortised cost.</jenv_bw2_cor:FinancialAssetsPolicy>
+    <rj_cor:DeferredTaxAssetsPolicy contextRef="context_1" id="ID0004130">Deferred tax assets are recognised at nominal value to the extent that it is probable that future taxable profit will be available for set-off, for which the group assesses the availability of deferred tax liabilities set-off, the possibility of planning of fiscal results and the level of future taxable profits in combination with the time and/or period in which the deferred tax assets are realised.</rj_cor:DeferredTaxAssetsPolicy>
+    <jenv_bw2_cor:InventoriesPolicy contextRef="context_1" id="ID0004140">Raw materials and consumables are stated at the lower of cost and net realisable value. Van Oord applies the first-in/first-out system.</jenv_bw2_cor:InventoriesPolicy>
+    <jenv_bw2_cor:ReceivablesPolicy contextRef="context_1" id="ID0004150">Receivables are initially measured at fair value plus transaction costs and subsequently stated at amortised cost, net of provisions for doubtful debts where necessary.</jenv_bw2_cor:ReceivablesPolicy>
+    <jenv_bw2_cor:CashAndCashEquivalentsPolicy contextRef="context_1" id="ID0004160">Cash at bank and in hand is stated at nominal value.</jenv_bw2_cor:CashAndCashEquivalentsPolicy>
+    <jenv_bw2_cor:ProvisionsPolicy contextRef="context_1" id="ID0004170">&lt;p class="no-padding-bottom"&gt;Provisions are stated at the nominal value of the expenditures expected to be required to settle the liabilities or losses. Provisions are discounted if the effect of discounting is material. If some or all of the expenditure required to settle a provision is likely to be reimbursed by a third party at the time when the provision is settled, the reimbursement is separately recognised as an asset.
+          &lt;br/&gt;A provision is recognised in the balance sheet if:
+        &lt;/p&gt;
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;a present obligation (legal or constructive) has arisen as a result of a past event;&lt;/li&gt;
+          &lt;li&gt;the amount can be estimated reliably; and&lt;/li&gt;
+          &lt;li&gt;settlement of the liability is likely to result in an outflow of resources.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;Deferred tax liabilities are recognised for taxable temporary differences between tax and financial reporting purposes, and are carried on the basis of the tax consequences of the realisation or settlement of assets and liabilities as planned at the balance sheet date. The tax rates and tax laws used, are those that are (substantively) enacted at that date. Deferred tax liabilities are non-discounted and recognised under the provision for tax liabilities.&lt;/p&gt;</jenv_bw2_cor:ProvisionsPolicy>
+    <jenv_bw2_cor:LiabilitiesNoncurrentPolicy contextRef="context_1" id="ID0004180">Liabilities are initially carried at fair value minus transaction costs and subsequently stated at amortised cost.</jenv_bw2_cor:LiabilitiesNoncurrentPolicy>
+    <rj_cor:ConstructionContractsLiabilitiesPolicy contextRef="context_1" id="ID0004190">Work in progress relates to contracts with third parties and is stated at cost, plus attributed profit, minus the realisable value of work completed.
+        Cost comprises of direct project costs (such as the costs of staff directly involved in the project, costs of materials, subcontractor fees and charges for equipment), expenses attributable to general project activities and the project, and other costs contractually allocable to the customer.
+        Profit is accounted for on the basis of the technical progress of the work once this profit can be estimated reliably. The realisable value of work completed comprises the total work in progress instalments charged, and work completed but not yet invoiced. A provision for expected losses is deducted from the balance of work in progress.
+        The net amount for each contract is recognised as a current asset or a current liability where the balance of the construction contract is positive or negative, respectively.</rj_cor:ConstructionContractsLiabilitiesPolicy>
+    <rj_cor:LiabilitiesCurrentOtherPolicy contextRef="context_1" id="ID0004200">Other liabilities are initially carried at fair value minus transaction costs and subsequently stated at amortised cost.</rj_cor:LiabilitiesCurrentOtherPolicy>
+    <rj_cor:PensionArrangementsPolicy contextRef="context_1" id="ID0004210">The new principle pension plan is carried out by pension fund PGB and is a collective defined contribution plan based on an average pay plan and a target pension age of 68. Based on this collective defined contribution plan Van Oord will allocate a fixed contribution annually. The aim is to maintain the value of the accrued pension entitlements. The accrued pension entitlements are not assured and the decision on the level of indexation percentage is based on the coverage ratio of the pension fund and is taken by the Board of the PGB pension fund.The coverage ratio at year-end 2022 is 113.2% (116.8%). The guiding principle is that annual pension charges are equal to the pension contributions payable to the pension administrator. A liability is recognised in so far as the contribution payable to the pension administrator has not been paid at the balance sheet date.</rj_cor:PensionArrangementsPolicy>
+    <rj_cor:FinancialInstrumentsHedgeAccountingPolicy contextRef="context_1" id="ID0004220">Van Oord N.V. uses financial instruments ('derivatives'), such as forward currency contracts to hedge against risks associated with fluctuations in currencies. Van Oord carries these instruments at cost and applies cost price hedge accounting. Hedge relationships have been documented and are pre-reviewed for expected effectiveness. Effectiveness is reviewed on a regular basis. If the critical elements of the derivative and the hedged item are not the same, a certain degree of ineffectiveness is assumed and a quantitative ineffectiveness measurement is required. If that measurement reveals that the cumulative negative change in fair value of the hedging instrument is higher in absolute terms than the opposite change in fair value of the hedged item, then ineffectiveness exists, which will be directly recognised in the profit and loss account as a loss.</rj_cor:FinancialInstrumentsHedgeAccountingPolicy>
+    <rj_cor:RevenueRecognitionPolicy contextRef="context_1" id="ID0004230">&lt;h6&gt;General&lt;/h6&gt;
+        Net revenue represents the value of the work carried out in the financial year plus the profit on work completed in the year and income from some trading activities.
+        &lt;h6&gt;Performance obligations&lt;/h6&gt;
+        Revenue is recognised per separate performance obligation. The nature of significant performance obligations and the method of allocating revenue to reporting periods, including the method of determining the extent of completion is described below. These performance obligations are the most significant ones, however, performance obligations are identified on a contract basis and can therefore differ from the below mentioned significant ones.
+        &lt;p class="no-padding-bottom"&gt;In general the following performance obligations are distinguished:&lt;/p&gt;
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;Construction, for which revenue is recognised based on the percentage of completion method;&lt;/li&gt;
+          &lt;li&gt;Maintenance, for which revenue is recognised based on the percentage of completion method.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p class="no-padding-bottom"&gt;For balance of plant contracts, generally the following performance obligations are distinguished:&lt;/p&gt;
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;Procurement, for which revenue is recognised based on the transfer of titles;&lt;/li&gt;
+          &lt;li&gt;Execution/installation, for which revenue is recognised based on the percentage of completion method. &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h6&gt;Percentage of completion method&lt;/h6&gt;
+        If the outcome of a construction contract can be reliably estimated, project income and costs from the contract are recognised in the income statement as revenue respectively costs pro rata to the extent of the work performed at the balance sheet date. The percentage of completion is generally determined based on the contract costs incurred in proportion to the estimated total contract costs.
+        &lt;p&gt;If the outcome of a construction contract cannot be estimated reliably, revenue is recognised only to the extent of contract costs incurred that are probably recoverable. The contract costs are recognised as an expense in the income statement in the period in which they are incurred.&lt;/p&gt;
+        &lt;h6&gt;Transfer of titles&lt;/h6&gt;
+        When procured goods are legally transferred to the customer, the related revenue is recognised.
+        &lt;h6&gt;Transaction price&lt;/h6&gt;
+        Revenue is recognised for the amount to which group expects to be entitled in exchange for the transfer of promised goods or services. If there are multiple performance obligations in a contract, the total transaction price is allocated to the performance obligations in proportion to the value of the performance obligations.
+        &lt;h6&gt;Contract modification&lt;/h6&gt;
+        &lt;p class="no-padding-bottom"&gt;An amendment to a contract is accounted for as a separate agreement if there is:&lt;/p&gt;
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;An addition of promised goods or services that are distinguishable; and&lt;/li&gt;
+          &lt;li&gt;An increase in the originally agreed consideration by an amount that reflects the value of the additional goods or services promised, taking into account appropriate adjustments to that consideration in line with the circumstances of the particular contract.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p class="no-padding-bottom"&gt;Other amendments are accounted for based on the following:&lt;/p&gt;
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;If the remaining goods or services are distinguishable from those transferred on or before the date of the amendment, the amendment is accounted for as a termination of the existing contract and the creation of a new contract.&lt;/li&gt;
+          &lt;li&gt;If the remaining goods or services are indistinguishable and therefore part of a single performance obligation that is partially satisfied at the time of the amendment, the amendment is accounted for as an amendment to the existing contract. The effect of the modification on the transaction price and on the measurement of the progress towards fulfilment of the performance obligation is recognised as an adjustment to the cumulative revenue at the time of the modification.&lt;/li&gt;
+        &lt;/ul&gt;</rj_cor:RevenueRecognitionPolicy>
+    <jenv_bw2_cor:ExpensesPolicy contextRef="context_1" id="ID0004240">Costs are determined in accordance with the accounting policies set out above and are allocated to the financial year to which they relate.</jenv_bw2_cor:ExpensesPolicy>
+    <jenv_bw2_cor:EmployeeBenefitsExpensesPolicy contextRef="context_1" id="ID0004250">Employee benefits and social charges are charged to the profit and loss account in the period in which the employee services are rendered.</jenv_bw2_cor:EmployeeBenefitsExpensesPolicy>
+    <jenv_bw2_cor:ShareInResultsParticipatingInterestsPolicy contextRef="context_1" id="ID0004260">The share in the result of participating interests consists of the share of the group in the results of these participating interests.</jenv_bw2_cor:ShareInResultsParticipatingInterestsPolicy>
+    <jenv_bw2_cor:IncomeTaxExpensePolicy contextRef="context_1" id="ID0004270">Income taxes are calculated on the basis of the result disclosed in the profit and loss account, taking into account current tax facilities and deferred tax assets and liabilities. Together with its Dutch group companies, the company constitutes a fiscal unity. Taxes within this fiscal unity are settled based on the reported financial results of the respective entities. Tax assets and liabilities are netted if the general conditions for netting are met.</jenv_bw2_cor:IncomeTaxExpensePolicy>
+    <rj_cor:CashFlowStatementPolicy contextRef="context_1" id="ID0004280">The cash flow statement is prepared on the indirect method. The liquidities included in the cash flow statement comprise of cash at bank and in hand. Cash flows in foreign currencies are translated at an average exchange rate. Transactions where no cash is exchanged are not included in the cash flow. </rj_cor:CashFlowStatementPolicy>
+    <jenv_bw2_cor:IntangibleAssetsDisclosure contextRef="context_1" id="ID0004290">&lt;h4&gt;1. Intangible fixed assets&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 1 January&lt;/td&gt;
+              &lt;td class="cell-right"&gt;18,282&lt;/td&gt;
+              &lt;td class="cell-right"&gt;27,575&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Amortisation&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-9,263&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-9,254&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Other movement&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-39&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;9,019&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;18,282&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Cost&lt;/td&gt;
+              &lt;td class="cell-right"&gt;149,346&lt;/td&gt;
+              &lt;td class="cell-right"&gt;149,346&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Accumulated amortisation&lt;/td&gt;
+              &lt;td class="cell-right"&gt;140,327&lt;/td&gt;
+              &lt;td class="cell-right"&gt;131,064&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;Intangible fixed assets fully relate to goodwill. Goodwill is amortised over the period in which the economic benefits attributable to asset are deemded to flow to Van Oord. The maximum amortisation period is 20 years. &lt;/p&gt;</jenv_bw2_cor:IntangibleAssetsDisclosure>
+    <jenv_bw2_cor:PropertyPlantEquipmentDisclosure contextRef="context_1" id="ID0004300">&lt;h4&gt;2. Tangible fixed assets 2022&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Land and buildings&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Floating&lt;br/&gt;and other contracting equipment&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Vehicles, fixtures and fittings&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Assets under construction&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Total&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 1 January&lt;/td&gt;
+              &lt;td class="cell-right"&gt;75,258&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,261,222&lt;/td&gt;
+              &lt;td class="cell-right"&gt;16,484&lt;/td&gt;
+              &lt;td class="cell-right"&gt;331,185&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,684,149&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Additions&lt;/td&gt;
+              &lt;td class="cell-right"&gt;9&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,487&lt;/td&gt;
+              &lt;td class="cell-right"&gt;282&lt;/td&gt;
+              &lt;td class="cell-right"&gt;304,373&lt;/td&gt;
+              &lt;td class="cell-right"&gt;307,151&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Assets taken into operation and other changes&lt;/td&gt;
+              &lt;td class="cell-right"&gt;106&lt;/td&gt;
+              &lt;td class="cell-right"&gt;132,175&lt;/td&gt;
+              &lt;td class="cell-right"&gt;14,322&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-147,146&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-543&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Disposals&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-6,885&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-130&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,725&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-8,740&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Depreciation&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-4,067&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-144,289&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-7,790&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-156,146&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="5"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;71,306&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,244,710&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;23,168&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;486,687&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,825,871&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Costs&lt;/td&gt;
+              &lt;td class="cell-right"&gt;118,937&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,359,084&lt;/td&gt;
+              &lt;td class="cell-right"&gt;54,092&lt;/td&gt;
+              &lt;td class="cell-right"&gt;486,687&lt;/td&gt;
+              &lt;td class="cell-right"&gt;4,018,800&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="5"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Accumulated depreciation&lt;/td&gt;
+              &lt;td class="cell-right"&gt;47,631&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,114,374&lt;/td&gt;
+              &lt;td class="cell-right"&gt;30,924&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,192,929&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Depreciation period in number of years&lt;/td&gt;
+              &lt;td class="cell-right"&gt;8 - 25&lt;/td&gt;
+              &lt;td class="cell-right"&gt;4 - 20&lt;/td&gt;
+              &lt;td class="cell-right"&gt;5 - 10&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;h5&gt;Tangible fixed assets 2021&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Land and buildings&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Floating&lt;br/&gt;and other contracting equipment&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Vehicles, fixtures and fittings&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Assets under construction&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Total&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 1 January&lt;/td&gt;
+              &lt;td class="cell-right"&gt;78,975&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,338,955&lt;/td&gt;
+              &lt;td class="cell-right"&gt;16,924&lt;/td&gt;
+              &lt;td class="cell-right"&gt;242,597&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,677,451&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Additions&lt;/td&gt;
+              &lt;td class="cell-right"&gt;953&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,949&lt;/td&gt;
+              &lt;td class="cell-right"&gt;6,715&lt;/td&gt;
+              &lt;td class="cell-right"&gt;156,341&lt;/td&gt;
+              &lt;td class="cell-right"&gt;167,958&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Assets taken into operation and other changes&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-152&lt;/td&gt;
+              &lt;td class="cell-right"&gt;66,615&lt;/td&gt;
+              &lt;td class="cell-right"&gt;546&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-67,753&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-744&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Disposals&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-447&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-3,773&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-759&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-4,979&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Depreciation&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-4,071&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-144,524&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-6,942&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-155,537&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="5"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;75,258&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,261,222&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;16,484&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;331,185&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,684,149&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Costs&lt;/td&gt;
+              &lt;td class="cell-right"&gt;119,336&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,242,280&lt;/td&gt;
+              &lt;td class="cell-right"&gt;67,006&lt;/td&gt;
+              &lt;td class="cell-right"&gt;331,185&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,759,807&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="5"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Accumulated depreciation&lt;/td&gt;
+              &lt;td class="cell-right"&gt;44,078&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,981,058&lt;/td&gt;
+              &lt;td class="cell-right"&gt;50,522&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,075,658&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Depreciation period in number of years&lt;/td&gt;
+              &lt;td class="cell-right"&gt;8 - 25&lt;/td&gt;
+              &lt;td class="cell-right"&gt;4 - 20&lt;/td&gt;
+              &lt;td class="cell-right"&gt;5 - 10&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;Assets under construction are not depreciated, unless the recoverable amount is lower than the carrying amount, which was not the case in 2022. Upon first use, these assets are properly categorised and depreciated in accordance with the accounting policies stated above.&lt;/p&gt;
+        &lt;p&gt;The insured value of tangible fixed assets at year-end 2022 amounted to EUR 3.3 billion (EUR 3.1 billion). &lt;/p&gt;
+        &lt;p&gt;As in previous years the company assessed whether as of 31 December 2022 there is objective evidence that an asset or group of assets is impaired. No triggers for impairment have been identified.&lt;/p&gt;</jenv_bw2_cor:PropertyPlantEquipmentDisclosure>
+    <jenv_bw2_cor:FinancialAssetsDisclosure contextRef="context_1" id="ID0004310">&lt;h4&gt;3. Financial fixed assets 2022&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Participations&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Loans&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Deferred&lt;br/&gt;tax assets&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Total&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Balance at 1 January&lt;/td&gt;
+              &lt;td class="cell-right"&gt;8,609&lt;/td&gt;
+              &lt;td class="cell-right"&gt;19,930&lt;/td&gt;
+              &lt;td class="cell-right"&gt;56,003&lt;/td&gt;
+              &lt;td class="cell-right"&gt;84,542&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Capital injections&lt;/td&gt;
+              &lt;td class="cell-right"&gt;179&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;179&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Dividend received&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-239&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-239&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Share in results&lt;/td&gt;
+              &lt;td class="cell-right"&gt;239&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;239&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Disposals&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-8,081&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-8,081&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;New loans&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,465&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,465&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Repayments&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-18,393&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-18,393&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Impairment of loans&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,600&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,600&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Additions&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;19,249&lt;/td&gt;
+              &lt;td class="cell-right"&gt;19,249&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Releases&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-22,461&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-22,461&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Other changes&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-8&lt;/td&gt;
+              &lt;td class="cell-right"&gt;201&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-669&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-476&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="4"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Balance at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;699&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;2,603&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;52,122&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;55,424&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;h5&gt;Financial fixed assets 2021&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Participations&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Loans&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Deferred&lt;br/&gt;tax assets&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Total&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Balance at 1 January&lt;/td&gt;
+              &lt;td class="cell-right"&gt;40,369&lt;/td&gt;
+              &lt;td class="cell-right"&gt;32,584&lt;/td&gt;
+              &lt;td class="cell-right"&gt;7,745&lt;/td&gt;
+              &lt;td class="cell-right"&gt;80,698&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Capital injections&lt;/td&gt;
+              &lt;td class="cell-right"&gt;506&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;506&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Dividend received&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-8,049&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-8,049&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Share in results&lt;/td&gt;
+              &lt;td class="cell-right"&gt;5,919&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;5,919&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Disposals&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-37,838&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-37,838&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;New loans&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,422&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,422&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Repayments&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-7,177&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-7,177&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Impairment of loans&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Other changes&lt;/td&gt;
+              &lt;td class="cell-right"&gt;7,702&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-7,899&lt;/td&gt;
+              &lt;td class="cell-right"&gt;48,258&lt;/td&gt;
+              &lt;td class="cell-right"&gt;48,061&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="4"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Balance at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;8,609&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;19,930&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;56,003&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;84,542&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;The disposal includes our share in Two Towers B.V.. This sale resulted in EUR 34 million of cash proceeds and EUR 7.2 million of book result in 2022. All loans provided to Two Towers B.V. amounting to EUR 18.4 million have been repaid.&lt;/p&gt;
+        &lt;p&gt;Deferred tax assets are recognised to the extent that the realisation of the related tax benefit through future taxable profits is probable. The deferred assets at year-end 2022 include positions of in total EUR 10.8 million which are expected to be settled within one year (2021: EUR 7.5 million).&lt;/p&gt;
+        &lt;p&gt;The impairment of loans in 2021 and 2022 reflects the write-down to the lower net realisable value which is anticipated to be recovered. In the profit and loss account this amount is included in Costs.&lt;/p&gt;</jenv_bw2_cor:FinancialAssetsDisclosure>
+    <jenv_bw2_cor:ReceivablesDisclosure contextRef="context_1" id="ID0004320">&lt;h4&gt;4. Receivables&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Trade debtors&lt;/td&gt;
+              &lt;td class="cell-right"&gt;202,995&lt;/td&gt;
+              &lt;td class="cell-right"&gt;197,061&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Other receivables&lt;/td&gt;
+              &lt;td class="cell-right"&gt;222,262&lt;/td&gt;
+              &lt;td class="cell-right"&gt;187,106&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Prepayments and accrued income&lt;/td&gt;
+              &lt;td class="cell-right"&gt;32,201&lt;/td&gt;
+              &lt;td class="cell-right"&gt;41,131&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;457,458&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;425,298&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;The total of the trade debtors is after deduction of a provision for bad debts of EUR 49 million (EUR 77 million).&lt;/p&gt;</jenv_bw2_cor:ReceivablesDisclosure>
+    <jenv_bw2_cor:CashAndCashEquivalentsDisclosure contextRef="context_1" id="ID0004330">&lt;h4&gt;5. Cash at bank and in hand&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-total column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Cash and bank&lt;/td&gt;
+              &lt;td class="cell-right"&gt;388,052&lt;/td&gt;
+              &lt;td class="cell-right"&gt;367,568&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Deposit accounts&lt;/td&gt;
+              &lt;td class="cell-right"&gt;12,341&lt;/td&gt;
+              &lt;td class="cell-right"&gt;5,069&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;400,393&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;372,637&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;Of the total of cash at bank and in hand at year-end 2022, EUR 50 million (EUR 50 million) relates to proportionally consolidated contracting consortiums and participating interests and EUR 15 million is considered trapped cash. At year-end 2021, of the total of cash at bank and in hand, EUR 14 million relates to a restricted bank account.&lt;br/&gt;The balance on this restricted bank account represented cash received from a customer on a specific bank account in the name of the company at the respective federal treasury department. The amount was subject to specific regulations before further transfer of amounts to unrestricted bank accounts of the company was possible. The restricted bank balances was therefore not immediately at free disposal of the company. &lt;/p&gt;
+        &lt;p&gt;Deposit accounts are immediately available to the company.&lt;/p&gt;</jenv_bw2_cor:CashAndCashEquivalentsDisclosure>
+    <jenv_bw2_cor:EquityGroupDisclosure contextRef="context_1" id="ID0004340">&lt;h4&gt;6. Shareholders' equity&lt;/h4&gt;
+        &lt;p&gt;Statement of changes in shareholders' equity of Van Oord N.V.:&lt;/p&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Shareholders' equity of Van Oord at 1 January&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;914,885&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,014,934&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Consolidated profit (loss) attributable to Van Oord N.V.&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;60,363&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-62,433&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Translation differences arising on foreign participating interests&lt;/td&gt;
+              &lt;td class="cell-right"&gt;9,256&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-21,653&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Total direct changes in shareholders' equity of Van Oord N.V.&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;9,256&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-21,653&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Total profit (loss) of the legal entity&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;69,619&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-84,086&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Dividend&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-15,963&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Total distributions to shareholders&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-15,963&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Shareholders' equity of Van Oord N.V. at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;984,504&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;914,885&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;For further details, please refer to the notes to the company balance sheet, under d.&lt;/p&gt;</jenv_bw2_cor:EquityGroupDisclosure>
+    <jenv_bw2_cor:Equity
+      contextRef="context_7"
+      decimals="-3"
+      id="ID0005000"
+      unitRef="EUR">914885000</jenv_bw2_cor:Equity>
+    <jenv_bw2_cor:Equity
+      contextRef="context_8"
+      decimals="-3"
+      id="ID0005010"
+      unitRef="EUR">1014934000</jenv_bw2_cor:Equity>
+    <jenv_bw2_cor:NetResultAfterTax
+      contextRef="context_9"
+      decimals="-3"
+      id="ID0005020"
+      unitRef="EUR">60363000</jenv_bw2_cor:NetResultAfterTax>
+    <jenv_bw2_cor:NetResultAfterTax
+      contextRef="context_10"
+      decimals="-3"
+      id="ID0005030"
+      unitRef="EUR">-62433000</jenv_bw2_cor:NetResultAfterTax>
+    <vanoord:TranslationDifferencesForeignParticipatingInterests
+      contextRef="context_9"
+      decimals="-3"
+      id="ID0005040"
+      unitRef="EUR">9256000</vanoord:TranslationDifferencesForeignParticipatingInterests>
+    <vanoord:TranslationDifferencesForeignParticipatingInterests
+      contextRef="context_10"
+      decimals="-3"
+      id="ID0005050"
+      unitRef="EUR">-21653000</vanoord:TranslationDifferencesForeignParticipatingInterests>
+    <vanoord:TotalDirectChangesShareholderEquityVanOordNV
+      contextRef="context_9"
+      decimals="-3"
+      id="ID0005060"
+      unitRef="EUR">9256000</vanoord:TotalDirectChangesShareholderEquityVanOordNV>
+    <vanoord:TotalDirectChangesShareholderEquityVanOordNV
+      contextRef="context_10"
+      decimals="-3"
+      id="ID0005070"
+      unitRef="EUR">-21653000</vanoord:TotalDirectChangesShareholderEquityVanOordNV>
+    <vanoord:TotalProfitLossLegalEntity
+      contextRef="context_9"
+      decimals="-3"
+      id="ID0005080"
+      unitRef="EUR">69619000</vanoord:TotalProfitLossLegalEntity>
+    <vanoord:TotalProfitLossLegalEntity
+      contextRef="context_10"
+      decimals="-3"
+      id="ID0005090"
+      unitRef="EUR">-84086000</vanoord:TotalProfitLossLegalEntity>
+    <rj_cor:EquityDividendDistribution
+      contextRef="context_9"
+      decimals="-3"
+      id="ID0005100"
+      unitRef="EUR">0</rj_cor:EquityDividendDistribution>
+    <rj_cor:EquityDividendDistribution
+      contextRef="context_10"
+      decimals="-3"
+      id="ID0005110"
+      unitRef="EUR">-15963000</rj_cor:EquityDividendDistribution>
+    <vanoord:TotalDistributionsToShareholders
+      contextRef="context_9"
+      decimals="-3"
+      id="ID0005120"
+      unitRef="EUR">0</vanoord:TotalDistributionsToShareholders>
+    <vanoord:TotalDistributionsToShareholders
+      contextRef="context_10"
+      decimals="-3"
+      id="ID0005130"
+      unitRef="EUR">-15963000</vanoord:TotalDistributionsToShareholders>
+    <jenv_bw2_cor:Equity
+      contextRef="context_6"
+      decimals="-3"
+      id="ID0005140"
+      unitRef="EUR">984504000</jenv_bw2_cor:Equity>
+    <jenv_bw2_cor:Equity
+      contextRef="context_7"
+      decimals="-3"
+      id="ID0005150"
+      unitRef="EUR">914885000</jenv_bw2_cor:Equity>
+    <jenv_bw2_cor:ProvisionsDisclosure contextRef="context_1" id="ID0004350">&lt;h4&gt;7. Provisions&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header"&gt;1 January 2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Addition&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Utilisation&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Release&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;Exchange differences&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;31 December 2022&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Regular maintenance of fixed operating assets&lt;/td&gt;
+              &lt;td class="cell-right"&gt;94,681&lt;/td&gt;
+              &lt;td class="cell-right"&gt;94,698&lt;/td&gt;
+              &lt;td class="cell-right"&gt;108,368&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;81,010&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Tax obligations&lt;/td&gt;
+              &lt;td class="cell-right"&gt;90,606&lt;/td&gt;
+              &lt;td class="cell-right"&gt;5,351&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;532&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-651&lt;/td&gt;
+              &lt;td class="cell-right"&gt;94,775&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Warranty obligations&lt;/td&gt;
+              &lt;td class="cell-right"&gt;34,651&lt;/td&gt;
+              &lt;td class="cell-right"&gt;4,708&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,348&lt;/td&gt;
+              &lt;td class="cell-right"&gt;608&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;35,403&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="6"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;219,938&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;104,757&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;111,716&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,140&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-651&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;211,188&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;The provision for regular maintenance of fixed operating assets is formed for systematic maintenance of equipment.&lt;/p&gt;
+        &lt;p&gt;The provision for tax obligations is intended mainly to settle tax liabilities, arising during the year and prior years, which may lead to tax payments in future reporting periods.&lt;/p&gt;
+        &lt;p&gt;The provision for warranty obligations covers estimated obligations for completed construction contracts. &lt;/p&gt;
+        &lt;p&gt;All provisions are generally long-term in nature.&lt;/p&gt;</jenv_bw2_cor:ProvisionsDisclosure>
+    <jenv_bw2_cor:LiabilitiesNoncurrentDisclosure contextRef="context_1" id="ID0004360">&lt;h4&gt;8. Long-term liabilities&lt;/h4&gt;
+        &lt;p&gt;In 2019 an EU Private Placement of EUR 200 million was arranged consisting of 6 tranches with terms of 5 to 10 years. During 2022 EUR 50 million was repaid.&lt;/p&gt;
+        &lt;p&gt;The Revolving Credit Facility has a principle amount of EUR 450 million. The maturity date was extended with another one year to July 2026 for EUR 405 million, with EUR 45 million maturing in 2024. At 31 December 2022 EUR 200 million was drawn under the RCF.&lt;/p&gt;
+        &lt;p&gt;In 2020 Van Oord signed a Green Loan Framework with a small number of banks on the back of 3 dual fuel (Natural Gas and Marine Gas Oil) hopper dredgers currently under construction. Under this Green Loan Framework EUR 130 million of variable rate loans have been secured all maturing in 2025. The maturity date was extended with another 2 years to respectively May 2027 and July 2027. At year-end 2022 the loans were fully drawn.&lt;/p&gt;
+        &lt;p&gt;In December 2021 Van Oord signed an EUR 100 million loan with a commercial bank based on ECB's TLTRO funding programme.&lt;/p&gt;
+        &lt;p&gt;This loan has variable interest and a tenor of 3 years with an option to request for extension of the loan with a maximum of 2 years.&lt;/p&gt;
+        &lt;p&gt;Further details of effective interest rates, remaining maturities and currencies in which the interest-bearing liabilities are denominated are provided in the note on financial instruments under 'interest rate risk'. &lt;/p&gt;
+        &lt;p&gt;At year-end 2022, the company was within the limits of the loan terms as agreed under the credit facility agreements (i.e. leverage ratio ≤ 3.5 and interest coverage ratio ≥ 4.0).&lt;/p&gt;
+        &lt;p&gt;The average rate of interest on long term loans in 2022 was 1.6% (1.7%). The repayment of long term liabilities after 5 years until final maturity amounts to EUR 55 million (EUR 53 million). No direct security is provided for any of the loans including Green Loan Framework tranches &amp;amp; TLTRO loan.&lt;/p&gt;</jenv_bw2_cor:LiabilitiesNoncurrentDisclosure>
+    <rj_cor:ConstructionContractsDisclosure contextRef="context_1" id="ID0004370">&lt;h4&gt;9. Work in progress&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Cost of work in progress, profit recognised, provision for expected losses &lt;/td&gt;
+              &lt;td class="cell-right"&gt;3,424,159&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,839,947&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Realisable value of work completed&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-3,604,230&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-3,158,816&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Advance payments received&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-77,277&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-86,531&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-257,348&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-405,400&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Of which presented as current assets&lt;/td&gt;
+              &lt;td class="cell-right"&gt;227,008&lt;/td&gt;
+              &lt;td class="cell-right"&gt;97,012&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Of which presented as current liabilities&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-484,356&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-502,412&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-257,348&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-405,400&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;</rj_cor:ConstructionContractsDisclosure>
+    <rj_cor:LiabilitiesOtherDisclosure contextRef="context_1" id="ID0004380">&lt;h4&gt;10. Other liabilities&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Trade creditors&lt;/td&gt;
+              &lt;td class="cell-right"&gt;174,833&lt;/td&gt;
+              &lt;td class="cell-right"&gt;142,155&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Taxes and social security contributions&lt;/td&gt;
+              &lt;td class="cell-right"&gt;81,078&lt;/td&gt;
+              &lt;td class="cell-right"&gt;97,864&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Various other liabilities&lt;/td&gt;
+              &lt;td class="cell-right"&gt;66,701&lt;/td&gt;
+              &lt;td class="cell-right"&gt;56,401&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Accruals and deferred income&lt;/td&gt;
+              &lt;td class="cell-right"&gt;457,527&lt;/td&gt;
+              &lt;td class="cell-right"&gt;369,517&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;780,139&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;665,937&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;Accruals and deferred income mainly concern accruals for project costs. The increase in 2022 compared to 2021 is&lt;br/&gt;mainly driven by accruals in relation to investments. &lt;/p&gt;</rj_cor:LiabilitiesOtherDisclosure>
+    <jenv_bw2_cor:FinancialInstrumentsDisclosure contextRef="context_1" id="ID0004390">&lt;h3&gt;Financial instruments&lt;/h3&gt;
+        &lt;h4&gt;General&lt;/h4&gt;
+        &lt;p&gt;Van Oord N.V. and its group companies use various financial instruments as part of their normal business activities. These are either accounted for under assets and liabilities or are not included in the balance sheet.&lt;/p&gt;
+        &lt;h4&gt;Credit risk&lt;/h4&gt;
+        &lt;p&gt;In principle, payment risks are covered by bank guarantees, insurance, etc., unless the creditworthiness of the debtor has been assured. These procedures and the geographical spread of the group companies' activities limit exposure to credit concentrations and market risks.&lt;/p&gt;
+        &lt;h4&gt;Liquidity risk&lt;/h4&gt;
+        &lt;p&gt;The principle underlying liquidity risk management is that sufficient cash resources must be maintained or credit facilities to be available to meet current and future financial commitments under both normal and exceptional circumstances. Liquidity forecasts, which include available credit facilities, form part of the regular management information. In view of the nature of the activities and corresponding strongly fluctuating cash flows, the available cash at bank and in hand is usually not tied up for more than one year.&lt;/p&gt;
+        &lt;h4&gt;Fuel price risk&lt;/h4&gt;
+        &lt;p&gt;The fuel price is largely hedged by entering into forward contracts and contractual arrangements with customers. &lt;/p&gt;
+        &lt;h4&gt;Foreign exchange risk&lt;/h4&gt;
+        &lt;p&gt;Many project contracts are denominated in foreign currencies. Virtually all positions in foreign currencies are fully hedged by means of forward exchange contracts. Forward currency contracts concluded to hedge against exchange rate fluctuations are valued at cost, and cost price hedge accounting is applied. Differences in forward rates arising from renewed forward exchange contracts are included in the balance sheet under current liabilities or assets. Forward exchange contracts are concluded for future cash flows mainly in US dollars. For this purpose, an amount of EUR 16 million (EUR 5 million) is included under other receivables at 31 December 2022, which is released as soon as the hedged future cash flow occurs.&lt;/p&gt;
+        &lt;h4&gt;Interest rate risk&lt;/h4&gt;
+        &lt;p&gt;The EU Private Placement is of a fixed-interest nature. The Revolving Credit Facility is fully of a variable-interest nature. The Green Loan Framework and TLTRO loan also have a variable interest. The variable interest on these loans is based on 1, 3 or 6 months EURIBOR (with a floor of 0%) plus margins of 25 to 175 bps.&lt;br/&gt;With regard to interest rate risk exposure, Van Oord periodically evaluates the mix of fixed and variable interest rate liabilities, balancing the benefit of lower interest costs versus the variability of cash flows. Van Oord uses derivative financial instruments to hedge the interest rate exposure. Part of our floating interest has been hedged to a fixed rate by means of financial instruments. As at year-end 66% of our total interest on non-revolving loans is fixed until maturity of the respective loans.&lt;/p&gt;
+        &lt;h5&gt;The effective interest rates and maturities of cash at bank and in hand and interest-bearing liabilities are as follows:&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;At 31 December 2022 (x EUR 1,000)&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;Effective interest rate&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;Less than 1 year&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;1-2 years&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;2-3 years&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;3-4 years&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;4-5 years&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;More than 5 years&lt;/td&gt;
+              &lt;td class="cell-right table-header column-smaller"&gt;Total&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="8"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Cash at bank and in hand&lt;/td&gt;
+              &lt;td class="cell-right"&gt;0.2%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;400,393&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;400,393&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;EU Private Placement (EUR)&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1.9%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;50,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;45,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;55,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;150,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Revolving Credit Facility (EUR)&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1.9%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;200,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;200,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Green Loan Framework (EUR)&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1.7%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;13,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;117,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;130,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;TLTRO loan (EUR)&lt;/td&gt;
+              &lt;td class="cell-right"&gt;0.5%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Other loans (EUR)&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-591&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-457&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-161&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-21&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,230&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="7"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class="table-header"&gt;Total long-term liabilities&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-591&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;99,543&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;49,839&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;257,979&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;117,000&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;55,000&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;578,770&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;h5&gt;The movement of the interest-bearing long-term liabilities is as follows:&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;(x EUR 1,000)&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;EU Private Placement&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;Revolving Credit Facility&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;Green&lt;br/&gt;Term&lt;br/&gt;Loan&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;TLTRO&lt;br/&gt;loan&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;Other&lt;br/&gt;loans&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;Capitalised financing costs&lt;/td&gt;
+              &lt;td class="cell-right table-header column-small"&gt;Total&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="7"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 1 January&lt;/td&gt;
+              &lt;td class="cell-right"&gt;200,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;130,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;6,503&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1,580&lt;/td&gt;
+              &lt;td class="cell-right"&gt;434,923&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Repayment&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-50,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-6,503&lt;/td&gt;
+              &lt;td class="cell-right"&gt;&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-56,503&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;New loans&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;200,000&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;200,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Amortisation of financing costs&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right"&gt;350&lt;/td&gt;
+              &lt;td class="cell-right"&gt;350&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="7"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Book value at 31 December&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;150,000&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;200,000&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;130,000&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;100,000&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-1,230&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;578,770&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;</jenv_bw2_cor:FinancialInstrumentsDisclosure>
+    <jenv_bw2_cor:OffBalanceSheetCommitmentsDisclosure contextRef="context_1" id="ID0004400">&lt;h4&gt;On-balance financial instruments and fair value&lt;/h4&gt;
+        &lt;p&gt;The fair value of financial instruments included in the balance sheet, such as financial fixed assets, cash at bank and in hand, receivables, and current and long-term liabilities, is virtually identical to their carrying value.&lt;/p&gt;
+        &lt;h4&gt;Off-balance financial instruments and fair value&lt;/h4&gt;
+        &lt;p&gt;As of 31 December 2022, the (nominal) amount of the forward exchange contracts at the forward rates was EUR 216 million (EUR 140 million). The (nominal) amount of the currencies to be received under these contracts at the exchange rates at 31 December 2022 was EUR 193 million (EUR 141 million).&lt;/p&gt;
+        &lt;h3&gt;Commitments, contingent assets and liabilities&lt;/h3&gt;
+        &lt;h4&gt;Warranty commitments&lt;/h4&gt;
+        &lt;p&gt;The warranty commitments not included in the balance sheet amount to EUR 960 million (EUR 915 million) at year-end 2022. The vast majority of the commitments relate to performance bonds issued to clients, which is common practice in contracting.&lt;/p&gt;
+        &lt;h4&gt;Obligations pursuant to claims, procedures and investigations&lt;/h4&gt;
+        &lt;p&gt;Van Oord is involved in - or may in the future be involved in - claims, procedures and (criminal) investigations, including regulatory, fiscal and other governmental, with possible financial and/or other consequences in the context of its business operations.&lt;/p&gt;
+        &lt;p&gt;Events of non-compliance may result in regulatory or fiscal (criminal) investigations, litigations and/or sanctions. Although extensive efforts are made to act in compliance with all relevant (local and international) legislation and regulations, notwithstanding all risk mitigating measures, a complete elimination of compliance risk cannot be guaranteed. Any violation of any relevant legislation, including anti-bribery and corruption legislation or anti-money laundering legislation could be material on our operational performance and cash flow in an individual accounting period.&lt;/p&gt;
+        &lt;h4&gt;Rental and lease commitments&lt;/h4&gt;
+        &lt;p&gt;Total commitments under long-term rental and lease contracts amount to EUR 21.3 million (EUR 20.0 million). An amount of EUR 9.6 million will be paid in 2023. Total operational lease commitments amount to EUR 14.9 million, of which EUR 5.7 million will be paid in 2023. Commitments with a term longer than 5 years amount to EUR 0.0 million.&lt;/p&gt;
+        &lt;h4&gt;Capital commitments&lt;/h4&gt;
+        &lt;p&gt;Commitments relating to investments in tangible fixed assets amount to EUR 263 million (EUR 492 million) at the balance sheet date. An amount of EUR 88 million will be paid in 2023. There are no commitments with a term longer than 5 years.&lt;/p&gt;
+        &lt;h4&gt;Agency fees&lt;/h4&gt;
+        &lt;p&gt;Van Oord has own management teams in place in many parts of the world, but also works with agents to win and/or execute contracts. This can lead to an increased risk of non-compliance with laws and regulations. &lt;/p&gt;
+        &lt;p&gt;Some countries require us to engage an agent, and an agent can also provide local support during the execution of a project. Agents usually receive a (fixed) percentage of the contract price for their work, sometimes in the form of a (partial) success fee. That is why we try to mitigate the risks associated with working with agents through our Agent Policy. Stringent procedures relating to new and existing agents are in place and we engage the services of external professionals to support us.&lt;/p&gt;
+        &lt;p&gt;Although our stringent policy and procedures did not reveal any concrete indications of possible irregularities, the risk of non-compliance with the applicable laws and regulations can never be completely excluded. Please refer to chapter 4 Governance (Risk and Compliance) for a more detailed explanation of our approach to and management of compliance risks.&lt;/p&gt;
+        &lt;h4&gt;Related parties&lt;/h4&gt;
+        &lt;p&gt;Van Oord classifies group companies, the Executive Committee, the Supervisory Board and (participations of) the shareholders as related parties. Related-party transactions are carried out at arm's length basis. &lt;/p&gt;</jenv_bw2_cor:OffBalanceSheetCommitmentsDisclosure>
+    <jenv_bw2_cor:NetRevenueDisclosure contextRef="context_1" id="ID0004410">&lt;h4&gt;11. General&lt;/h4&gt;
+        &lt;p&gt;Net revenue on work carried out in 2022, including the company's share of revenue generated by the consolidated consortiums (excluding value added tax), amounted to EUR 2,021 million (EUR 1,517 million). &lt;/p&gt;
+        &lt;h5&gt;Breakdown revenue by geographical area&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;2022&lt;/td&gt;
+              &lt;td class="column"&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;2021&lt;/td&gt;
+              &lt;td class="column"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Netherlands&lt;/td&gt;
+              &lt;td class="cell-right"&gt;585,698&lt;/td&gt;
+              &lt;td class="cell-right"&gt;29%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;416,232&lt;/td&gt;
+              &lt;td class="cell-right"&gt;27%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Rest of Europe&lt;/td&gt;
+              &lt;td class="cell-right"&gt;852,159&lt;/td&gt;
+              &lt;td class="cell-right"&gt;42%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;706,891&lt;/td&gt;
+              &lt;td class="cell-right"&gt;47%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Rest of the world&lt;/td&gt;
+              &lt;td class="cell-right"&gt;582,958&lt;/td&gt;
+              &lt;td class="cell-right"&gt;29%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;393,512&lt;/td&gt;
+              &lt;td class="cell-right"&gt;26%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;2,020,815&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100%&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,516,635&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100%&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;h5&gt;Breakdown revenue by business unit&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;2022&lt;/td&gt;
+              &lt;td class="column"&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;2021&lt;/td&gt;
+              &lt;td class="column"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Dredging&lt;/td&gt;
+              &lt;td class="cell-right"&gt;892,325&lt;/td&gt;
+              &lt;td class="cell-right"&gt;44%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;726,693&lt;/td&gt;
+              &lt;td class="cell-right"&gt;48%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Offshore Wind&lt;/td&gt;
+              &lt;td class="cell-right"&gt;599,336&lt;/td&gt;
+              &lt;td class="cell-right"&gt;30%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;347,198&lt;/td&gt;
+              &lt;td class="cell-right"&gt;23%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Offshore&lt;/td&gt;
+              &lt;td class="cell-right"&gt;207,671&lt;/td&gt;
+              &lt;td class="cell-right"&gt;10%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;191,157&lt;/td&gt;
+              &lt;td class="cell-right"&gt;13%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Netherlands&lt;/td&gt;
+              &lt;td class="cell-right"&gt;321,483&lt;/td&gt;
+              &lt;td class="cell-right"&gt;16%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;251,586&lt;/td&gt;
+              &lt;td class="cell-right"&gt;16%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;2,020,815&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100%&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;1,516,635&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100%&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;</jenv_bw2_cor:NetRevenueDisclosure>
+    <jenv_bw2_cor:EmployeeBenefitsExpensesDisclosure contextRef="context_1" id="ID0004420">&lt;h5&gt;Wages and salaries&lt;/h5&gt;
+        &lt;p&gt;Wages, salaries and social security contributions in 2022 for employees of Van Oord and it group companies amounted to EUR 310 million (EUR 291 million). This is related to an average of 3,824 (3,381) employees in full-time equivalents and can be broken down as follows:&lt;/p&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Wages and salaries&lt;/td&gt;
+              &lt;td class="cell-right"&gt;254,100&lt;/td&gt;
+              &lt;td class="cell-right"&gt;243,423&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Social security contributions&lt;/td&gt;
+              &lt;td class="cell-right"&gt;28,824&lt;/td&gt;
+              &lt;td class="cell-right"&gt;25,002&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Pension costs&lt;/td&gt;
+              &lt;td class="cell-right"&gt;27,131&lt;/td&gt;
+              &lt;td class="cell-right"&gt;22,982&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;310,055&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;291,407&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;These costs only relate to employees on our own payroll. The above figures include wages, salaries, social security contributions and pension costs of EUR 58 million (EUR 53 million) relating to the companies consolidated on a proportional basis.&lt;br/&gt;Annual pension charges are equal to the pension contributions payable to the pension administrator.&lt;/p&gt;</jenv_bw2_cor:EmployeeBenefitsExpensesDisclosure>
+    <jenv_bw2_cor:RemunerationManagingSupervisoryDirectorsDisclosure contextRef="context_1" id="ID0004430">Remuneration of the members of the Supervisory Board and statutory directors totalled EUR 2.0 million (EUR 2.7 million).
+        Remuneration of the members of the Supervisory Board amounts to EUR 0.4 million (EUR 0.4 million) and statutory directors amounts to EUR 1.6 million (EUR 2.3 million).</jenv_bw2_cor:RemunerationManagingSupervisoryDirectorsDisclosure>
+    <jenv_bw2_cor:AverageNumberEmployeesDisclosure contextRef="context_1" id="ID0004440">&lt;h5&gt;Breakdown of average number of employees&lt;/h5&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;2022&lt;/td&gt;
+              &lt;td class="column"&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column"&gt;2021&lt;/td&gt;
+              &lt;td class="column"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;(fulltime equivalents)&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Employed in the Netherlands&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,468&lt;/td&gt;
+              &lt;td class="cell-right"&gt;48%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,453&lt;/td&gt;
+              &lt;td class="cell-right"&gt;53%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Employed outside the Netherlands&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,356&lt;/td&gt;
+              &lt;td class="cell-right"&gt;26%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;928&lt;/td&gt;
+              &lt;td class="cell-right"&gt;20%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;3,824&lt;/td&gt;
+              &lt;td class="cell-right"&gt;74%&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;3,381&lt;/td&gt;
+              &lt;td class="cell-right"&gt;73%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Hired personnel&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,355&lt;/td&gt;
+              &lt;td class="cell-right"&gt;26%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,238&lt;/td&gt;
+              &lt;td class="cell-right"&gt;27%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td colspan="2"&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;5,179&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100%&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;4,619&lt;/td&gt;
+              &lt;td class="cell-right"&gt;100%&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;</jenv_bw2_cor:AverageNumberEmployeesDisclosure>
+    <vanoord:GrossProfitDisclosure contextRef="context_1" id="ID0004450">&lt;h4&gt;11. and 12. Gross profit&lt;/h4&gt;
+        &lt;p class="no-padding-bottom"&gt;Gross profit represents the balance of net revenue and the cost of work, plus the profit recognised on work in progress. Gross profit also includes:&lt;/p&gt;
+        &lt;ul class="no-padding-top"&gt;
+          &lt;li&gt;the addition to or release from the provision for expected losses on work in progress;&lt;/li&gt;
+          &lt;li&gt;prior-year income and expenses on work completed in previous years;&lt;/li&gt;
+          &lt;li&gt;income from fixed operating assets charged as rent to projects and third parties, less operating expenses, including periodic maintenance costs, and excluding depreciation;&lt;/li&gt;
+          &lt;li&gt;various items of income and expenses, such as results on the sale of tangible fixed assets, exchange differences and compensation for damage;- various items of income and expenses, such as results on the sale of tangible fixed assets, exchange differences and compensation for damage;&lt;/li&gt;
+          &lt;li&gt;depreciation and impairment of tangible fixed assets;&lt;/li&gt;
+          &lt;li&gt;amortisation of intangible fixed assets.&lt;/li&gt;
+        &lt;/ul&gt;</vanoord:GrossProfitDisclosure>
+    <jenv_bw2_cor:GeneralAdministrativeExpensesDisclosure contextRef="context_1" id="ID0004460">&lt;h4&gt;13. General and administrative expenses&lt;/h4&gt;
+        &lt;p&gt;General and administrative expenses are costs not charged to projects for mainly personnel &amp;amp; organization, operations and area support, quality, health &amp;amp; safety &amp;amp; environment, finance &amp;amp; administration (including management support), communication, corporate affairs, internal audit, information technology, strategy &amp;amp; markets, engineering &amp;amp; estimating and legal &amp;amp; contracts. The costs in respect of the aforesaid services are allocated to worldwide group entities. General and administrative expenses are charged based on a fixed ratio of the applicable net revenue to the respective group companies for the book year. This allocation ratio is set to cover, to a certain level, the general administrative expenses of the company that renders the head office services concerned.&lt;/p&gt;
+        &lt;p&gt;General and administrative expenses comprised of EUR 1.5 million (EUR 1.2 million) audit fees for the financial statements of the entities included in Van Oord N.V.'s consolidated accounts. These fees were charged by Ernst &amp;amp; Young Accountants LLP Netherlands and taken to the profit and loss account. Other audit fees charged by Ernst &amp;amp; Young in 2022 were EUR 0.1 million (EUR 0.3 million). Non-audit fees charged by Ernst &amp;amp; Young were EUR 0.0 million (2021: 0.5 million).&lt;/p&gt;</jenv_bw2_cor:GeneralAdministrativeExpensesDisclosure>
+    <rj_cor:FinancialIncomeExpensesDisclosure contextRef="context_1" id="ID0004470">&lt;h4&gt;14. Net interest expense&lt;/h4&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Interest income&lt;/td&gt;
+              &lt;td class="cell-right"&gt;1,642&lt;/td&gt;
+              &lt;td class="cell-right"&gt;2,222&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Interest expense&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-11,766&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-10,518&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-10,124&lt;/td&gt;
+              &lt;td class="cell-right table-total"&gt;-8,296&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;The EU Private Placement is of a fixed-interest nature. The Revolving Credit Facility is fully of a variable-interest nature. The Green Loan Framework and TLTRO loan also have a variable interest.&lt;/p&gt;</rj_cor:FinancialIncomeExpensesDisclosure>
+    <jenv_bw2_cor:IncomeTaxExpenseDisclosure contextRef="context_1" id="ID0004480">&lt;h4&gt;15. Income taxes&lt;/h4&gt;
+        &lt;p&gt;This item includes both Dutch and foreign income taxes. The effective and nominal tax rates differ by country.&lt;br/&gt;Reconciliation between the weighted nominal tax rate and the effective tax rate is a as follows (in percentage terms): &lt;/p&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2022&lt;/td&gt;
+              &lt;td class="cell-right table-header column-large"&gt;2021&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Weighted average nominal tax rate&lt;/td&gt;
+              &lt;td class="cell-right"&gt;22.4%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;32.9%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Tax implications of:&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Use of losses available for set-off not accounted for&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-17.9%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;22.5%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Loss carry-forwards not accounted for&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-16.2%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-29.9%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Tax-exempt profits and non-deductible expenses&lt;/td&gt;
+              &lt;td class="cell-right"&gt;11.9%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3.9%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Amortisation of intangible fixed assets&lt;/td&gt;
+              &lt;td class="cell-right"&gt;3.5%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;-1.6%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Movements in provisions&lt;/td&gt;
+              &lt;td class="cell-right"&gt;7.1%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;13.4%&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;hr/&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Effective tax rate&lt;/td&gt;
+              &lt;td class="cell-right"&gt;10.8%&lt;/td&gt;
+              &lt;td class="cell-right"&gt;41.2%&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;p&gt;Future loss relief corresponds to a tax amount of approximately EUR 76 million (EUR 59 million) which is not recognised as a deferred tax asset in the balance sheet of Van Oord. The set off of these losses are amongst others dependent on any future taxable profits. Of the total amount, around EUR 73 million (EUR 38 million) can in principle be carried forward indefinitely. EUR 3 million (EUR 21 million) relates to jurisdictions in which losses can be carried forward 3 to 10 years (average of 6 years) and based thereon the expiration of these losses is estimated to be on average approximately 3 years.&lt;/p&gt;</jenv_bw2_cor:IncomeTaxExpenseDisclosure>
+</xbrl>
