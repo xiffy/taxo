@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:nen_1888_2002="https://www.nltaxonomie.nl/sbr/taxonomy/2025-01-01/nen_1888_2002" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xsd:element name="CountryName" id="nen_1888_2002_CountryName" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="EmailAddressFull" id="nen_1888_2002_EmailAddressFull" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="HouseNumberAddition" id="nen_1888_2002_HouseNumberAddition" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="HouseNumberNL" id="nen_1888_2002_HouseNumberNL" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="NameRegion" id="nen_1888_2002_NameRegion" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="PlaceOfResidenceNL" id="nen_1888_2002_PlaceOfResidenceNL" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="PostalCodeNL" id="nen_1888_2002_PostalCodeNL" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="SexCode" id="nen_1888_2002_SexCode" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="StreetNameNL" id="nen_1888_2002_StreetNameNL" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+  <xsd:element name="TelephoneNumber" id="nen_1888_2002_TelephoneNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant"/>
+</xsd:schema>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier>https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01</tp:identifier>
+	<tp:name>KVK Taxonomy 2024</tp:name>
+	<tp:description></tp:description>
+	<tp:version>0.1.0</tp:version>
+	<tp:publisher>Kamer van Koophandel</tp:publisher>
+	<tp:publisherURL>https://www.nltaxonomie.nl/kvk</tp:publisherURL>
+	<tp:publisherCountry>NL</tp:publisherCountry>
+	<tp:publicationDate>2025-01-01</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name>JenV BW2 Core</tp:name>
+			<tp:description></tp:description>
+			<tp:entryPointDocument href="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd" />
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>

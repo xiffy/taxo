@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://www.w3.org/1999/xlink http://www.xbrl.org/2003/xlink-2003-12-31.xsd http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd http://xbrl.org/2008/reference http://www.xbrl.org/2008/generic-reference.xsd" xmlns:reference="http://xbrl.org/2008/reference" xmlns:gen="http://xbrl.org/2008/generic" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:roleRef roleURI="http://www.xbrl.org/2008/role/reference" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-reference.xsd#standard-reference"/>
+  <link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-reference" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-reference.xsd#element-reference"/>
+  <gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_FinancialInstrumentsCurrentValueTypedMember" xlink:label="jenv-bw2_FinancialInstrumentsCurrentValueTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJk_2021-01-01_B12_110_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJk_2021-01-01_B12_110_ref">
+      <ref:Chapter>B12</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Paragraph>110</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_FinancialInstrumentsCurrentValueTypedMember_loc" xlink:to="jenv-bw2_RJk_2021-01-01_B12_110_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_LegalEntityTypedMember" xlink:label="jenv-bw2_LegalEntityTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJ_2021-01-01_214_611_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJ_2021-01-01_214_611_ref">
+      <ref:Chapter>214</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>611</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_LegalEntityTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_214_611_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ManagingDirectorTypedMember" xlink:label="jenv-bw2_ManagingDirectorTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJ_2021-01-01_271_605_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJ_2021-01-01_271_605_ref">
+      <ref:Chapter>271</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>605</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_ManagingDirectorTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_271_605_ref"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJ_2021-01-01_660_518_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJ_2021-01-01_660_518_ref">
+      <ref:Chapter>660</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>518</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_ManagingDirectorTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_660_518_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ManagingOrSupervisoryDirectorOrRepresentativeTypedMember" xlink:label="jenv-bw2_ManagingOrSupervisoryDirectorOrRepresentativeTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJk_2021-01-01_A6_108_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJk_2021-01-01_A6_108_ref">
+      <ref:Chapter>A6</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Paragraph>108</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_ManagingOrSupervisoryDirectorOrRepresentativeTypedMember_loc" xlink:to="jenv-bw2_RJk_2021-01-01_A6_108_ref"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJk_2021-01-01_C1_404_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJk_2021-01-01_C1_404_ref">
+      <ref:Chapter>C1</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Paragraph>404</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_ManagingOrSupervisoryDirectorOrRepresentativeTypedMember_loc" xlink:to="jenv-bw2_RJk_2021-01-01_C1_404_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_NameBeneficiarySpecialGoverningControlStructureTypedMember" xlink:label="jenv-bw2_NameBeneficiarySpecialGoverningControlStructureTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJ_2021-01-01_410_102_D_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJ_2021-01-01_410_102_D_ref">
+      <ref:Chapter>410</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>102</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_NameBeneficiarySpecialGoverningControlStructureTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_410_102_D_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_RelatedPartyTransactionDetailsTypedMember" xlink:label="jenv-bw2_RelatedPartyTransactionDetailsTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJ_2021-01-01_330_201_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJ_2021-01-01_330_201_ref">
+      <ref:Chapter>330</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>201</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_RelatedPartyTransactionDetailsTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_330_201_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ShareBasedPaymentsSpecificationTypedMember" xlink:label="jenv-bw2_ShareBasedPaymentsSpecificationTypedMember_loc"/>
+    <reference:reference xlink:type="resource" xlink:label="jenv-bw2_RJ_2021-01-01_275_504_ref" xlink:role="http://www.xbrl.org/2008/role/reference" id="jenv-bw2_RJ_2021-01-01_275_504_ref">
+      <ref:Chapter>275</ref:Chapter>
+      <ref:IssueDate>2021-01-01</ref:IssueDate>
+      <ref:Name>Richtlijnen voor de jaarverslaggeving</ref:Name>
+      <ref:Paragraph>504</ref:Paragraph>
+    </reference:reference>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_ShareBasedPaymentsSpecificationTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_275_504_ref"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_SupervisoryDirectorTypedMember" xlink:label="jenv-bw2_SupervisoryDirectorTypedMember_loc"/>
+    <gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-reference" xlink:from="jenv-bw2_SupervisoryDirectorTypedMember_loc" xlink:to="jenv-bw2_RJ_2021-01-01_271_605_ref"/>
+  </gen:link>
+</link:linkbase>

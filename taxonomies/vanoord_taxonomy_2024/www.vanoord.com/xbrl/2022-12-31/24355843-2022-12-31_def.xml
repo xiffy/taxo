@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+  <link:roleRef roleURI="https://www.vanoord.com/role/Anchoring" xlink:type="simple" xlink:href="24355843-2022-12-31.xsd#Anchoring"/>
+  <link:roleRef roleURI="https://www.nltaxonomie.nl/kvk/role/role-999999" xlink:type="simple" xlink:href="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd#kvk_Role999999"/>
+  <link:roleRef roleURI="https://www.vanoord.com/role/ConsolidatedStatementOfChangesInEquity" xlink:type="simple" xlink:href="24355843-2022-12-31.xsd#ConsolidatedStatementOfChangesInEquity"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"/>
+  <link:arcroleRef arcroleURI="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:type="simple" xlink:href="http://www.xbrl.org/lrr/arcrole/esma-arcrole-2018-11-21.xsd#wider-narrower"/>
+  <link:definitionLink xlink:type="extended" xlink:role="https://www.vanoord.com/role/Anchoring">
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_InvestmentsInFinancialFixedAssets" xlink:label="vanoord_InvestmentsInFinancialFixedAssets_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_PurchaseGroupCompanies" xlink:label="rj_PurchaseGroupCompanies_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="vanoord_InvestmentsInFinancialFixedAssets_loc" xlink:to="rj_PurchaseGroupCompanies_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseReceivables" xlink:label="vanoord_IncreaseDecreaseReceivables_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncreaseDecreaseInTradeAccountsReceivable" xlink:label="rj_IncreaseDecreaseInTradeAccountsReceivable_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="vanoord_IncreaseDecreaseReceivables_loc" xlink:to="rj_IncreaseDecreaseInTradeAccountsReceivable_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ReceiptsFromFinancialFixedAssets" xlink:label="vanoord_ReceiptsFromFinancialFixedAssets_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ProceedsSalesGroupCompanies" xlink:label="rj_ProceedsSalesGroupCompanies_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="vanoord_ReceiptsFromFinancialFixedAssets_loc" xlink:to="rj_ProceedsSalesGroupCompanies_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_FinancialReportingPeriodDisclosure" xlink:label="vanoord_FinancialReportingPeriodDisclosure_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_FinancialReportingPeriodCurrentEndDate" xlink:label="jenv-bw2_FinancialReportingPeriodCurrentEndDate_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="vanoord_FinancialReportingPeriodDisclosure_loc" xlink:to="jenv-bw2_FinancialReportingPeriodCurrentEndDate_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_CostOfSales" xlink:label="jenv-bw2_CostOfSales_loc"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_CostOfWork" xlink:label="vanoord_CostOfWork_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="jenv-bw2_CostOfSales_loc" xlink:to="vanoord_CostOfWork_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_GrossOperatingResult" xlink:label="jenv-bw2_GrossOperatingResult_loc"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfit" xlink:label="vanoord_GrossProfit_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="jenv-bw2_GrossOperatingResult_loc" xlink:to="vanoord_GrossProfit_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_AdjustmentsDepreciationAndAmortisationExpense" xlink:label="rj_AdjustmentsDepreciationAndAmortisationExpense_loc"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsAmortisationIntangibleFixedAssets" xlink:label="vanoord_AdjustmentsAmortisationIntangibleFixedAssets_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="rj_AdjustmentsDepreciationAndAmortisationExpense_loc" xlink:to="vanoord_AdjustmentsAmortisationIntangibleFixedAssets_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsDepreciationTangibleFixedAssets" xlink:label="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="rj_AdjustmentsDepreciationAndAmortisationExpense_loc" xlink:to="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_EquityMovement" xlink:label="jenv-bw2_EquityMovement_loc_2"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalDirectChangesShareholderEquityVanOordNV" xlink:label="vanoord_TotalDirectChangesShareholderEquityVanOordNV_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="jenv-bw2_EquityMovement_loc_2" xlink:to="vanoord_TotalDirectChangesShareholderEquityVanOordNV_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalProfitLossLegalEntity" xlink:label="vanoord_TotalProfitLossLegalEntity_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="jenv-bw2_EquityMovement_loc_2" xlink:to="vanoord_TotalProfitLossLegalEntity_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_GrossOperatingResultDisclosure" xlink:label="jenv-bw2_GrossOperatingResultDisclosure_loc"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfitDisclosure" xlink:label="vanoord_GrossProfitDisclosure_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.esma.europa.eu/xbrl/esef/arcrole/wider-narrower" xlink:from="jenv-bw2_GrossOperatingResultDisclosure_loc" xlink:to="vanoord_GrossProfitDisclosure_loc" order="1.0"/>
+  </link:definitionLink>
+  <link:definitionLink xlink:type="extended" xlink:role="https://www.nltaxonomie.nl/kvk/role/role-999999">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_FinancialStatementsTypeAxis" xlink:label="jenv-bw2_FinancialStatementsTypeAxis_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ConsolidatedMember" xlink:label="jenv-bw2_ConsolidatedMember_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ConsolidatedMember" xlink:label="jenv-bw2_ConsolidatedMember2_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="jenv-bw2_FinancialStatementsTypeAxis_loc" xlink:to="jenv-bw2_ConsolidatedMember_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="jenv-bw2_FinancialStatementsTypeAxis_loc" xlink:to="jenv-bw2_ConsolidatedMember2_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_DefaultTable" xlink:label="vanoord_DefaultTable_loc"/>  
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd#kvk_LineItemsNotDimensionallyQualified" xlink:label="kvk_LineItemsNotDimensionallyQualified_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_DefaultTable_loc" order="1.0" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="vanoord_DefaultTable_loc" xlink:to="jenv-bw2_FinancialStatementsTypeAxis_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_CostOfWork" xlink:label="vanoord_CostOfWork_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_CostOfWork_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfit" xlink:label="vanoord_GrossProfit_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_GrossProfit_loc" order="3.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_InvestmentsInFinancialFixedAssets" xlink:label="vanoord_InvestmentsInFinancialFixedAssets_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_InvestmentsInFinancialFixedAssets_loc" order="50.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseReceivables" xlink:label="vanoord_IncreaseDecreaseReceivables_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_IncreaseDecreaseReceivables_loc" order="51.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ResultOnSaleParticipatingInterest" xlink:label="vanoord_ResultOnSaleParticipatingInterest_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_ResultOnSaleParticipatingInterest_loc" order="52.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsDepreciationTangibleFixedAssets" xlink:label="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc" order="53.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsAmortisationIntangibleFixedAssets" xlink:label="vanoord_AdjustmentsAmortisationIntangibleFixedAssets_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_AdjustmentsAmortisationIntangibleFixedAssets_loc" order="54.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ReceiptsFromFinancialFixedAssets" xlink:label="vanoord_ReceiptsFromFinancialFixedAssets_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_ReceiptsFromFinancialFixedAssets_loc" order="55.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseWorkInProgress" xlink:label="vanoord_IncreaseDecreaseWorkInProgress_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_IncreaseDecreaseWorkInProgress_loc" order="56.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_FinancialReportingPeriodDisclosure" xlink:label="vanoord_FinancialReportingPeriodDisclosure_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_FinancialReportingPeriodDisclosure_loc" order="57.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfitDisclosure" xlink:label="vanoord_GrossProfitDisclosure_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="vanoord_GrossProfitDisclosure_loc" order="58.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_NetResultAfterTax" xlink:label="jenv-bw2_NetResultAfterTax_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="jenv-bw2_NetResultAfterTax_loc" order="59.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Equity" xlink:label="jenv-bw2_Equity_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="kvk_LineItemsNotDimensionallyQualified_loc" xlink:to="jenv-bw2_Equity_loc" order="60.0"/>
+  </link:definitionLink>
+  <link:definitionLink xlink:type="extended" xlink:role="https://www.vanoord.com/role/ConsolidatedStatementOfChangesInEquity">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_FinancialStatementsTypeAxis" xlink:label="jenv-bw2_FinancialStatementsTypeAxis_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ConsolidatedMember" xlink:label="jenv-bw2_ConsolidatedMember_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ConsolidatedMember" xlink:label="jenv-bw2_ConsolidatedMember2_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="jenv-bw2_FinancialStatementsTypeAxis_loc" xlink:to="jenv-bw2_ConsolidatedMember_loc" order="1.0"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="jenv-bw2_FinancialStatementsTypeAxis_loc" xlink:to="jenv-bw2_ConsolidatedMember2_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_EquityMember" xlink:label="jenv-bw2_EquityMember_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="jenv-bw2_ClassesOfEquityAxis_loc" xlink:to="jenv-bw2_EquityMember_loc" order="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd#kvk_EquityLineItemsTitle" xlink:label="jenv-bw2_EquityLineItemsTitle_loc"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_StatementOfChangesInEquityTable" xlink:label="vanoord_StatementOfChangesInEquityTable_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="vanoord_StatementOfChangesInEquityTable_loc" order="1.0" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="vanoord_StatementOfChangesInEquityTable_loc" xlink:to="jenv-bw2_FinancialStatementsTypeAxis_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ClassesOfEquityAxis" xlink:label="jenv-bw2_ClassesOfEquityAxis_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="vanoord_StatementOfChangesInEquityTable_loc" xlink:to="jenv-bw2_ClassesOfEquityAxis_loc" order="3.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Equity" xlink:label="jenv-bw2_Equity_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="jenv-bw2_Equity_loc" order="2.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_NetResultAfterTax" xlink:label="jenv-bw2_NetResultAfterTax_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="jenv-bw2_NetResultAfterTax_loc" order="3.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TranslationDifferencesForeignParticipatingInterests" xlink:label="vanoord_TranslationDifferencesForeignParticipatingInterests_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="vanoord_TranslationDifferencesForeignParticipatingInterests_loc" order="4.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalDirectChangesShareholderEquityVanOordNV" xlink:label="vanoord_TotalDirectChangesShareholderEquityVanOordNV_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="vanoord_TotalDirectChangesShareholderEquityVanOordNV_loc" order="5.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalDistributionsToShareholders" xlink:label="vanoord_TotalDistributionsToShareholders_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="vanoord_TotalDistributionsToShareholders_loc" order="6.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_TotalProfitLossLegalEntity" xlink:label="vanoord_TotalProfitLossLegalEntity_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="vanoord_TotalProfitLossLegalEntity_loc" order="7.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_EquityDividendDistribution" xlink:label="rj_EquityDividendDistribution_loc"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="jenv-bw2_EquityLineItemsTitle_loc" xlink:to="rj_EquityDividendDistribution_loc" order="8.0"/>
+  </link:definitionLink>
+</link:linkbase>

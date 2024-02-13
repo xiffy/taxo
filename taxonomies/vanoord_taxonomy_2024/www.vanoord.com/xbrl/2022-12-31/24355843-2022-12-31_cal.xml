@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:roleRef roleURI="https://www.vanoord.com/role/ConsolidatedProfitAndLossAccount" xlink:type="simple" xlink:href="24355843-2022-12-31.xsd#ConsolidatedProfitAndLossAccount"/>
+  <link:roleRef roleURI="https://www.vanoord.com/role/ConsolidatedCashFlowStatement" xlink:type="simple" xlink:href="24355843-2022-12-31.xsd#ConsolidatedCashFlowStatement"/>
+  <link:roleRef roleURI="https://www.vanoord.com/role/ConsolidatedBalanceSheet" xlink:type="simple" xlink:href="24355843-2022-12-31.xsd#ConsolidatedBalanceSheet"/>
+  <link:calculationLink xlink:type="extended" xlink:role="https://www.vanoord.com/role/ConsolidatedProfitAndLossAccount">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_NetResultAfterTax" xlink:label="jenv-bw2_NetResultAfterTax_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ShareInResultsParticipatingInterests" xlink:label="jenv-bw2_ShareInResultsParticipatingInterests_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_NetResultAfterTax_loc" xlink:to="jenv-bw2_ShareInResultsParticipatingInterests_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_IncomeTaxExpense" xlink:label="jenv-bw2_IncomeTaxExpense_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_NetResultAfterTax_loc" xlink:to="jenv-bw2_IncomeTaxExpense_loc" order="2.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_ResultBeforeTax" xlink:label="jenv-bw2_ResultBeforeTax_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_NetResultAfterTax_loc" xlink:to="jenv-bw2_ResultBeforeTax_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_FinancialIncomeExpenses" xlink:label="rj_FinancialIncomeExpenses_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_ResultBeforeTax_loc" xlink:to="rj_FinancialIncomeExpenses_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_OperatingIncome" xlink:label="jenv-bw2_OperatingIncome_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_ResultBeforeTax_loc" xlink:to="jenv-bw2_OperatingIncome_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_GeneralAdministrativeExpenses" xlink:label="jenv-bw2_GeneralAdministrativeExpenses_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_OperatingIncome_loc" xlink:to="jenv-bw2_GeneralAdministrativeExpenses_loc" order="1.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_GrossProfit" xlink:label="vanoord_GrossProfit_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_OperatingIncome_loc" xlink:to="vanoord_GrossProfit_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_CostOfWork" xlink:label="vanoord_CostOfWork_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="vanoord_GrossProfit_loc" xlink:to="vanoord_CostOfWork_loc" order="1.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_AmortisationIntangibleAssets" xlink:label="jenv-bw2_AmortisationIntangibleAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="vanoord_CostOfWork_loc" xlink:to="jenv-bw2_AmortisationIntangibleAssets_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_DepreciationPropertyPlantEquipment" xlink:label="jenv-bw2_DepreciationPropertyPlantEquipment_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="vanoord_CostOfWork_loc" xlink:to="jenv-bw2_DepreciationPropertyPlantEquipment_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Expenses" xlink:label="jenv-bw2_Expenses_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="vanoord_CostOfWork_loc" xlink:to="jenv-bw2_Expenses_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_NetRevenue" xlink:label="jenv-bw2_NetRevenue_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="vanoord_GrossProfit_loc" xlink:to="jenv-bw2_NetRevenue_loc" order="5.0" weight="1.0"/>
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="https://www.vanoord.com/role/ConsolidatedBalanceSheet">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Assets" xlink:label="jenv-bw2_Assets_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_AssetsNoncurrent" xlink:label="jenv-bw2_AssetsNoncurrent_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_Assets_loc" xlink:to="jenv-bw2_AssetsNoncurrent_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_IntangibleAssets" xlink:label="jenv-bw2_IntangibleAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsNoncurrent_loc" xlink:to="jenv-bw2_IntangibleAssets_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_PropertyPlantEquipment" xlink:label="jenv-bw2_PropertyPlantEquipment_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsNoncurrent_loc" xlink:to="jenv-bw2_PropertyPlantEquipment_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_FinancialAssets" xlink:label="jenv-bw2_FinancialAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsNoncurrent_loc" xlink:to="jenv-bw2_FinancialAssets_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_AssetsCurrent" xlink:label="jenv-bw2_AssetsCurrent_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_Assets_loc" xlink:to="jenv-bw2_AssetsCurrent_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Inventories" xlink:label="jenv-bw2_Inventories_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsCurrent_loc" xlink:to="jenv-bw2_Inventories_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ConstructionContractsAmount" xlink:label="rj_ConstructionContractsAmount_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsCurrent_loc" xlink:to="rj_ConstructionContractsAmount_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_Receivables" xlink:label="jenv-bw2_Receivables_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsCurrent_loc" xlink:to="jenv-bw2_Receivables_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/jenv/taxonomy/2025-01-01/jenv-bw2_cor.xsd#jenv-bw2_CashAndCashEquivalents" xlink:label="jenv-bw2_CashAndCashEquivalents_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="jenv-bw2_AssetsCurrent_loc" xlink:to="jenv-bw2_CashAndCashEquivalents_loc" order="4.0" weight="1.0"/>
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="https://www.vanoord.com/role/ConsolidatedCashFlowStatement">
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncreaseDecreaseCashAndCashEquivalents" xlink:label="rj_IncreaseDecreaseCashAndCashEquivalents_loc"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_EffectExchangeRateChangesCashAndCashEquivalents" xlink:label="rj_EffectExchangeRateChangesCashAndCashEquivalents_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_IncreaseDecreaseCashAndCashEquivalents_loc" xlink:to="rj_EffectExchangeRateChangesCashAndCashEquivalents_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_NetCashFlows" xlink:label="rj_NetCashFlows_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_IncreaseDecreaseCashAndCashEquivalents_loc" xlink:to="rj_NetCashFlows_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_CashFlowOperatingActivities" xlink:label="rj_CashFlowOperatingActivities_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowOperatingActivities_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_CashFlowFromOperations" xlink:label="rj_CashFlowFromOperations_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="rj_CashFlowFromOperations_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_OperatingResultCashFlow" xlink:label="rj_OperatingResultCashFlow_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_OperatingResultCashFlow_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsDepreciationTangibleFixedAssets" xlink:label="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="vanoord_AdjustmentsDepreciationTangibleFixedAssets_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_AdjustmentsAmortisationIntangibleFixedAssets" xlink:label="vanoord_AdjustmentsAmortisationIntangibleFixedAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="vanoord_AdjustmentsAmortisationIntangibleFixedAssets_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ResultOnSaleParticipatingInterest" xlink:label="vanoord_ResultOnSaleParticipatingInterest_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="vanoord_ResultOnSaleParticipatingInterest_loc" order="4.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ChangesWorkingCapital" xlink:label="rj_ChangesWorkingCapital_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_ChangesWorkingCapital_loc" order="5.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncreaseDecreaseInInventories" xlink:label="rj_IncreaseDecreaseInInventories_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="rj_IncreaseDecreaseInInventories_loc" order="1.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseReceivables" xlink:label="vanoord_IncreaseDecreaseReceivables_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="vanoord_IncreaseDecreaseReceivables_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_IncreaseDecreaseWorkInProgress" xlink:label="vanoord_IncreaseDecreaseWorkInProgress_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="vanoord_IncreaseDecreaseWorkInProgress_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncreaseDecreaseInOtherPayables" xlink:label="rj_IncreaseDecreaseInOtherPayables_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_ChangesWorkingCapital_loc" xlink:to="rj_IncreaseDecreaseInOtherPayables_loc" order="4.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncreaseDecreaseProvisions" xlink:label="rj_IncreaseDecreaseProvisions_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFromOperations_loc" xlink:to="rj_IncreaseDecreaseProvisions_loc" order="6.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_InterestPaidClassifiedAsOperatingActivities" xlink:label="rj_InterestPaidClassifiedAsOperatingActivities_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="rj_InterestPaidClassifiedAsOperatingActivities_loc" order="2.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_IncomeTaxPaidClassifiedAsOperatingActivities" xlink:label="rj_IncomeTaxPaidClassifiedAsOperatingActivities_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowOperatingActivities_loc" xlink:to="rj_IncomeTaxPaidClassifiedAsOperatingActivities_loc" order="3.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_CashFlowInvestingActivities" xlink:label="rj_CashFlowInvestingActivities_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowInvestingActivities_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_ReceiptsFromFinancialFixedAssets" xlink:label="vanoord_ReceiptsFromFinancialFixedAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowInvestingActivities_loc" xlink:to="vanoord_ReceiptsFromFinancialFixedAssets_loc" order="2.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="24355843-2022-12-31.xsd#vanoord_InvestmentsInFinancialFixedAssets" xlink:label="vanoord_InvestmentsInFinancialFixedAssets_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowInvestingActivities_loc" xlink:to="vanoord_InvestmentsInFinancialFixedAssets_loc" order="1.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_PurchasePropertyPlantEquipment" xlink:label="rj_PurchasePropertyPlantEquipment_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowInvestingActivities_loc" xlink:to="rj_PurchasePropertyPlantEquipment_loc" order="3.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ProceedsSalesPropertyPlantAndEquipment" xlink:label="rj_ProceedsSalesPropertyPlantAndEquipment_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowInvestingActivities_loc" xlink:to="rj_ProceedsSalesPropertyPlantAndEquipment_loc" order="4.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_CashFlowFinancingActivities" xlink:label="rj_CashFlowFinancingActivities_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_NetCashFlows_loc" xlink:to="rj_CashFlowFinancingActivities_loc" order="3.0" weight="1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_DividendsPaidClassifiedAsFinancingActivities" xlink:label="rj_DividendsPaidClassifiedAsFinancingActivities_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFinancingActivities_loc" xlink:to="rj_DividendsPaidClassifiedAsFinancingActivities_loc" order="1.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_RepaymentsBorrowings" xlink:label="rj_RepaymentsBorrowings_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFinancingActivities_loc" xlink:to="rj_RepaymentsBorrowings_loc" order="2.0" weight="-1.0"/>
+    <link:loc xlink:type="locator" xlink:href="https://www.nltaxonomie.nl/rj/taxonomy/2025-01-01/rj_cor.xsd#rj_ProceedsFromBorrowings" xlink:label="rj_ProceedsFromBorrowings_loc"/>
+    <link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="rj_CashFlowFinancingActivities_loc" xlink:to="rj_ProceedsFromBorrowings_loc" order="3.0" weight="1.0"/>
+  </link:calculationLink>
+</link:linkbase>

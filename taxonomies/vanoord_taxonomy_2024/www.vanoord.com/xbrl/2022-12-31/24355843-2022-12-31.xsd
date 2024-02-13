@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema targetNamespace="https://www.vanoord.com/xbrl/2022-12-31" attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vanoord="https://www.vanoord.com/xbrl/2022-12-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dtr="http://www.xbrl.org/dtr/type/2022-03-31">
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="24355843-2022-12-31_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="24355843-2022-12-31_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="24355843-2022-12-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="24355843-2022-12-31_lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:roleType roleURI="https://www.vanoord.com/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
+        <link:definition>00000 - Document - Document and Entity information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/ConsolidatedBalanceSheet" id="ConsolidatedBalanceSheet">
+        <link:definition>01000 - Statement - Consolidated balance sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/ConsolidatedProfitAndLossAccount" id="ConsolidatedProfitAndLossAccount">
+        <link:definition>01100 - Statement - Consolidated profit and loss account</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/ConsolidatedCashFlowStatement" id="ConsolidatedCashFlowStatement">
+        <link:definition>01200 - Statement - Consolidated cash flow statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/ConsolidatedStatementOfChangesInEquity" id="ConsolidatedStatementOfChangesInEquity">
+        <link:definition>13000 - Disclosure - Consolidated statement of changes in equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/NotesToTheConsolidatedFinancialStatements" id="NotesToTheConsolidatedFinancialStatements">
+        <link:definition>10000 - Disclosure - Notes to the consolidated financial statements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/NotesToTheConsolidatedBalanceSheet" id="NotesToTheConsolidatedBalanceSheet">
+        <link:definition>11000 - Disclosure - Notes to the consolidated balance sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/NotesToTheProfitAndLossAccount" id="NotesToTheConsolidatedProfitAndLossAccount">
+        <link:definition>12000 - Disclosure - Notes to the consolidated profit and loss account</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.vanoord.com/role/Anchoring" id="Anchoring">
+        <link:definition>Anchoring</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+  <xs:import namespace="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk" schemaLocation="https://www.nltaxonomie.nl/kvk/taxonomy/2025-01-01/kvk_cor.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:element name="CostOfWork" id="vanoord_CostOfWork" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="GrossProfit" id="vanoord_GrossProfit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xs:element name="FinancialReportingPeriodDisclosure" id="vanoord_FinancialReportingPeriodDisclosure" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:periodType="duration"/>
+  <xs:element name="AdjustedForAbstract" id="vanoord_AdjustedForAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="false" xbrli:periodType="duration"/>
+  <xs:element name="ChangesInWorkingCapitalAbstract" id="vanoord_ChangesInWorkingCapitalAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="false" xbrli:periodType="duration"/>
+  <xs:element name="AdjustmentsDepreciationTangibleFixedAssets" id="vanoord_AdjustmentsDepreciationTangibleFixedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="GrossProfitDisclosure" id="vanoord_GrossProfitDisclosure" type="dtr:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:periodType="duration"/>
+  <xs:element name="AdjustmentsAmortisationIntangibleFixedAssets" id="vanoord_AdjustmentsAmortisationIntangibleFixedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="ResultOnSaleParticipatingInterest" id="vanoord_ResultOnSaleParticipatingInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="IncreaseDecreaseReceivables" id="vanoord_IncreaseDecreaseReceivables" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="IncreaseDecreaseWorkInProgress" id="vanoord_IncreaseDecreaseWorkInProgress" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="InvestmentsInFinancialFixedAssets" id="vanoord_InvestmentsInFinancialFixedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xs:element name="ReceiptsFromFinancialFixedAssets" id="vanoord_ReceiptsFromFinancialFixedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="false" xbrli:balance="debit" xbrli:periodType="duration"/>
+  <xs:element name="StatementOfChangesInEquityTable" id="vanoord_StatementOfChangesInEquityTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="false" xbrli:periodType="duration"/>
+  <xs:element name="TranslationDifferencesForeignParticipatingInterests" id="vanoord_TranslationDifferencesForeignParticipatingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xs:element name="TotalDirectChangesShareholderEquityVanOordNV" id="vanoord_TotalDirectChangesShareholderEquityVanOordNV" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xs:element name="TotalDistributionsToShareholders" id="vanoord_TotalDistributionsToShareholders" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xs:element name="TotalProfitLossLegalEntity" id="vanoord_TotalProfitLossLegalEntity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:balance="credit" xbrli:periodType="duration"/>
+  <xs:element name="DefaultTable" id="vanoord_DefaultTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="false" xbrli:periodType="duration"/>
+</xs:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+<tp:identifier>https://www.vanoord.com/xbrl/2022-12-31</tp:identifier>
+<tp:name>Van Oord XBRL extension taxonomy 2022</tp:name>
+<tp:description>Illustrative extension taxonomy for KVK reporting</tp:description>
+<tp:version>Eample</tp:version>
+<tp:publisher>Van Oord N.V.</tp:publisher>
+<tp:publisherURL>https://www.vanoord.com</tp:publisherURL>
+<tp:publisherCountry>NL</tp:publisherCountry>
+<tp:publicationDate>2023-03-10</tp:publicationDate>
+<tp:entryPoints>
+<tp:entryPoint>
+<tp:name>Van Oord XBRL extension taxonomy 2022 Entry point</tp:name>
+<tp:description>Entry point to be used to load Van Oord XBRL extension taxonomy and Annual Report for 2022</tp:description>
+<tp:entryPointDocument href="https://www.vanoord.com/xbrl/2022-12-31/24355843-2022-12-31.xsd" />
+<tp:languages>
+<tp:language>EN</tp:language>
+</tp:languages>
+</tp:entryPoint>
+</tp:entryPoints>
+</tp:taxonomyPackage>

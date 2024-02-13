@@ -2,7 +2,7 @@
 setlocal enableDelayedExpansion
 cd .\instances
 set LIST=
-for %%f in (*xbrl) do (
+for %%f in (*html) do (
     echo|set /p=".\instances\%%f|">> _list.env
 )
 echo|set /p="INSTANCE_LIST="> instance_list.env
